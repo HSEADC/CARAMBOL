@@ -1,4 +1,0 @@
-/******/ (() => { // webpackBootstrap
-console.log("hey");
-/******/ })()
-;
