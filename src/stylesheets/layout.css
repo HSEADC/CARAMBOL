@@ -1,102 +1,274 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: calc(1vw / 14.4);
 }
-
 body {
-  font-family: "Gramatika Regular", Arial, Helvetica, sans-serif;
-  font-size: 14rem;
+  background-color: black;
 }
-
-.zaglushka {
-  background-color: rgb(16, 2, 2);
-  color: #eee;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.header {
   position: fixed;
-}
-.zaglushka h1 {
-  font-size: 36rem;
-  font-weight: 500;
-  line-height: 42rem;
-}
-.zaglushka p {
-  font-size: 24rem;
-  line-height: 30rem;
-}
-.zaglushka > div {
-  width: 48%;
-}
-.zaglushka img {
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
   width: 100%;
+  height: 88rem;
 }
-.text {
-  position: relative;
+.header_logo_link {
+  text-decoration: none;
+}
+.header_logo {
+  justify-self: start;
+  width: 68rem;
+}
+.header_navigation {
+  justify-self: end;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62rem;
+}
+.header__links-list-item {
+  text-decoration: none;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+  list-style: none;
+}
+.arrow_left {
+  width: 40rem;
+}
+.arrow_right {
+  width: 40rem;
+}
+.sitestub {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20rem 0 0 20rem;
+  padding: 127rem 50rem 0;
 }
-input[name="message"] {
-  width: 66%;
+.sitestub__title {
+  padding: 80rem 0 0 25rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 150rem;
+}
+.sitestub__description {
+  margin-top: 35rem;
+  text-align: center;
+  padding-top: 9rem;
+  width: 884rem;
+  height: 52.25rem;
+  background-color: #292929;
+  border-radius: 50rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+  list-style: none;
+}
+.sitestub__flowers {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 200rem;
+  width: 590rem;
+  height: 645rem;
+}
+.sitestub__buttercup {
+  position: absolute;
+  left: -80rem;
+  top: -50rem;
+  width: 828rem;
+}
+.sitestub__callalily {
+  position: absolute;
+  left: -150rem;
+  top: 220rem;
+  width: 567rem;
+  rotate: -11.6deg;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 255rem;
+  gap: 24rem;
+}
+.text-wrapper_title {
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+input[type="email"] {
+  width: 24%;
   height: 56rem;
   border-radius: 100rem;
-  outline: none;
-  border: 1rem solid transparent;
-  padding: 0 20rem;
-  background-color: rgba(28, 28, 28, 0.6);
+  border: 3rem solid white;
+  padding: 5rem 30rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Gramatika Regular;
   color: #eee;
-  transition: border ease 0.3s;
+  font-size: 20rem;
 }
-input[name="message"]:focus {
-  border: 1rem solid #eee;
-  transition: border ease 0.6s;
+input[type="email"]::placeholder {
+  font-family: Gramatika Regular;
+  color: rgba(238, 238, 238, 0.75);
+  font-size: 20rem;
+}
+#my-form {
+  display: flex;
+  gap: 18rem;
 }
 #my-form-button {
-  width: 30%;
+  width: 12%;
   height: 56rem;
   border-radius: 100rem;
   border: none;
-  padding: 18rem 20rem;
-  background-color: rgba(151, 151, 151, 0.6);
-  color: #eee;
+  background-color: white;
+  font-family: Gramatika Regular;
+  color: #000;
   font-size: 20rem;
   cursor: pointer;
 }
-.text-wrapper {
-  background-color: rgba(76, 76, 76, 0.6);
-  padding: 20rem;
-  border-radius: 20rem;
-  backdrop-filter: blur(20rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20rem;
+#my-form-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #my-form-status {
+  font-family: Gramatika Regular;
+  color: #eee;
   font-size: 20rem;
-  padding-left: 20rem;
+  text-align: center;
 }
-.text-animation {
+.social-list {
   position: absolute;
+  top: 755rem;
+  width: 200rem;
+  align-self: end;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20rem;
+  list-style: none;
+  padding: 0;
 }
-.anim {
-  width: 330rem;
-  height: 330rem;
-  border-radius: 100%;
-  filter: blur(50rem);
+
+.social-icon {
+  display: block;
+  height: auto;
+  width: 60rem;
+  max-width: 100%;
 }
-.anim:nth-of-type(1),
-.anim:nth-of-type(4) {
-  background-color: rgb(92, 92, 92);
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  padding: 48rem 0 0;
+  align-items: center;
+  min-height: 1580px;
 }
-.anim:nth-of-type(3),
-.anim:nth-of-type(2) {
-  background-color: rgb(226, 162, 43);
+
+.title {
+  padding: 80rem 0 20rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 190rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  padding-top: 9rem;
+  width: 1114rem;
+  height: 40rem;
+  background-color: #292929;
+  border-radius: 50rem;
+}
+.description_help {
+  position: relative;
+  top: -5rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+.emergency_buttons {
+  position: sticky;
+  top: 750rem;
+  align-self: end;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
+  width: 100%;
+  height: 88rem;
+}
+.info_button {
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.info_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: black;
+  font-size: 20rem;
+}
+.extra_button {
+  justify-self: end;
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 93, 0, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.extra_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+}
+.flowers {
+  position: absolute;
+  overflow: hidden;
+  top: 150rem;
+  width: 100%;
+  min-height: 720rem;
+}
+.flowers_item {
+  position: absolute;
+}
+.flowers_birdofparadise {
+  width: 450rem;
+  rotate: -10.67deg;
+  left: -80rem;
+  top: 366rem;
+}
+.flowers_callalily {
+  width: 450rem;
+  rotate: 1.74deg;
+  left: 200rem;
+  top: 440rem;
+}
+.flowers_buttercup {
+  width: 720rem;
+  rotate: 1.74deg;
+  left: -120rem;
+  top: 240rem;
+}
+.flowers_lycoris {
+  width: 720rem;
+  rotate: 336.62deg;
+  left: 120rem;
+  top: 120rem;
 }

@@ -3,89 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <title>KARAMBOL</title>
+    <link rel="stylesheet" href="../src/stylesheets/style.css" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <div class="zaglushka">
-      <div class="text">
-        <div class="text-animation">
-          <div class="anim"></div>
-          <div class="anim"></div>
-          <div class="anim"></div>
-          <div class="anim"></div>
+    <header class="header">
+      <img class="arrow_left" src="../src/images/arrow_left.svg" alt="" />
+      <a class="header_logo_link" href="../src/index.html"
+        ><img
+          class="header_logo"
+          src="../src/images/logo.svg"
+          alt="логотип KARAMBOL"
+      /></a>
+      <nav class="header_navigation">
+        <ul class="header__links-list">
+          <li class="header__links-list-item">О нас</li>
+          <li class="header__links-list-item">Глоссарий</li>
+          <li class="header__links-list-item">Помощь</li>
+        </ul>
+      </nav>
+      <img class="arrow_right" src="../src/images/arrow_right.svg" alt="" />
+    </header>
+    <main>
+      <section class="cover">
+        <h1 class="title">KARAMBOL</h1>
+        <div class="description">
+          <p class="description_help">Поможем с безопасностью питомца</p>
         </div>
-        <div class="text-wrapper">
-          <h1>Привет! Мы Karambol!</h1>
-          <p>
-            Поможем вам с безопасностью питомцев. Скоро обновим сайт,
-            оставайтесь на связи
-          </p>
-          <form
-            id="my-form"
-            action="https://formspree.io/f/xnngorro"
-            method="POST"
-          >
-            <!-- <label>Email:</label>
-          <input type="email" name="email" /> -->
-            <!-- <label>Message:</label> -->
-            <input type="text" name="message" />
-            <button id="my-form-button">Отправить</button>
-            <p id="my-form-status"></p>
-          </form>
+        <div class="flowers">
+          <img
+            class="flowers_item flowers_birdofparadise"
+            src="./images/Bird of Paradise.png"
+            alt="Цветок райской птицы"
+          />
+          <img
+            class="flowers_item flowers_callalily"
+            src="./images/Calla Lily.png"
+            alt=""
+          />
+          <img
+            class="flowers_item flowers_buttercup"
+            src="./images/Buttercup.png"
+            alt=""
+          />
+          <img
+            class="flowers_item flowers_lycoris"
+            src="./images/Lycoris.png"
+            alt=""
+          />
         </div>
-      </div>
-      <div class="image">
-        <img src="images/Orchid.png" alt="" />
-      </div>
-    </div>
-
-    <!-- Place this script at the end of the body tag -->
-    <script>
-      var form = document.getElementById("my-form");
-
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset();
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, "errors")) {
-                  status.innerHTML = data["errors"]
-                    .map((error) => error["message"])
-                    .join(", ");
-                } else {
-                  status.innerHTML =
-                    "Oops! There was a problem submitting your form";
-                }
-              });
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
-
-    <!-- <div class="routing">
-      <h1>Главная</h1>
-
-      <h2>Категории</h2>
-      <ul>
-        <li><a href="pages/plants.html">Страница с глоссарием</a></li>
-        <li><a href="pages/instruction.html">Инструкции по безопасности</a></li>
-      </ul>
-    </div> -->
+        <div class="emergency_buttons">
+          <img class="arrow_left" src="../src/images/arrow_left.svg" alt="" />
+          <button class="info_button">
+            <p class="info_button_description">Узнать больше</p>
+          </button>
+          <button class="extra_button">
+            <p class="extra_button_description">Экстренная помощь</p>
+          </button>
+          <img class="arrow_right" src="../src/images/arrow_right.svg" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
