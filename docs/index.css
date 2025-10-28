@@ -143,8 +143,8 @@ body {
   background-color: black;
 }
 .header {
-  position: fixed;
-  z-index: 10;
+  position: relative;
+  z-index: 5;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr 40rem;
   column-gap: 30rem;

@@ -10,7 +10,7 @@ body {
 }
 .header {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr 40rem;
   column-gap: 30rem;
