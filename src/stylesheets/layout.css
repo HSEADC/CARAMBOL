@@ -1,1 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.header {
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
+  width: 100%;
+  height: 88rem;
+}
+.header_logo_link {
+  text-decoration: none;
+}
+.header_logo {
+  justify-self: start;
+  width: 68rem;
+}
+.header_navigation {
+  justify-self: end;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62rem;
+}
+.header__links-list-item {
+  text-decoration: none;
+  list-style: none;
+}
+.header__links-list-item_link {
+  text-decoration: none;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+}
+.arrow_left {
+  width: 40rem;
+}
+.arrow_right {
+  width: 40rem;
+}
+.adaptiv_navigation {
+  display: none;
+}
+.sitestub {
+  display: flex;
+  flex-direction: column;
+  padding: 127rem 50rem 0;
+}
+.sitestub__title {
+  padding: 80rem 0 0 25rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 150rem;
+}
+.sitestub__description {
+  margin-top: 35rem;
+  text-align: center;
+  padding-top: 9rem;
+  width: 884rem;
+  height: 52.25rem;
+  background-color: #292929;
+  border-radius: 50rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+  list-style: none;
+}
+.sitestub__flowers {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 200rem;
+  width: 590rem;
+  height: 645rem;
+}
+.sitestub__buttercup {
+  position: absolute;
+  left: -80rem;
+  top: -30rem;
+  width: 828rem;
+}
+.sitestub__callalily {
+  position: absolute;
+  left: -100rem;
+  top: 220rem;
+  width: 567rem;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 255rem;
+  gap: 24rem;
+}
+.text-wrapper_title {
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+input[type="email"] {
+  width: 24%;
+  height: 56rem;
+  border-radius: 100rem;
+  border: 3rem solid white;
+  padding: 5rem 30rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Gramatika Regular;
+  color: #eee;
+  font-size: 20rem;
+}
+input[type="email"]::placeholder {
+  font-family: Gramatika Regular;
+  color: rgba(238, 238, 238, 0.75);
+  font-size: 20rem;
+}
+#my-form {
+  display: flex;
+  gap: 18rem;
+}
+#my-form-button {
+  width: 12%;
+  height: 56rem;
+  border-radius: 100rem;
+  border: none;
+  background-color: white;
+  font-family: Gramatika Regular;
+  color: #000;
+  font-size: 20rem;
+  cursor: pointer;
+}
+#my-form-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#my-form-status {
+  font-family: Gramatika Regular;
+  color: #eee;
+  font-size: 20rem;
+  text-align: center;
+}
+.social-list {
+  position: absolute;
+  top: 755rem;
+  width: 200rem;
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+  list-style: none;
+  padding: 0;
+}
+.social-icon {
+  display: block;
+  height: auto;
+  width: 60rem;
+  max-width: 100%;
+}
 
+.cover {
+  display: flex;
+  flex-direction: column;
+  padding: 48rem 0 0;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  margin-top: -10rem;
+  padding: 0 0 20rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 190rem;
+  text-align: center;
+}
+
+.description {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 9rem;
+  width: 1114rem;
+  height: 40rem;
+  background-color: #292929;
+  border-radius: 50rem;
+}
+.description_help {
+  position: relative;
+  top: -5rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+.emergency_buttons {
+  position: sticky;
+  z-index: 3;
+  top: 750rem;
+  align-self: end;
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
+  width: 100%;
+  height: 88rem;
+}
+.info_button {
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.info_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: black;
+  font-size: 20rem;
+}
+.extra_button {
+  justify-self: end;
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 93, 0, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.extra_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+}
+.flowers {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  top: 150rem;
+  width: 100%;
+  min-height: 720rem;
+}
+.flowers_item {
+  position: absolute;
+}
+.flowers_birdofparadise {
+  width: 450rem;
+  rotate: -10deg;
+  left: -20rem;
+  top: 366rem;
+}
+.flowers_callalily {
+  width: 450rem;
+  left: 200rem;
+  top: 440rem;
+}
+.flowers_buttercup {
+  width: 720rem;
+  left: -140rem;
+  top: 240rem;
+}
+.flowers_lycoris {
+  width: 720rem;
+  left: 120rem;
+  top: 120rem;
+}
+.flowers_dahlia {
+  z-index: 4;
+  width: 900rem;
+  left: 180rem;
+  top: 10rem;
+}
+.flowers_rose {
+  width: 600rem;
+  left: 420rem;
+  top: 370rem;
+}
+.flowers_lycoris_reflection {
+  width: 720rem;
+  rotate: 0deg;
+  left: 540rem;
+  top: 140rem;
+}
+.flowers_zinnia {
+  width: 640rem;
+  left: 760rem;
+  top: 260rem;
+}
+.flowers_anthurium {
+  width: 850rem;
+  rotate: 20deg;
+  left: 760rem;
+  top: 180rem;
+}
+.aboutus {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 560rem;
+  min-height: 750rem;
+}
+.title_aboutus {
+  position: relative;
+  z-index: 2;
+  padding: 80rem 0 100rem;
+  font-family: Pompeji;
+  color: white;
+  font-size: 110rem;
+  text-align: center;
+}
+.description_aboutus {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+  line-height: 28rem;
+}
+.description_aboutus p {
+  margin-bottom: 40rem;
+}
+.background-gradient_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  justify-self: center;
+  overflow: hidden;
+  top: 120rem;
+  z-index: 1;
+  width: 1400rem;
+  min-height: 200rem;
+}
+.background-gradient {
+  width: 1900rem;
+  height: 500rem;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 93, 0, 0.8) 0%,
+    rgba(255, 93, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.7) 70%
+  );
+}
+.box {
+  width: 100%;
+  height: 400rem;
+  background-color: #292929;
+}
