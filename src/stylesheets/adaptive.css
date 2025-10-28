@@ -54,6 +54,7 @@
     display: flex;
   }
   .title {
+    margin-top: -170rem;
     padding: 30rem 0 20rem 7rem;
     font-size: 65rem;
   }

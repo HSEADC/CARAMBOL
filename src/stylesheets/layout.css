@@ -176,7 +176,7 @@ input[type="email"]::placeholder {
 .title {
   position: relative;
   z-index: 2;
-  margin-top: -10rem;
+  margin-top: -100rem;
   padding: 0 0 20rem;
   font-family: Pompeji;
   color: #ff5e00;
