@@ -9,7 +9,7 @@ body {
   background-color: black;
 }
 .header {
-  position: fixed;
+  position: relative;
   z-index: 10;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr 40rem;
