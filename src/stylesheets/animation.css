@@ -1,14 +1,108 @@
-.text-animation {
-  animation: rotate 20s linear infinite;
+.flowers_birdofparadise,
+.flowers_callalily {
+  animation: sway-scale 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
 }
-@keyframes rotate {
+@keyframes sway-scale {
   0% {
-    transform: rotate(0);
+    transform: rotate(-7deg) scale(1);
   }
   50% {
-    transform: rotate(180deg) scale(0.5);
+    transform: rotate(-14deg) scale(1.02);
   }
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: rotate(-4deg) scale(1);
+  }
+}
+
+.flowers_buttercup {
+  animation: slopes_buttercup 20s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_buttercup {
+  0% {
+    transform: rotate(3deg) scale(1);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(6deg) scale(1);
+  }
+}
+.flowers_zinnia {
+  animation: slopes_zinnia 20s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_zinnia {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+.flowers_lycoris,
+.flowers_anthurium {
+  animation: slopes_lycoris 18s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_lycoris {
+  0% {
+    transform: rotate(-8deg) scale(1);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1);
+  }
+}
+.flowers_dahlia {
+  animation: slopes_dahlia 17s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_dahlia {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+.flowers_rose {
+  animation: slopes_rose 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_rose {
+  0% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+.flowers_lycoris_reflection {
+  animation: slopes_lycoris_reflection 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_lycoris_reflection {
+  0% {
+    transform: rotate(-6deg);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(2deg);
   }
 }

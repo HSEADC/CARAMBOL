@@ -1,34 +1,108 @@
 @media screen and (max-width: 600px) {
   html {
-    font-size: calc(1vw / 3.9);
+    font-size: calc(1vw / 4.14);
   }
-  .zaglushka {
-    flex-direction: column-reverse;
+  .arrow_left {
+    display: none;
   }
-  .zaglushka div {
-    width: 100%;
+  .arrow_right {
+    display: none;
   }
-  .text {
-    padding: 20rem;
+  .header {
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: 160rem;
+    padding: 0 20rem 0 12rem;
   }
-  .zaglushka img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
+  .header_logo {
+    width: 66rem;
   }
-  .anim {
-    width: 180rem;
-    height: 180rem;
-    filter: blur(20rem);
+  .emergency_buttons {
+    top: 780rem;
+    left: 345rem;
+    height: 88rem;
   }
-  form {
+  .header_navigation {
+    display: none;
+  }
+  .adaptiv_navigation {
+    justify-self: end;
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    justify-content: space-between;
+    width: 49rem;
+    height: 29rem;
   }
-  input[name="message"],
-  #my-form-button {
-    width: 100%;
+  .adaptiv_navigation_box {
+    width: 49rem;
+    height: 5rem;
+    background-color: #fb7520;
+    border-radius: 50rem;
+  }
+  .header__links-list {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #333;
+  }
+
+  .header__links-list.active {
+    display: flex;
+  }
+  .title {
+    padding: 100rem 0 20rem 7rem;
+    font-size: 65rem;
+  }
+  .description {
+    padding-top: 9rem;
+    width: 392rem;
+    height: 40rem;
+  }
+  .description_help {
+    top: -2rem;
     font-size: 20rem;
+  }
+  .flowers {
+    top: 180rem;
+  }
+  .flowers_callalily {
+    width: 400rem;
+    left: -40rem;
+    top: 400rem;
+  }
+  .flowers_dahlia {
+    width: 697rem;
+    left: -170rem;
+    top: 80rem;
+  }
+  .flowers_rose {
+    width: 473rem;
+    left: 60rem;
+    top: 370rem;
+  }
+  .flowers_birdofparadise {
+    display: none;
+  }
+  .flowers_buttercup {
+    display: none;
+  }
+  .flowers_lycoris {
+    display: none;
+  }
+  .flowers_lycoris_reflection {
+    display: none;
+  }
+  .flowers_zinnia {
+    display: none;
+  }
+  .flowers_anthurium {
+    display: none;
+  }
+  .info_button {
+    display: none;
+  }
+  .extra_button {
+    width: 352rem;
+    height: 50rem;
   }
 }

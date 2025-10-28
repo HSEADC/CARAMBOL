@@ -9,6 +9,7 @@ body {
 }
 .header {
   position: fixed;
+  z-index: 10;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr 40rem;
   column-gap: 30rem;
@@ -33,16 +34,22 @@ body {
 }
 .header__links-list-item {
   text-decoration: none;
+  list-style: none;
+}
+.header__links-list-item_link {
+  text-decoration: none;
   font-family: Gramatika Regular;
   color: white;
   font-size: 20rem;
-  list-style: none;
 }
 .arrow_left {
   width: 40rem;
 }
 .arrow_right {
   width: 40rem;
+}
+.adaptiv_navigation {
+  display: none;
 }
 .sitestub {
   display: flex;
@@ -152,7 +159,6 @@ input[type="email"]::placeholder {
   list-style: none;
   padding: 0;
 }
-
 .social-icon {
   display: block;
   height: auto;
@@ -169,6 +175,8 @@ input[type="email"]::placeholder {
 }
 
 .title {
+  position: relative;
+  z-index: 2;
   padding: 80rem 0 20rem;
   font-family: Pompeji;
   color: #ff5e00;
@@ -177,6 +185,8 @@ input[type="email"]::placeholder {
 }
 
 .description {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding-top: 9rem;
   width: 1114rem;
@@ -193,6 +203,7 @@ input[type="email"]::placeholder {
 }
 .emergency_buttons {
   position: sticky;
+  z-index: 3;
   top: 750rem;
   align-self: end;
   position: fixed;
@@ -240,6 +251,7 @@ input[type="email"]::placeholder {
 }
 .flowers {
   position: absolute;
+  z-index: 1;
   overflow: hidden;
   top: 150rem;
   width: 100%;
@@ -250,25 +262,50 @@ input[type="email"]::placeholder {
 }
 .flowers_birdofparadise {
   width: 450rem;
-  rotate: -10.67deg;
-  left: -80rem;
+  rotate: -10deg;
+  left: -20rem;
   top: 366rem;
 }
 .flowers_callalily {
   width: 450rem;
-  rotate: 1.74deg;
   left: 200rem;
   top: 440rem;
 }
 .flowers_buttercup {
   width: 720rem;
-  rotate: 1.74deg;
-  left: -120rem;
+  left: -140rem;
   top: 240rem;
 }
 .flowers_lycoris {
   width: 720rem;
-  rotate: 336.62deg;
   left: 120rem;
   top: 120rem;
+}
+.flowers_dahlia {
+  z-index: 4;
+  width: 900rem;
+  left: 180rem;
+  top: 10rem;
+}
+.flowers_rose {
+  width: 600rem;
+  left: 420rem;
+  top: 370rem;
+}
+.flowers_lycoris_reflection {
+  width: 720rem;
+  rotate: 0deg;
+  left: 540rem;
+  top: 140rem;
+}
+.flowers_zinnia {
+  width: 640rem;
+  left: 760rem;
+  top: 260rem;
+}
+.flowers_anthurium {
+  width: 850rem;
+  rotate: 20deg;
+  left: 760rem;
+  top: 180rem;
 }
