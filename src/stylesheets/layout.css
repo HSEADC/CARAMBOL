@@ -3,6 +3,7 @@
 }
 html {
   font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
 }
 body {
   background-color: black;
@@ -86,15 +87,14 @@ body {
 .sitestub__buttercup {
   position: absolute;
   left: -80rem;
-  top: -50rem;
+  top: -30rem;
   width: 828rem;
 }
 .sitestub__callalily {
   position: absolute;
-  left: -150rem;
+  left: -100rem;
   top: 220rem;
   width: 567rem;
-  rotate: -11.6deg;
 }
 .text-wrapper {
   display: flex;
@@ -171,13 +171,13 @@ input[type="email"]::placeholder {
   flex-direction: column;
   padding: 48rem 0 0;
   align-items: center;
-  min-height: 1580px;
 }
 
 .title {
   position: relative;
   z-index: 2;
-  padding: 80rem 0 20rem;
+  margin-top: -10rem;
+  padding: 0 0 20rem;
   font-family: Pompeji;
   color: #ff5e00;
   font-size: 190rem;
@@ -206,7 +206,6 @@ input[type="email"]::placeholder {
   z-index: 3;
   top: 750rem;
   align-self: end;
-  position: fixed;
   display: grid;
   grid-template-columns: 40rem 1fr 1fr 40rem;
   column-gap: 30rem;
@@ -308,4 +307,60 @@ input[type="email"]::placeholder {
   rotate: 20deg;
   left: 760rem;
   top: 180rem;
+}
+.aboutus {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 560rem;
+  min-height: 750rem;
+}
+.title_aboutus {
+  position: relative;
+  z-index: 2;
+  padding: 80rem 0 100rem;
+  font-family: Pompeji;
+  color: white;
+  font-size: 110rem;
+  text-align: center;
+}
+.description_aboutus {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+  line-height: 28rem;
+}
+.description_aboutus p {
+  margin-bottom: 40rem;
+}
+.background-gradient_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  justify-self: center;
+  overflow: hidden;
+  top: 120rem;
+  z-index: 1;
+  width: 1400rem;
+  min-height: 200rem;
+}
+.background-gradient {
+  width: 1900rem;
+  height: 500rem;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 93, 0, 0.8) 0%,
+    rgba(255, 93, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.7) 70%
+  );
+}
+.box {
+  width: 100%;
+  height: 400rem;
+  background-color: #292929;
 }

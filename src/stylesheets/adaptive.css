@@ -18,8 +18,12 @@
     width: 66rem;
   }
   .emergency_buttons {
-    top: 780rem;
-    left: 345rem;
+    display: flex;
+    padding-left: 35rem;
+    padding-top: 40rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
     height: 88rem;
   }
   .header_navigation {
@@ -50,7 +54,7 @@
     display: flex;
   }
   .title {
-    padding: 100rem 0 20rem 7rem;
+    padding: 30rem 0 20rem 7rem;
     font-size: 65rem;
   }
   .description {
@@ -104,5 +108,41 @@
   .extra_button {
     width: 352rem;
     height: 50rem;
+  }
+  .title_aboutus {
+    font-size: 64rem;
+    padding: 250rem 0 120rem;
+  }
+  .description_aboutus {
+    width: 350rem;
+    font-size: 20rem;
+    line-height: 28rem;
+  }
+  .description_aboutus p {
+    margin-bottom: 40rem;
+  }
+  .background-gradient_div {
+    padding-top: 250rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700rem;
+    min-height: 360rem;
+    overflow: hidden;
+  }
+  .background-gradient {
+    width: 100%;
+    height: 600rem;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 93, 0, 0.8) 0%,
+      rgba(255, 93, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.7) 80%
+    );
+  }
+  .aboutus {
+    align-items: center;
+    min-height: 1000rem;
   }
 }

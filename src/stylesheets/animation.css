@@ -91,7 +91,8 @@
     transform: rotate(3deg);
   }
 }
-.flowers_lycoris_reflection {
+.flowers_lycoris_reflection,
+.sitestub__buttercup {
   animation: slopes_lycoris_reflection 15s infinite alternate ease-in-out;
   transform-origin: bottom center;
 }
@@ -104,5 +105,20 @@
   }
   100% {
     transform: rotate(2deg);
+  }
+}
+.sitestub__callalily {
+  animation: sitestub__callalily 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes sitestub__callalily {
+  0% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(-9deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-5deg);
   }
 }
