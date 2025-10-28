@@ -1,1 +1,777 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:Gramatika Regular;src:url(fonts/fa575a2226c4b00b21b0.ttf)}@font-face{font-family:Pompeji;src:url(fonts/a50b74f831ec518ecd70.otf)}*{box-sizing:border-box}html{font-size:.06944vw}body{font-family:Gramatika Regular,Arial,Helvetica,sans-serif;font-size:14rem}.zaglushka{background-color:#100202;color:#eee;display:flex;justify-content:space-between;position:fixed;width:100%}.zaglushka h1{font-size:36rem;font-weight:500;line-height:42rem}.zaglushka p{font-size:24rem;line-height:30rem}.zaglushka>div{width:48%}.zaglushka img{width:100%}.text{display:flex;flex-direction:column;justify-content:center;padding:20rem 0 0 20rem;position:relative}input[name=message]{background-color:rgba(28,28,28,.6);border:1rem solid transparent;border-radius:100rem;color:#eee;height:56rem;outline:none;padding:0 20rem;transition:border .3s ease;width:66%}input[name=message]:focus{border:1rem solid #eee;transition:border .6s ease}#my-form-button{background-color:hsla(0,0%,59%,.6);border:none;border-radius:100rem;color:#eee;cursor:pointer;font-size:20rem;height:56rem;padding:18rem 20rem;width:30%}.text-wrapper{backdrop-filter:blur(20rem);background-color:rgba(76,76,76,.6);border-radius:20rem;display:flex;flex-direction:column;gap:20rem;justify-content:center;padding:20rem}#my-form-status{font-size:20rem;padding-left:20rem}.text-animation{display:flex;flex-wrap:wrap;position:absolute}.anim{border-radius:100%;filter:blur(50rem);height:330rem;width:330rem}.anim:first-of-type,.anim:nth-of-type(4){background-color:#5c5c5c}.anim:nth-of-type(2),.anim:nth-of-type(3){background-color:#e2a22b}.text-animation{animation:rotate 20s linear infinite}@keyframes rotate{0%{transform:rotate(0)}50%{transform:rotate(180deg) scale(.5)}to{transform:rotate(1turn) scale(1)}}@media screen and (max-width:600px){html{font-size:.25641vw}.zaglushka{flex-direction:column-reverse}.zaglushka div{width:100%}.text{padding:20rem}.zaglushka img{display:block;margin:0 auto;width:60%}.anim{filter:blur(20rem);height:180rem;width:180rem}form{display:flex;flex-direction:column;gap:20rem}#my-form-button,input[name=message]{font-size:20rem;width:100%}}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Gramatika Regular";
+  src: url(fonts/fa575a2226c4b00b21b0.ttf);
+}
+@font-face {
+  font-family: "Pompeji";
+  src: url(fonts/a50b74f831ec518ecd70.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.header {
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
+  width: 100%;
+  height: 88rem;
+}
+.header_logo_link {
+  text-decoration: none;
+}
+.header_logo {
+  justify-self: start;
+  width: 68rem;
+}
+.header_navigation {
+  justify-self: end;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62rem;
+}
+.header__links-list-item {
+  text-decoration: none;
+  list-style: none;
+}
+.header__links-list-item_link {
+  text-decoration: none;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+}
+.arrow_left {
+  width: 40rem;
+}
+.arrow_right {
+  width: 40rem;
+}
+.adaptiv_navigation {
+  display: none;
+}
+.sitestub {
+  display: flex;
+  flex-direction: column;
+  padding: 127rem 50rem 0;
+}
+.sitestub__title {
+  padding: 80rem 0 0 25rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 150rem;
+}
+.sitestub__description {
+  margin-top: 35rem;
+  text-align: center;
+  padding-top: 9rem;
+  width: 884rem;
+  height: 52.25rem;
+  background-color: #292929;
+  border-radius: 50rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+  list-style: none;
+}
+.sitestub__flowers {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 200rem;
+  width: 590rem;
+  height: 645rem;
+}
+.sitestub__buttercup {
+  position: absolute;
+  left: -80rem;
+  top: -30rem;
+  width: 828rem;
+}
+.sitestub__callalily {
+  position: absolute;
+  left: -100rem;
+  top: 220rem;
+  width: 567rem;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 255rem;
+  gap: 24rem;
+}
+.text-wrapper_title {
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+input[type="email"] {
+  width: 24%;
+  height: 56rem;
+  border-radius: 100rem;
+  border: 3rem solid white;
+  padding: 5rem 30rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Gramatika Regular;
+  color: #eee;
+  font-size: 20rem;
+}
+input[type="email"]::placeholder {
+  font-family: Gramatika Regular;
+  color: rgba(238, 238, 238, 0.75);
+  font-size: 20rem;
+}
+#my-form {
+  display: flex;
+  gap: 18rem;
+}
+#my-form-button {
+  width: 12%;
+  height: 56rem;
+  border-radius: 100rem;
+  border: none;
+  background-color: white;
+  font-family: Gramatika Regular;
+  color: #000;
+  font-size: 20rem;
+  cursor: pointer;
+}
+#my-form-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#my-form-status {
+  font-family: Gramatika Regular;
+  color: #eee;
+  font-size: 20rem;
+  text-align: center;
+}
+.social-list {
+  position: absolute;
+  top: 755rem;
+  width: 200rem;
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+  list-style: none;
+  padding: 0;
+}
+.social-icon {
+  display: block;
+  height: auto;
+  width: 60rem;
+  max-width: 100%;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  padding: 48rem 0 0;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  margin-top: -10rem;
+  padding: 0 0 20rem;
+  font-family: Pompeji;
+  color: #ff5e00;
+  font-size: 190rem;
+  text-align: center;
+}
+
+.description {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 9rem;
+  width: 1114rem;
+  height: 40rem;
+  background-color: #292929;
+  border-radius: 50rem;
+}
+.description_help {
+  position: relative;
+  top: -5rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 25rem;
+}
+.emergency_buttons {
+  position: sticky;
+  z-index: 3;
+  top: 750rem;
+  align-self: end;
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr 40rem;
+  column-gap: 30rem;
+  align-items: center;
+  width: 100%;
+  height: 88rem;
+}
+.info_button {
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.info_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: black;
+  font-size: 20rem;
+}
+.extra_button {
+  justify-self: end;
+  text-align: center;
+  padding-top: 9rem;
+  width: 236rem;
+  height: 50rem;
+  background-color: rgba(255, 93, 0, 0.75);
+  border-radius: 50rem;
+  border: none;
+  cursor: pointer;
+}
+.extra_button_description {
+  position: relative;
+  top: -7rem;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+}
+.flowers {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  top: 150rem;
+  width: 100%;
+  min-height: 720rem;
+}
+.flowers_item {
+  position: absolute;
+}
+.flowers_birdofparadise {
+  width: 450rem;
+  rotate: -10deg;
+  left: -20rem;
+  top: 366rem;
+}
+.flowers_callalily {
+  width: 450rem;
+  left: 200rem;
+  top: 440rem;
+}
+.flowers_buttercup {
+  width: 720rem;
+  left: -140rem;
+  top: 240rem;
+}
+.flowers_lycoris {
+  width: 720rem;
+  left: 120rem;
+  top: 120rem;
+}
+.flowers_dahlia {
+  z-index: 4;
+  width: 900rem;
+  left: 180rem;
+  top: 10rem;
+}
+.flowers_rose {
+  width: 600rem;
+  left: 420rem;
+  top: 370rem;
+}
+.flowers_lycoris_reflection {
+  width: 720rem;
+  rotate: 0deg;
+  left: 540rem;
+  top: 140rem;
+}
+.flowers_zinnia {
+  width: 640rem;
+  left: 760rem;
+  top: 260rem;
+}
+.flowers_anthurium {
+  width: 850rem;
+  rotate: 20deg;
+  left: 760rem;
+  top: 180rem;
+}
+.aboutus {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 560rem;
+  min-height: 750rem;
+}
+.title_aboutus {
+  position: relative;
+  z-index: 2;
+  padding: 80rem 0 100rem;
+  font-family: Pompeji;
+  color: white;
+  font-size: 110rem;
+  text-align: center;
+}
+.description_aboutus {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 20rem;
+  line-height: 28rem;
+}
+.description_aboutus p {
+  margin-bottom: 40rem;
+}
+.background-gradient_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  justify-self: center;
+  overflow: hidden;
+  top: 120rem;
+  z-index: 1;
+  width: 1400rem;
+  min-height: 200rem;
+}
+.background-gradient {
+  width: 1900rem;
+  height: 500rem;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 93, 0, 0.8) 0%,
+    rgba(255, 93, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.7) 70%
+  );
+}
+.box {
+  width: 100%;
+  height: 400rem;
+  background-color: #292929;
+}
+
+.flowers_birdofparadise,
+.flowers_callalily {
+  animation: sway-scale 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes sway-scale {
+  0% {
+    transform: rotate(-7deg) scale(1);
+  }
+  50% {
+    transform: rotate(-14deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-4deg) scale(1);
+  }
+}
+
+.flowers_buttercup {
+  animation: slopes_buttercup 20s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_buttercup {
+  0% {
+    transform: rotate(3deg) scale(1);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(6deg) scale(1);
+  }
+}
+.flowers_zinnia {
+  animation: slopes_zinnia 20s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_zinnia {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+.flowers_lycoris,
+.flowers_anthurium {
+  animation: slopes_lycoris 18s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_lycoris {
+  0% {
+    transform: rotate(-8deg) scale(1);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1);
+  }
+}
+.flowers_dahlia {
+  animation: slopes_dahlia 17s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_dahlia {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+.flowers_rose {
+  animation: slopes_rose 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_rose {
+  0% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+.flowers_lycoris_reflection,
+.sitestub__buttercup {
+  animation: slopes_lycoris_reflection 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes slopes_lycoris_reflection {
+  0% {
+    transform: rotate(-6deg);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+.sitestub__callalily {
+  animation: sitestub__callalily 15s infinite alternate ease-in-out;
+  transform-origin: bottom center;
+}
+@keyframes sitestub__callalily {
+  0% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(-9deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: calc(1vw / 4.14);
+  }
+  .arrow_left {
+    display: none;
+  }
+  .arrow_right {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: 160rem;
+    padding: 0 20rem 0 12rem;
+  }
+  .header_logo {
+    width: 66rem;
+  }
+  .emergency_buttons {
+    display: flex;
+    padding-left: 35rem;
+    padding-top: 40rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 88rem;
+  }
+  .header_navigation {
+    display: none;
+  }
+  .adaptiv_navigation {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49rem;
+    height: 29rem;
+  }
+  .adaptiv_navigation_box {
+    width: 49rem;
+    height: 5rem;
+    background-color: #fb7520;
+    border-radius: 50rem;
+  }
+  .header__links-list {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #333;
+  }
+
+  .header__links-list.active {
+    display: flex;
+  }
+  .title {
+    padding: 30rem 0 20rem 7rem;
+    font-size: 65rem;
+  }
+  .description {
+    padding-top: 9rem;
+    width: 392rem;
+    height: 40rem;
+  }
+  .description_help {
+    top: -2rem;
+    font-size: 20rem;
+  }
+  .flowers {
+    top: 180rem;
+  }
+  .flowers_callalily {
+    width: 400rem;
+    left: -40rem;
+    top: 400rem;
+  }
+  .flowers_dahlia {
+    width: 697rem;
+    left: -170rem;
+    top: 80rem;
+  }
+  .flowers_rose {
+    width: 473rem;
+    left: 60rem;
+    top: 370rem;
+  }
+  .flowers_birdofparadise {
+    display: none;
+  }
+  .flowers_buttercup {
+    display: none;
+  }
+  .flowers_lycoris {
+    display: none;
+  }
+  .flowers_lycoris_reflection {
+    display: none;
+  }
+  .flowers_zinnia {
+    display: none;
+  }
+  .flowers_anthurium {
+    display: none;
+  }
+  .info_button {
+    display: none;
+  }
+  .extra_button {
+    width: 352rem;
+    height: 50rem;
+  }
+  .title_aboutus {
+    font-size: 64rem;
+    padding: 250rem 0 120rem;
+  }
+  .description_aboutus {
+    width: 350rem;
+    font-size: 20rem;
+    line-height: 28rem;
+  }
+  .description_aboutus p {
+    margin-bottom: 40rem;
+  }
+  .background-gradient_div {
+    padding-top: 250rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700rem;
+    min-height: 360rem;
+    overflow: hidden;
+  }
+  .background-gradient {
+    width: 100%;
+    height: 600rem;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 93, 0, 0.8) 0%,
+      rgba(255, 93, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.7) 80%
+    );
+  }
+  .aboutus {
+    align-items: center;
+    min-height: 1000rem;
+  }
+}
+
+
+
