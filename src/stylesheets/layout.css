@@ -14,15 +14,39 @@ body::-webkit-scrollbar {
 }
 .header {
   position: relative;
+  padding-left: 60rem;
   z-index: 6;
   display: grid;
-  grid-template-columns: 40rem 1fr 1fr 40rem;
+  grid-template-columns: 1fr 1fr;
   column-gap: 30rem;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: 88rem;
 }
+.emergency_buttons {
+  position: absolute;
+  padding-left: 60rem;
+  z-index: 3;
+  bottom: 0rem;
+  align-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30rem;
+  align-items: center;
+  width: 95%;
+  height: 88rem;
+}
+.graphics_fix {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -85rem;
+}
 .header_logo_link {
+  cursor: pointer;
   text-decoration: none;
 }
 .header_logo {
@@ -48,10 +72,28 @@ body::-webkit-scrollbar {
   font-size: 20rem;
 }
 .arrow_left {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 40rem;
 }
 .arrow_right {
   width: 40rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.arrow_left_lower {
+  position: absolute;
+  width: 40rem;
+  bottom: 0;
+  left: 0;
+}
+.arrow_right_lower {
+  width: 40rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .adaptiv_navigation {
   display: none;
@@ -74,13 +116,17 @@ body::-webkit-scrollbar {
   text-align: center;
   padding-top: 12rem;
   width: 884rem;
-  height: 52rem;
+  height: 40rem;
   background-color: #292929;
   border-radius: 50rem;
+  list-style: none;
+}
+.undername_sitestub {
+  position: relative;
+  top: -7rem;
   font-family: Gramatika Regular;
   color: white;
-  font-size: 20rem;
-  list-style: none;
+  font-size: 22rem;
 }
 .sitestub__flowers {
   position: absolute;
@@ -180,7 +226,7 @@ input[type="email"]::placeholder {
 .title {
   position: relative;
   z-index: 2;
-  margin-top: -100rem;
+  margin-top: -10rem;
   font-family: Pompeji;
   color: #ff5e00;
   font-size: 190rem;
@@ -198,28 +244,18 @@ input[type="email"]::placeholder {
 }
 .undername {
   position: relative;
-  top: -5rem;
+  top: -7rem;
   font-family: Gramatika Regular;
   color: white;
-  font-size: 20rem;
+  font-size: 22rem;
 }
+
 .section_name {
   display: flex;
   flex-direction: column;
   gap: 32rem;
 }
-.emergency_buttons {
-  position: relative;
-  z-index: 3;
-  top: 680rem;
-  align-self: end;
-  display: grid;
-  grid-template-columns: 40rem 1fr 1fr 40rem;
-  column-gap: 30rem;
-  align-items: center;
-  width: 100%;
-  height: 88rem;
-}
+
 .info_button {
   text-align: center;
   padding-top: 9rem;
@@ -520,4 +556,7 @@ input[type="email"]::placeholder {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+}
+.title_second_orange {
+  color: #ff5e00;
 }
