@@ -448,7 +448,7 @@ input[type="email"]::placeholder {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 70rem;
-  width: 150%;
+  width: 100%;
 }
 .to_glossary {
   text-align: center;
