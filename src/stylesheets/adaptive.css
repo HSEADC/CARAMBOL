@@ -2,6 +2,9 @@
   html {
     font-size: calc(1vw / 4.14);
   }
+  body {
+    overflow-x: hidden;
+  }
   .arrow_left {
     display: none;
   }
@@ -145,5 +148,6 @@
   .aboutus {
     align-items: center;
     min-height: 1000rem;
+    margin-top: 700rem;
   }
 }
