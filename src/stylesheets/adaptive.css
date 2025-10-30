@@ -170,6 +170,8 @@
     padding: 30rem 50rem;
   }
   .glossary {
+    display: flex;
+    justify-content: center;
     padding: 120rem 10rem;
   }
   .title_third {
@@ -182,5 +184,82 @@
     margin-left: 20rem;
     width: 90%;
     justify-content: center;
+  }
+  .to_glossary {
+    display: none;
+  }
+  .to_glossary_adaptive {
+    display: block;
+    position: relative;
+    margin-left: 80rem;
+    text-align: center;
+    width: 236rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50rem;
+    border: none;
+    cursor: pointer;
+    font-family: Gramatika Regular;
+    color: rgb(0, 0, 0);
+    font-size: 20rem;
+  }
+  .footer {
+    padding: 50rem 20rem;
+    height: 500rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sub_form {
+    gap: 32rem;
+  }
+  input[type="email"] {
+    width: 300rem;
+    height: 50rem;
+  }
+  #my-form-button_adaptive {
+    display: block;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  .my-form-button_adaptive_img {
+    width: 70%;
+  }
+  #my-form-button {
+    display: none;
+  }
+  .social_media {
+    width: 200rem;
+  }
+  .social_media_list {
+    position: relative;
+    margin-left: -387rem;
+    margin-top: 350rem;
+    gap: 20rem;
+    list-style: none;
+  }
+  .text-wrapper_title {
+    font-size: 24rem;
+  }
+  .second_footer_row {
+    display: flex;
+    position: absolute;
+    margin-top: 180rem;
+  }
+  .team {
+    row-gap: 20rem;
+  }
+  .university {
+    display: none;
   }
 }

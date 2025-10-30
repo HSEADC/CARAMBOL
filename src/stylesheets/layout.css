@@ -472,12 +472,28 @@ input[type="email"]::placeholder {
 }
 .active {
   width: 50%;
+  background-image: url(../images/main_card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0 150rem 0 150rem;
   display: flex;
   justify-content: end;
   align-items: end;
   padding: 0 20rem 20rem 0;
   box-sizing: border-box;
+}
+.carousel_item_img_second {
+  background-image: url(../images/second_card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel_item_img_third {
+  background-image: url(../images/third_card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .carousel {
   display: flex;
@@ -497,6 +513,9 @@ input[type="email"]::placeholder {
   font-family: Gramatika Regular;
   color: rgb(0, 0, 0);
   font-size: 20rem;
+}
+.to_glossary_adaptive {
+  display: none;
 }
 .footer {
   padding: 60rem 50rem;
@@ -559,4 +578,7 @@ input[type="email"]::placeholder {
 }
 .title_second_orange {
   color: #ff5e00;
+}
+#my-form-button_adaptive {
+  display: none;
 }

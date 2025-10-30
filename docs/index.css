@@ -606,12 +606,28 @@ input[type="email"]::placeholder {
 }
 .active {
   width: 50%;
+  background-image: url(images/147b6face21b24396212.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0 150rem 0 150rem;
   display: flex;
   justify-content: end;
   align-items: end;
   padding: 0 20rem 20rem 0;
   box-sizing: border-box;
+}
+.carousel_item_img_second {
+  background-image: url(images/897576f8b54a297bff9c.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel_item_img_third {
+  background-image: url(images/40f51e635c7f372fe200.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .carousel {
   display: flex;
@@ -631,6 +647,9 @@ input[type="email"]::placeholder {
   font-family: Gramatika Regular;
   color: rgb(0, 0, 0);
   font-size: 20rem;
+}
+.to_glossary_adaptive {
+  display: none;
 }
 .footer {
   padding: 60rem 50rem;
@@ -693,6 +712,9 @@ input[type="email"]::placeholder {
 }
 .title_second_orange {
   color: #ff5e00;
+}
+#my-form-button_adaptive {
+  display: none;
 }
 
 .flowers_birdofparadise,
@@ -992,6 +1014,8 @@ input[type="email"]::placeholder {
     padding: 30rem 50rem;
   }
   .glossary {
+    display: flex;
+    justify-content: center;
     padding: 120rem 10rem;
   }
   .title_third {
@@ -1004,6 +1028,83 @@ input[type="email"]::placeholder {
     margin-left: 20rem;
     width: 90%;
     justify-content: center;
+  }
+  .to_glossary {
+    display: none;
+  }
+  .to_glossary_adaptive {
+    display: block;
+    position: relative;
+    margin-left: 80rem;
+    text-align: center;
+    width: 236rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50rem;
+    border: none;
+    cursor: pointer;
+    font-family: Gramatika Regular;
+    color: rgb(0, 0, 0);
+    font-size: 20rem;
+  }
+  .footer {
+    padding: 50rem 20rem;
+    height: 500rem;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/d01e14ff45f787097827.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sub_form {
+    gap: 32rem;
+  }
+  input[type="email"] {
+    width: 300rem;
+    height: 50rem;
+  }
+  #my-form-button_adaptive {
+    display: block;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  .my-form-button_adaptive_img {
+    width: 70%;
+  }
+  #my-form-button {
+    display: none;
+  }
+  .social_media {
+    width: 200rem;
+  }
+  .social_media_list {
+    position: relative;
+    margin-left: -387rem;
+    margin-top: 350rem;
+    gap: 20rem;
+    list-style: none;
+  }
+  .text-wrapper_title {
+    font-size: 24rem;
+  }
+  .second_footer_row {
+    display: flex;
+    position: absolute;
+    margin-top: 180rem;
+  }
+  .team {
+    row-gap: 20rem;
+  }
+  .university {
+    display: none;
   }
 }
 
