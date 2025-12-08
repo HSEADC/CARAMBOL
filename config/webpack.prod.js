@@ -6,7 +6,9 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     path: path.resolve(".", "docs"),
-    filename: "index.js",
+    // уникальные имена, предотвращают конфликты и полезны для кэширования
+    filename: "[name].[contenthash].js",
+    chunkFilename: "[name].[contenthash].js",
     clean: true,
   },
 });

@@ -1,0 +1,90 @@
+@import "reset.css";
+@import "fonts.css";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gramatika Regular", sans-serif;
+}
+.A_MainHeader,
+.A_SectionHeader,
+.A_SectionDopHeader,
+h4 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.A_MainHeader {
+  font-size: 120rem;
+}
+.A_SectionHeader {
+  font-size: 56rem;
+}
+.A_SectionDopHeader {
+  font-size: 48rem;
+}
+h4 {
+  font-size: 36rem;
+}
+.A_Text,
+a {
+  font-size: 24rem;
+  line-height: 1.5;
+}
+.O_StyleguideHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 400rem;
+  padding: 20rem;
+  background-color: rgb(0, 68, 132);
+  color: white;
+}
+.A_HeaderLink {
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.A_HeaderLink:hover {
+  color: rgb(132, 132, 132);
+  transition: all 0.6s ease;
+  text-decoration: underline;
+}
+.S_StyleguedeContent {
+  display: flex;
+  padding: 20rem 0;
+}
+.O_SidebarMenu {
+  position: relative;
+  width: 20%;
+  padding: 0 30rem;
+}
+.O_Sections {
+  width: 60%;
+}
+.C_SidebarMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  background-color: rgb(139, 178, 255);
+  border-radius: 20rem;
+  gap: 10rem;
+  bottom: 20rem;
+}
+.A_SidebarMenuLink {
+  background-color: white;
+  border-radius: 10rem;
+  padding: 6rem 20rem;
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+}
+.A_SidebarMenuLink:hover {
+  background-color: rgba(100, 148, 237, 0.452);
+  color: white;
+  transition: all 0.8s ease;
+}

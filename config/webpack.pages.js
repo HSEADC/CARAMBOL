@@ -1,19 +1,18 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-function createPages(template, filename) {
+function createPages(template, filename, chunks) {
   return new HtmlWebpackPlugin({
     template: template,
     filename: filename,
+    chunks: chunks,
   });
 }
 
 const htmlPages = [
-  createPages("./src/index.html", "./index.html"),
-  createPages("./src/pages/plants.html", "./pages/plants.html"),
-  createPages("./src/pages/instruction.html", "./pages/instruction.html"),
-  createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html"),
-  createPages("./src/pages/stories/story1.html", "./pages/stories/story1.html"),
-  createPages("./src/pages/sitestub.html", "./pages/sitestub.html"),
+  createPages("./src/index.html", "./index.html", ["index"]),
+  createPages("./src/pages/plants.html", "./pages/plants.html", ["index"]),
+  createPages("./src/pages/aboutus.html", "./pages/aboutus.html", ["index"]),
+  createPages("./src/styleguide.html", "./styleguide.html", ["styleguide"]),
 ];
 
 module.exports = htmlPages;
