@@ -498,10 +498,19 @@ input[type="email"]::placeholder {
 .title_second {
   position: relative;
   z-index: 2;
-  font-family: Pompeji;
+  font-family: Gramatika Regular;
   color: white;
-  font-size: 110rem;
-  text-align: center;
+  font-size: 40rem;
+  text-align: start;
+  margin-top: 20rem;
+}
+.title_third {
+  position: relative;
+  z-index: 2;
+  font-family: Gramatika Regular;
+  color: white;
+  font-size: 32rem;
+  text-align: start;
 }
 .description_aboutus {
   position: relative;
@@ -592,13 +601,7 @@ input[type="email"]::placeholder {
   flex-direction: column;
   gap: 50rem;
 }
-.title_third {
-  position: relative;
-  font-family: Pompeji;
-  color: white;
-  font-size: 64rem;
-  text-align: left;
-}
+
 .carousel_item {
   width: 25%;
   height: 270rem;
