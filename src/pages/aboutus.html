@@ -7,7 +7,7 @@
     <link rel="icon" href="../images/logo.ico" sizes="any" />
     <link rel="icon" href="../images/logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="../images/logo.png" />
-    <meta name="description" content="Описание медиа-сервиса KARAMBOL"/>
+    <meta name="description" content="Описание медиа-сервиса KARAMBOL" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About us" />
@@ -17,9 +17,12 @@
     />
     <meta property="og:url" content="https://hseadc.github.io/CARAMBOL/" />
     <!-- добавить ссылку -->
-    <meta property="og:image" content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477" />
+    <meta
+      property="og:image"
+      content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
+    />
     <!-- добавить фото -->
-     <meta name="twitter:title" content="About us" />
+    <meta name="twitter:title" content="About us" />
     <meta
       name="twitter:description"
       content="Описание медиа-сервиса KARAMBOL."
@@ -33,127 +36,123 @@
     <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body>
-     <header class="header">
-      <a class="header_logo_link" href="../index.html"
-        ><img
-          class="header_logo"
-          src="../images/logo.svg"
-          alt="логотип KARAMBOL"
-      /></a>
-      <nav class="header_navigation">
+    <header class="menu-wrapper">
+      <button class="header_menu_button_aboutus"></button>
+      <nav class="header_menu_aboutus">
         <ul class="header__links-list">
-          <li class="header__links-list-item">
-            <a href="#about-us-section" class="header__links-list-item_link"
-              >О нас</a
+          <li class="header__links-item">
+            <a class="header__link" href="../pages/aboutus.html">О нас</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Помощь</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Глоссарий</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="../pages/riskmap.html"
+              >Карта рисков</a
             >
           </li>
-          <li class="header__links-list-item">
-            <a href="#glossary" class="header__links-list-item_link"
-              >Глоссарий</a
-            >
-          </li>
-          <li class="header__links-list-item">
-            <a href="#aid" class="header__links-list-item_link">Помощь</a>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Обучение</a>
           </li>
         </ul>
       </nav>
-      <div class="adaptiv_navigation">
-        <div class="adaptiv_navigation_box"></div>
-        <div class="adaptiv_navigation_box"></div>
-        <div class="adaptiv_navigation_box"></div>
-      </div>
     </header>
-    <div class="graphics_fix">
+    <main class="main_aboutus">
       <img
-        class="arrow_left"
-        src="../images/arrow_left.svg"
-        alt="Графика"
+        src="../images/main_aboutus.webp"
+        class="main_aboutus_background"
+        alt="Градиентный фон"
       />
-      <img
-        class="arrow_right"
-        src="../images/arrow_right.svg"
-        alt="Графика"
-      />
-      <img
-        class="arrow_left_lower"
-        src="../images/arrow_left.svg"
-        alt="Графика"
-      />
-      <img
-        class="arrow_right_lower"
-        src="../images/arrow_right.svg"
-        alt="Графика изображение"
-      />
-    </div>
-    <div class="sitestub">
-      <h1 class="sitestub__title">KARAMBOL</h1>
-      <div class="sitestub__description">
-        <p class="undername_sitestub">Сервис по идентификации опасных растений для домашних животных</p>
-      </div>
-      <div class="sitestub__flowers">
-          <img
-          class="sitestub__buttercup"
-          src="../images/Buttercup.png"
-          alt="Лютик"
-        />
+      <div class="aboutus_logo">
         <img
-          class="sitestub__callalily"
-          src="../images/Calla Lily.png"
-          alt="Калла-лилия"
+          class="aboutus_logo_img"
+          src="../images/aboutus_logo_img.svg"
+          alt="Логотип KARAMBOL"
         />
+        <p class="section_p aboutus_logo_discription">
+          KARAMBOL – цифровой инструмент, <br />
+          помогающий заботиться о питомце<br />
+          вовремя
+        </p>
       </div>
-      <div class="text-wrapper">
-        <p class="text-wrapper_title">Подписывайтесь на наш сервис!</p>
-        <form
-          id="my-form"
-          action="https://formspree.io/f/xnngorro"
-          method="POST"
-        >
-          <input type="email" name="email" placeholder="Ваш email" />
-          <button id="my-form-button">Подписаться</button>
-          <p id="my-form-status"></p>
-        </form>
-      <ul class="social-list">
-        <li class="social-list-item"><a href="https://t.me/karambol_info" target="_blank"><img class="social-icon" src="../images/tg_black.svg" alt="Переход в телеграмм"></a></li>
-        <li class="social-list-item"><a href="" target="_blank"><img class="social-icon" src="../images/vk_black.svg" alt="Переход в ВК"></a></li>
-        <li class="social-list-item"><a href="" target="_blank"><img class="social-icon" src="../images/Zen_black.svg" alt="Переход в Яндекс Дзен"></a></li>
-      </ul>
-      <script>
-      var form = document.getElementById("my-form");
-
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset();
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, "errors")) {
-                  status.innerHTML = data["errors"]
-                    .map((error) => error["message"])
-                    .join(", ");
-                } else {
-                  status.innerHTML =
-                    "Oops! There was a problem submitting your form";
-                }
-              });
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
+      <div class="aboutus_information">
+        <div class="aboutus_appeals">
+          <p class="aboutus_appeals_title">~ 1370</p>
+          <p class="section_p_aboutus section_p_aboutus_appeals">
+            Обращений в московские <br />
+            ветклиники ежелневно
+          </p>
+        </div>
+        <div class="aboutus_ident">
+          <p class="section_p_aboutus">Моментальная идентификация</p>
+          <hr class="liner" />
+          <p class="section_p_aboutus">экспертная проверка</p>
+        </div>
+      </div>
+      <div class="aboutus_discription">
+        <p class="section_p_aboutus">
+          Сервис строится на ценностях своевременности, <br />
+          безопасности и внимательности: гео‑оповещения, <br />
+          <a class="abourus_underline" href="./riskmap.html"
+            >карта горячих точек</a
+          >, готовые контакты клиник. Мы учим <br />
+          предотвращать риски и возвращаем спокойствие — <br />
+          вы получаете не просто уведомление, а план действий.
+        </p>
+        <p class="section_p_aboutus">
+          Мы объединяем объемную
+          <a class="abourus_underline" href="#0">библиографию растений</a>
+          <br />
+          и экспертов, чтобы вы получали честную оценку риска. <br />
+          Сервис дает вам контроль в критической ситуации <br />
+          и помогает принять правильное решение быстро.
+        </p>
+      </div>
+    </main>
+    <footer class="footer_area_aboutus">
+      <div class="footer_area">
+        <div class="text-wrapper">
+          <p class="text-wrapper_title">Волонтерите? Свяжитесь с нами!</p>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xnngorro"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Ваш email" />
+            <button id="my-form-button">Подписаться</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_telegram.svg"
+                alt="Логотип Телеграмм"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_VK.svg"
+                alt="Логотип ВК"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_dzen.svg"
+                alt="Логотип Яндекс Дзен"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

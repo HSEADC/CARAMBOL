@@ -39,7 +39,288 @@
     <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body>
-    <h2 class="title_second">Карта рисков</h2>
-    <a class="title_third" href="../index.html">На главную</a>
+    <header class="menu-wrapper">
+      <button class="header_menu_button_aboutus button_riskmap"></button>
+      <nav class="header_menu_aboutus">
+        <ul class="header__links-list">
+          <li class="header__links-item">
+            <a class="header__link" href="../pages/aboutus.html">О нас</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Помощь</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Глоссарий</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="../pages/riskmap.html"
+              >Карта рисков</a
+            >
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Обучение</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="riskmap_section">
+      <section class="riskmap_discription">
+        <div class="riskmap_title">
+          <h2 class="title_h2">Карта рисков</h2>
+          <p class="section_p_aboutus">г. Москва</p>
+        </div>
+        <form class="riskmap_form riskmap_flowers">
+          <h5 class="title_h5">Аллергены</h5>
+          <fieldset class="riskmap_form_option">
+            <input
+              type="radio"
+              id="all"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="all" class="chip-label">Все</label>
+
+            <input
+              type="radio"
+              id="sago_palm"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="sago_palm" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/sago_palm.svg"
+                alt="Иконка саговой пальмы"
+              />
+              Саговая пальма
+            </label>
+
+            <input
+              type="radio"
+              id="lily"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="lily" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/lily.svg"
+                alt="Иконка лилии"
+              />
+              Лилия
+            </label>
+
+            <input
+              type="radio"
+              id="rhododendron"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="rhododendron" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/rhododendron.svg"
+                alt="Иконка рододендрона"
+              />
+              Рододендрон
+            </label>
+
+            <input
+              type="radio"
+              id="ivy"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="ivy" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/ivy.svg"
+                alt="Иконка плюща"
+              />
+              Плющ
+            </label>
+
+            <input
+              type="radio"
+              id="tulip"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="tulip" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/tulip.svg"
+                alt="Иконка тюльпана"
+              />
+              Тюльпан
+            </label>
+
+            <input
+              type="radio"
+              id="oleander"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="oleander" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/oleander.svg"
+                alt="Иконка олеандра"
+              />
+              Олеандр
+            </label>
+
+            <input
+              type="radio"
+              id="castor_bean"
+              name="allergen"
+              class="visually-hidden"
+            />
+            <label for="castor_bean" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/castor_bean.svg"
+                alt="Иконка клещевина"
+              />
+              Клещевина
+            </label>
+          </fieldset>
+        </form>
+        <form class="riskmap_form riskmap_dangerlevel">
+          <h5 class="title_h5">Уровень опасности</h5>
+          <fieldset class="riskmap_form_option">
+            <input type="radio" id="low" name="level" class="visually-hidden" />
+            <label for="low" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/low.svg"
+                alt="Зеленая полоса"
+              />
+              Низкая
+            </label>
+
+            <input
+              type="radio"
+              id="average"
+              name="level"
+              class="visually-hidden"
+            />
+            <label for="average" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/average.svg"
+                alt="Желтая полоса"
+              />
+              Средняя
+            </label>
+
+            <input
+              type="radio"
+              id="high"
+              name="level"
+              class="visually-hidden"
+            />
+            <label for="high" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/high.svg"
+                alt="Красная полоса"
+              />
+              Высокая
+            </label>
+          </fieldset>
+        </form>
+        <form class="riskmap_form riskmap_vet">
+          <h5 class="title_h5">Ветеринарные клиники</h5>
+          <fieldset class="riskmap_form_option">
+            <input
+              type="radio"
+              id="all_clinic"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="all_clinic" class="chip-label"> Все </label>
+
+            <input
+              type="radio"
+              id="help"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="help" class="chip-label"> Экстренная помощь </label>
+
+            <input
+              type="radio"
+              id="around_the_clock"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="around_the_clock" class="chip-label">
+              Круглосуточно
+            </label>
+
+            <input
+              type="radio"
+              id="dogs"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="dogs" class="chip-label"> Собаки </label>
+
+            <input
+              type="radio"
+              id="cats"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="cats" class="chip-label"> Кошки </label>
+
+            <input
+              type="radio"
+              id="hamsters"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="hamsters" class="chip-label"> Хомяки </label>
+
+            <input
+              type="radio"
+              id="exotic_animals"
+              name="clinic"
+              class="visually-hidden"
+            />
+            <label for="exotic_animals" class="chip-label">
+              Экзотические животные
+            </label>
+          </fieldset>
+        </form>
+        <p class="riskmap_discription_carefully">
+          Карта аллергенных зон может быть неточной — проверьте дату <br />
+          обновления и уровень уверенности; при сомнениях избегайте <br />
+          зоны и сообщите о проблеме, загрузив фото или отчёт.
+        </p>
+      </section>
+      <section class="riskmap_map">
+        <button class="riskmap_map_button">
+          <img
+            class="enlarge_the_map"
+            src="../images/enlarge_the_map.svg"
+            alt="Плюс"
+          />
+          <img
+            class="zoom_out_the_map"
+            src="../images/zoom_out_the_map.svg"
+            alt="Минус"
+          />
+        </button>
+        <button class="riskmap_map_nav">
+          <img
+            class="riskmap_map_nav_img"
+            src="../images/navigation.svg"
+            alt="Текущее местоположение"
+          />
+        </button>
+      </section>
+    </main>
   </body>
 </html>

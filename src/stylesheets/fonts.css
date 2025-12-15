@@ -3,6 +3,10 @@
   src: url("../fonts/gramatika_regular.ttf");
 }
 @font-face {
+  font-family: "Gramatika Medium";
+  src: url("../fonts/gramatika_medium.ttf");
+}
+@font-face {
   font-family: "Pompeji";
   src: url("../fonts/POMPEJI-trial.otf");
 }

@@ -38,233 +38,455 @@
     <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
   <body>
-    <section class="cover">
-      <h1 class="title">KARAMBOL</h1>
-    </section>
-    <a href="./pages/firstaid.html"
-      ><h2 class="title_second">Первая помощь</h2></a
-    >
-    <a href="./pages/articles.html"
-      ><h2 class="title_second">Популярные статьи</h2></a
-    >
-    <a href="./pages/tests.html"
-      ><h2 class="title_second">Обучающие тесты</h2></a
-    >
-    <a href="./pages/riskmap.html"
-      ><h2 class="title_second">Карта рисков</h2></a
-    >
-
-    <!--<header class="header">
-      <a class="header_logo_link" href="./pages/sitestub.html"
-        ><img
-          class="header_logo"
-          src="../src/images/logo.svg"
-          alt="логотип KARAMBOL"
-      /></a>
-      <nav class="header_navigation">
+    <header class="header">
+      <div class="menu-wrapper">
+        <button class="header_menu_button"></button>
+        <nav class="header_menu">
+          <ul class="header__links-list">
+            <li class="header__links-item">
+              <a class="header__link" href="./pages/aboutus.html">О нас</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link" href="#0">Помощь</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link" href="#0">Глоссарий</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link" href="./pages/riskmap.html"
+                >Карта рисков</a
+              >
+            </li>
+            <li class="header__links-item">
+              <a class="header__link" href="#0">Обучение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="header_menu_visible">
         <ul class="header__links-list">
-          <li class="header__links-list-item">
-            <a href="#about-us-section" class="header__links-list-item_link"
-              >О нас</a
-            >
+          <li class="header__links-item">
+            <a class="header__link" href="./pages/aboutus.html">О нас</a>
           </li>
-          <li class="header__links-list-item">
-            <a href="#glossary" class="header__links-list-item_link"
-              >Глоссарий</a
-            >
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Помощь</a>
           </li>
-          <li class="header__links-list-item">
-            <a href="#aid" class="header__links-list-item_link">Помощь</a>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Глоссарий</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="./pages/riskmap.html">Карта рисков</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link" href="#0">Обучение</a>
           </li>
         </ul>
       </nav>
-      <div class="adaptiv_navigation">
-        <div class="adaptiv_navigation_box"></div>
-        <div class="adaptiv_navigation_box"></div>
-        <div class="adaptiv_navigation_box"></div>
+      <h1 class="title_h1">KARAMBOL</h1>
+      <div class="team">
+        <div class="team_name">
+          <img
+            class="team_logo"
+            src="./images/logo_KARAMBOL.webp"
+            alt="Логотип KARAMBOL"
+          />
+          <p class="team_discription">Karambol <br />Team</p>
+        </div>
+        <button class="button extra_button">Первая помощь</button>
       </div>
     </header>
-        <div class="flowers">
-          <img
-            class="flowers_item flowers_birdofparadise"
-            src="./images/Bird of Paradise.png"
-            alt="Цветок райской птицы"
-          />
-          <img
-            class="flowers_item flowers_callalily"
-            src="./images/Calla Lily.png"
-            alt="Калла лилия"
-          />
-          <img
-            class="flowers_item flowers_buttercup"
-            src="./images/Buttercup.png"
-            alt="Лютик"
-          />
-          <img
-            class="flowers_item flowers_lycoris"
-            src="./images/Lycoris.png"
-            alt="Ликорис"
-          />
-          <img
-            class="flowers_item flowers_dahlia"
-            src="./images/Dahlia.png"
-            alt="Георгин"
-          />
-          <img
-            class="flowers_item flowers_rose"
-            src="./images/Rose.png"
-            alt="Роза"
-          />
-          <img
-            class="flowers_item flowers_lycoris_reflection"
-            src="./images/Lycoris_reflection.png"
-            alt="Ликорис"
-          />
-          <img
-            class="flowers_item flowers_zinnia"
-            src="./images/Zinnia.png"
-            alt="Цинния"
-          />
-          <img
-            class="flowers_item flowers_anthurium"
-            src="./images/anthurium.png"
-            alt="Антуриум"
-          />
-        </div>
+    <main class="main">
+      <section class="first_help_banner">
+        <h2 class="title_h2 first_help_banner_title">Первая помощь</h2>
+        <p class="section_p first_help_banner_p">
+          Мы знаем, как помочь питомцу, подскажем <br />
+          адреса ближайших клиник, их контакты <br />
+          и необходимые действия
+        </p>
+        <button class="button button_learn_more">Узнать больше</button>
+        <img
+          class="first_help_img"
+          src="./images/first_help_gif.png"
+          alt=""
+          loading="lazy"
+        />
       </section>
-      <section class="aboutus" id="about-us-section">
-        <h2 class="title_second">ABOUT US</h2>
-        <div class="description_aboutus">
-          <p>
-            Этот медиа-сервис поможет владельцам домашних животных <br />
-            узнать об потенциальных опасностях в своем доме.
+      <section class="glossary_area">
+        <h2 class="title_h2 area_article_title">Популярные статьи</h2>
+        <div class="area_article">
+          <h3 class="title_h3 article_title">
+            Отучаем питомца грызть растения
+          </h3>
+          <p class="section_p article_disciption">
+            Узнайте топ самых эффективных советов, как безопасно <br />
+            и навсегда отучить вашего питомца портить комнатные <br />
+            и уличные растения
           </p>
-          <p>
-            Наша команда поддерживает высокий уровень качества
-            <br />достоверной информации, старается донести ее не только
-            <br />
-            через этот сервис, но и другие медиа платформы.
+          <button class="button article_button">Изучить глоссарий</button>
+        </div>
+        <section class="cards_list_area">
+          <div class="card_list">
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Статья</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Растения
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  Опасные садовые <br />растения
+                </h4>
+                <p class="card_list_time">~20 мин</p>
+              </div>
+            </div>
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Пост</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Тренды
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  Самые интересные <br />
+                  мифы о растениях
+                </h4>
+                <p class="card_list_time">~15 мин</p>
+              </div>
+            </div>
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Статья</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Улица
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  На что обратить <br />
+                  внимание на улице
+                </h4>
+                <p class="card_list_time">~25 мин</p>
+              </div>
+            </div>
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Статья</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Собаки
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  Правила спокойной <br />прогулки
+                </h4>
+                <p class="card_list_time">~20 мин</p>
+              </div>
+            </div>
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Статья</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Угрозы
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  Грибы, плесень <br />
+                  и микотоксины
+                </h4>
+                <p class="card_list_time">~15 мин</p>
+              </div>
+            </div>
+            <div class="card_list_item">
+              <img
+                class="card_list_img"
+                src="./images/card_list_img.webp"
+                alt="Градиентный фон у карточки"
+                loading="lazy"
+              />
+              <div class="card_list_description">
+                <div class="card_list_tegs">
+                  <button class="card_list_teg">Статья</button>
+                  <button class="card_list_teg card_list_teg_white">
+                    Питание
+                  </button>
+                </div>
+                <h4 class="title_h4 card_list_title">
+                  Растительная диета <br />
+                  и здоровье питомца
+                </h4>
+                <p class="card_list_time">~20 мин</p>
+              </div>
+            </div>
+          </div>
+          <div class="card_list_swape">
+            <button
+              class="card_list_swape_button card_list_swape_left"
+            ></button>
+            <button
+              class="card_list_swape_button card_list_swape_right"
+            ></button>
+          </div>
+        </section>
+      </section>
+      <section class="ticket_area">
+        <img
+          class="ticket_area_img"
+          src="./images/ticket_area_img.png"
+          alt=""
+          loading="lazy"
+        />
+        <p class="section_p ticket_area_chooseus">Choose Us!</p>
+        <h3 class="title_h3 ticket_area_title">
+          Первый помощник по безопасности <br />
+          питомца у вас в кармане
+        </h3>
+        <p class="section_p ticket_area_discription">
+          Наша задача – обеспечивать ваше спокойствие, быстро <br />и точно
+          выявляя риски, связанные с аллергенами
+        </p>
+        <img
+          class="ticket_area_icon"
+          src="./images/icon.svg"
+          alt="Иконка цветка"
+        />
+      </section>
+      <section class="tests_area">
+        <h2 class="title_h2 area_article_title">Обучающие тесты</h2>
+        <div class="area_article area_tests">
+          <h3 class="title_h3 article_title">
+            А вы хорошо знаете своего питомца?
+          </h3>
+          <p class="section_p article_disciption">
+            Изучите особенности животного для его счастливой <br />
+            и безопасной жизни, а также виды опасных растений <br />
+            в вашем доме и на улице
           </p>
+          <button class="button article_button">К тестам</button>
         </div>
-        <div class="background-gradient_div">
-          <div class="background-gradient"></div>
-        </div>
-      </section>
-      <section class="aid" id="aid">
-        <div class="section_name">
-          <h2 class="title_second title_second_orange">FIRST AID</h2>
-          <div class="description aid_description">
-            <p class="undername">
-              Cохраняйте спокойствие и следуйте нашим инструкциям
-            </p>
+        <section class="tests">
+          <div class="card_list_description_test test_first">
+            <div class="card_list_tegs">
+              <button class="card_list_teg">Тест</button>
+              <button class="card_list_teg card_list_teg_white">Питомец</button>
+            </div>
+            <h4 class="title_h4 card_list_title">
+              Насколько вы знающий <br />хозяин?
+            </h4>
+            <p class="card_list_time">~5 мин</p>
+            <button class="tests_area_button"></button>
           </div>
-        </div>
-        <div class="check_list_section">
-          <div class="list_frame">
-            <ol class="list">
-              <li class="list_item">Уберите растение подальше от животного</li>
-              <li class="list_item">
-                Сфотографируйте и соберите образец растения
-              </li>
-              <li class="list_item">
-                Сообщите симптомы ветеринару по телефону
-              </li>
-              <li class="list_item">
-                Как можно скорее отвезите питомца в клинику
-              </li>
-              <li class="list_item">
-                <a href="" class="list_item_link"
-                  >Видео-инструкция по экстренной помощи</a
-                >
-              </li>
-            </ol>
-          </div>
-          <button class="extra_button">
-            <p class="extra_button_description">Экстренная помощь</p>
-          </button>
-        </div>
-      </section>
-      <section class="glossary" id="glossary">
-        <h3 class="title_third">glossary</h3>
-
-        <ul class="carousel" id="carousel">
-          <li class="carousel_item active">
-            <button class="to_glossary">В глоссарий</button>
-          </li>
-          <li
-            class="carousel_item carousel_item_non carousel_item_img_second"
-          ></li>
-          <li
-            class="carousel_item carousel_item_non carousel_item_img_third"
-          ></li>
-        </ul>
-        <button class="to_glossary_adaptive">В глоссарий</button>
-      </section>
-      <footer class="footer">
-        <div class="first_footer_row">
-          <div class="sub_form">
-            <p class="text-wrapper_title">Подписывайтесь на наш сервис!</p>
-            <form
-              id="my-form"
-              action="https://formspree.io/f/xnngorro"
-              method="POST"
-            >
-              <input type="email" name="email" placeholder="Ваш email" />
-              <button id="my-form-button">Подписаться</button>
-              <button id="my-form-button_adaptive">
-                <img
-                  class="my-form-button_adaptive_img"
-                  src="./images/my-form-button.svg"
-                  alt="Стрелка подписаться"
-                />
+          <div class="card_list_description_test test_second">
+            <div class="card_list_tegs">
+              <button class="card_list_teg">Викторина</button>
+              <button class="card_list_teg card_list_teg_white">
+                Растения
               </button>
-              <p id="my-form-status"></p>
-            </form>
-          </div>
-          <div class="social_media">
-            <ul class="social_media_list">
-              <li class="media_item">
-                <a href=""
-                  ><img
-                    src="./images/TG_footer.svg"
-                    alt="Иконка Телеграм"
-                    class="icon"
-                /></a>
-              </li>
-              <li class="media_item">
-                <a href=""
-                  ><img
-                    src="./images/VK_footer.svg"
-                    alt="Иконка ВК"
-                    class="icon"
-                /></a>
-              </li>
-              <li class="media_item">
-                <a href=""
-                  ><img
-                    src="./images/DZEN_footer.svg"
-                    alt="Иконка Дзен"
-                    class="icon"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="second_footer_row">
-          <div class="team">
-            <div class="team_row"><p>Команда Karambol:</p></div>
-            <div class="team_row">
-              <p>Екатерина</p>
-              <span>@dem_yank</span>
             </div>
-            <div class="team_row">
-              <p>Ирина</p>
-              <span>@dvvarr</span>
-            </div>
+            <h4 class="title_h4 card_list_title">
+              Умеете распознавать <br />
+              опасные растения?
+            </h4>
+            <p class="card_list_time">~15 мин</p>
+            <button class="tests_area_button"></button>
           </div>
-          <div class="university"><p>HSE Art and Design School</p></div>
+          <div class="card_list_description_test test_third">
+            <div class="card_list_tegs">
+              <button class="card_list_teg">Опрос</button>
+              <button class="card_list_teg card_list_teg_white">Сервис</button>
+            </div>
+            <h4 class="title_h4 card_list_title">
+              Насколько удобен <br />
+              сервис для вас?
+            </h4>
+            <p class="card_list_time">~15 мин</p>
+            <button class="tests_area_button"></button>
+          </div>
+          <div class="card_list_description_test test_fourth">
+            <div class="card_list_tegs">
+              <button class="card_list_teg">Тест</button>
+              <button class="card_list_teg card_list_teg_white">Тренды</button>
+            </div>
+            <h4 class="title_h4 card_list_title">
+              Зимняя безопасность <br />
+              питомца: готовы ли вы?
+            </h4>
+            <p class="card_list_time">~15 мин</p>
+            <button class="tests_area_button"></button>
+          </div>
+        </section>
+      </section>
+      <section class="risks_map_area">
+        <h2 class="title_h2 risks_map_area_title">Обучающие тесты</h2>
+        <div class="map_area">
+          <img
+            class="map_area_img"
+            src="./images/map_area_img.webp"
+            alt="Карта Москвы"
+            loading="lazy"
+          />
+
+          <button class="button button_map_area">
+            <a href="./pages/riskmap.html" class="transition">Узнать больше</a>
+          </button>
+          >
         </div>
-      </footer>
-    </main> -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_area">
+        <div class="text-wrapper">
+          <p class="text-wrapper_title">Волонтерите? Свяжитесь с нами!</p>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xnngorro"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Ваш email" />
+            <button id="my-form-button">Подписаться</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="./images/logo_telegram.svg"
+                alt="Логотип Телеграмм"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="./images/logo_VK.svg"
+                alt="Логотип ВК"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a href="" target="_blank"
+              ><img
+                class="social-icon"
+                src="./images/logo_dzen.svg"
+                alt="Логотип Яндекс Дзен"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="section_p footer_discription">
+        Мы строим отношения с пользователями на прозрачности. Перед началом
+        работы с сервисом прочитайте
+        <a class="footer_discription_link" href="#0"
+          >пользовательское <br />
+          соглашение</a
+        >
+        и
+        <a class="footer_discription_link" href="#0"
+          >политику конфиденциальности</a
+        >
+        — так вы будете уверены, что ваши данные и данные вашего питомца в
+        надёжных руках.
+      </p>
+    </footer>
+    <script>
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+
+      const menuWrapper = document.querySelector(".menu-wrapper");
+      const menu = document.querySelector(".header_menu");
+      const menuButton = document.querySelector(".header_menu_button");
+      function activateMenu() {
+        if (menuWrapper.classList.contains("scrolled")) {
+          menuWrapper.classList.add("is-active");
+        }
+      }
+
+      function deactivateMenu() {
+        menuWrapper.classList.remove("is-active");
+      }
+
+      menuButton.addEventListener("mouseenter", activateMenu);
+      menu.addEventListener("mouseenter", activateMenu);
+
+      menuButton.addEventListener("mouseleave", deactivateMenu);
+      menu.addEventListener("mouseleave", deactivateMenu);
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          menuWrapper.classList.add("scrolled");
+        } else {
+          menuWrapper.classList.remove("scrolled");
+          menuWrapper.classList.remove("is-active");
+        }
+      });
+
+      const menuг = document.querySelector(".header_menu");
+    </script>
   </body>
 </html>

@@ -128,6 +128,10 @@ table {
   src: url(fonts/fa575a2226c4b00b21b0.ttf);
 }
 @font-face {
+  font-family: "Gramatika Medium";
+  src: url(fonts/111c419b0b22d0258dda.ttf);
+}
+@font-face {
   font-family: "Pompeji";
   src: url(fonts/a50b74f831ec518ecd70.otf);
 }

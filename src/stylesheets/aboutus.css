@@ -1,0 +1,249 @@
+.header_menu_aboutus {
+  position: fixed;
+  left: 50rem;
+  top: 50rem;
+  padding: 6rem 350rem 0;
+  min-height: 40rem;
+  width: 1340rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20rem;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.header_menu_button_aboutus {
+  position: fixed;
+  top: 50rem;
+  right: 50rem;
+  width: 40rem;
+  min-height: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url("../images/header_menu_button.svg");
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+}
+.menu-wrapper:hover .header_menu_button_aboutus {
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-wrapper:hover .header_menu_aboutus {
+  opacity: 1;
+  visibility: visible;
+}
+.main_aboutus {
+  display: grid;
+  grid-template-columns: repeat(2, 690rem);
+  grid-template-rows: 340rem 220rem 1fr;
+  column-gap: 55rem;
+  padding: 20rem 20rem 80rem;
+}
+.main_aboutus_background {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  width: 1400rem;
+}
+.aboutus_logo {
+  padding: 45rem 0 220rem 147rem;
+  min-height: 72rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  gap: 26rem;
+}
+.aboutus_logo_img {
+  width: 82.66rem;
+}
+.aboutus_logo_discription {
+  width: 356rem;
+}
+.aboutus_information {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 103rem;
+  padding-left: 40rem;
+}
+.aboutus_appeals {
+  display: flex;
+  gap: 40rem;
+}
+.section_p_aboutus {
+  line-height: 1.35;
+  font-size: 18rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+}
+.section_p_aboutus_appeals {
+  padding-top: 10rem;
+}
+.aboutus_appeals_title {
+  font-size: 64rem;
+  font-family: "Gramatika Medium", Arial, sans-serif;
+  color: white;
+}
+.aboutus_ident {
+  display: flex;
+  width: 569rem;
+}
+.liner {
+  position: relative;
+  rotate: 90deg;
+  min-height: 84.5rem;
+  top: -27rem;
+  border: 1rem solid white;
+}
+.aboutus_discription {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  width: 542rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding-top: 85rem;
+}
+.abourus_underline {
+  text-decoration: underline;
+  color: white;
+}
+.footer_area_aboutus {
+  padding-bottom: 48rem;
+}
+.button_riskmap {
+  top: 50rem;
+  left: 50rem;
+}
+.riskmap_section {
+  display: grid;
+  grid-template-columns: 1fr 888rem;
+}
+.riskmap_discription {
+  display: grid;
+  align-items: end;
+  grid-template-rows: min-content 160rem min-content min-content;
+  padding: 135rem 50rem 50rem;
+  gap: 30rem;
+}
+.riskmap_title {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.riskmap_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  width: 452rem;
+  background-color: #2d2d2d;
+  border-radius: 10rem;
+  padding: 10rem 13rem 5rem;
+}
+.riskmap_flowers {
+  grid-row: 2 / 3;
+}
+.riskmap_dangerlevel {
+  grid-row: 3 / 4;
+}
+.riskmap_vet {
+  grid-row: 4 / 5;
+}
+.riskmap_discription_carefully {
+  grid-row: 5 / 6;
+  font-size: 14rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+  opacity: 50%;
+}
+.riskmap_form_option {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6rem;
+  column-gap: 10rem;
+  padding-bottom: 7rem;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+.chip-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding: 3rem 5rem 8rem;
+  background-color: transparent;
+  border-radius: 40rem;
+  font-size: 15rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.chip-label:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.chip-icon {
+  position: relative;
+  top: 2rem;
+  width: 14rem;
+  height: 14rem;
+}
+input[type="radio"]:checked + .chip-label {
+  background-color: #ff5e00;
+  color: white;
+}
+.riskmap_map {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 21rem;
+  gap: 16rem;
+  width: 100%;
+  min-height: 900rem;
+  background-image: url("../images/map.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.riskmap_map_button {
+  display: flex;
+  flex-direction: column;
+  padding: 12rem 11rem;
+  gap: 20rem;
+  width: 48rem;
+  min-height: 80rem;
+  background-color: white;
+  border-radius: 7rem;
+  border: none;
+}
+.enlarge_the_map {
+  cursor: pointer;
+}
+.zoom_out_the_map {
+  cursor: pointer;
+}
+.riskmap_map_nav {
+  width: 48rem;
+  min-height: 48rem;
+  padding: 10rem;
+  background-color: white;
+  border-radius: 7rem;
+  border: none;
+  cursor: pointer;
+}
+.riskmap_map_nav_img {
+  width: 100%;
+}
