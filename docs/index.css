@@ -150,6 +150,11 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+/* section:has(:not(.area_article)),
+header,
+footer {
+  padding: 0 4vw;
+} */
 .title_h1 {
   align-self: center;
   justify-self: end;
@@ -186,7 +191,6 @@ body::-webkit-scrollbar {
 .transition {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
 }
 .header {
   display: flex;
@@ -204,7 +208,10 @@ body::-webkit-scrollbar {
 }
 .header_menu {
   position: fixed;
-  padding: 6rem 350rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 350rem 0;
   min-height: 40rem;
   width: 1340rem;
   background-color: rgba(255, 255, 255, 0.5);
@@ -217,7 +224,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: 6rem 350rem 0;
+  align-items: center;
   min-height: 40rem;
   width: 1340rem;
   background-color: rgba(255, 255, 255, 0.5);
@@ -229,7 +236,7 @@ body::-webkit-scrollbar {
   width: 40rem;
   min-height: 40rem;
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url(images/514d7c0c1517c8e93ae4.svg);
+  background-image: url(images/1a530fec07f1046e20c5.svg);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
@@ -297,11 +304,11 @@ body::-webkit-scrollbar {
   font-family: "Gramatika Regular", Arial, sans-serif;
   border-radius: 25rem;
   border: none;
-  padding-bottom: 5rem;
   cursor: pointer;
 }
 .extra_button {
   justify-self: end;
+  align-self: center;
   color: white;
   background-color: #898280;
 }
@@ -380,6 +387,7 @@ body::-webkit-scrollbar {
   background-color: #ff5e00;
   color: white;
 }
+
 .cards_list_area {
   display: flex;
   align-self: center;
@@ -389,11 +397,17 @@ body::-webkit-scrollbar {
 .card_list {
   display: flex;
   padding-top: 80rem;
-  overflow: hidden;
   flex-wrap: nowrap;
   gap: 20rem;
   width: 1340rem;
   min-height: 290rem;
+}
+.swiper-wrapper {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 1350rem;
 }
 .card_list_item {
   display: flex;
@@ -424,7 +438,6 @@ body::-webkit-scrollbar {
   font-family: "Gramatika Regular", Arial, sans-serif;
   border-radius: 15.5rem;
   border: none;
-  padding-bottom: 5rem;
   background-color: #ff5e00;
   color: white;
 }
@@ -457,13 +470,13 @@ body::-webkit-scrollbar {
   background-color: white;
   cursor: pointer;
 }
-.card_list_swape_left {
-  background-image: url(images/85fe99382d13ca10f54f.svg);
+.swiper-button-next {
+  background-image: url(images/714079a4ea776a355539.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
-.card_list_swape_right {
-  background-image: url(images/c0729a18cb4dca97cd56.svg);
+.swiper-button-prev {
+  background-image: url(images/45ea964a47732be2afcc.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -558,7 +571,7 @@ body::-webkit-scrollbar {
   min-height: 100rem;
   border-radius: 50%;
   border: none;
-  background-image: url(images/ddaa69e03a035f740788.svg);
+  background-image: url(images/cf7af06352ffe02e234f.svg);
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -575,8 +588,10 @@ body::-webkit-scrollbar {
   grid-template-rows: 1fr min-content;
   width: 1341rem;
   min-height: 452rem;
-  background-color: white;
   border-radius: 20rem;
+  background-image: url(c168d823f25b07761e8a.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .map_area_img {
   width: 100%;
@@ -602,10 +617,10 @@ body::-webkit-scrollbar {
 .footer_area {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 340rem;
+  grid-template-columns: 1fr 190rem;
   grid-template-rows: 1fr min-content;
-  padding: 75rem 50rem 55rem;
-  background-image: url(35731fba3394fb4fc4c8.webp);
+  padding: 90rem 85rem 42rem 85rem;
+  background-image: url(c13bc80806650a0c38cb.webp);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -662,23 +677,22 @@ input[type="email"]::placeholder {
 .social-list {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  padding-top: 20rem;
   align-self: end;
   display: flex;
   justify-content: space-between;
-  gap: 50rem;
+  gap: 20rem;
   list-style: none;
   padding: 0;
 }
 .social-icon {
   display: block;
   height: auto;
-  width: 80rem;
+  width: 50rem;
   max-width: 100%;
 }
 .footer_discription {
-  align-self: start;
-  padding-left: 50rem;
+  align-self: center;
+  line-height: 1.35;
   color: rgba(255, 255, 255, 0.5);
 }
 .footer_discription_link {
@@ -705,7 +719,7 @@ input[type="email"]::placeholder {
   width: 40rem;
   min-height: 40rem;
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url(images/514d7c0c1517c8e93ae4.svg);
+  background-image: url(images/1a530fec07f1046e20c5.svg);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
@@ -716,11 +730,11 @@ input[type="email"]::placeholder {
   opacity: 1;
   visibility: visible;
 }
-.menu-wrapper:hover .header_menu_button_aboutus {
+.menu-wrapper.clicked .header_menu_button_aboutus {
   opacity: 0;
   visibility: hidden;
 }
-.menu-wrapper:hover .header_menu_aboutus {
+.menu-wrapper.clicked .header_menu_aboutus {
   opacity: 1;
   visibility: visible;
 }
@@ -847,6 +861,7 @@ input[type="email"]::placeholder {
   font-family: "Gramatika Regular", Arial, sans-serif;
   color: white;
   opacity: 50%;
+  line-height: 1.35;
 }
 .riskmap_form_option {
   display: flex;
@@ -869,7 +884,7 @@ input[type="email"]::placeholder {
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  padding: 3rem 5rem 8rem;
+  padding: 6rem 5rem 6rem;
   background-color: transparent;
   border-radius: 40rem;
   font-size: 15rem;
@@ -904,35 +919,35 @@ input[type="radio"]:checked + .chip-label {
   background-image: url(9e6cea3925180a2729d1.webp);
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: grab;
 }
 .riskmap_map_button {
   display: flex;
   flex-direction: column;
-  padding: 12rem 11rem;
-  gap: 20rem;
-  width: 48rem;
-  min-height: 80rem;
-  background-color: white;
-  border-radius: 7rem;
+  min-height: 96rem;
+  padding: 0;
   border: none;
+  background-color: transparent;
 }
 .enlarge_the_map {
   cursor: pointer;
+  width: 48rem;
 }
 .zoom_out_the_map {
   cursor: pointer;
+  width: 48rem;
 }
 .riskmap_map_nav {
   width: 48rem;
   min-height: 48rem;
-  padding: 10rem;
-  background-color: white;
+  padding: 0;
+  background-color: transparent;
   border-radius: 7rem;
   border: none;
   cursor: pointer;
 }
 .riskmap_map_nav_img {
-  width: 100%;
+  width: 48rem;
 }
 
 
