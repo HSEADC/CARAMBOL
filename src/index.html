@@ -35,7 +35,6 @@
     />
     <meta name="twitter:type" content="website" />
     <meta name="twitter:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
   <body>
     <header class="header">
@@ -111,9 +110,10 @@
           loading="lazy"
         />
       </section>
+
       <section class="glossary_area">
         <h2 class="title_h2 area_article_title">Популярные статьи</h2>
-        <div class="area_article">
+        <section class="area_article">
           <h3 class="title_h3 article_title">
             Отучаем питомца грызть растения
           </h3>
@@ -123,141 +123,139 @@
             и уличные растения
           </p>
           <button class="button article_button">Изучить глоссарий</button>
-        </div>
+        </section>
         <section class="cards_list_area">
-          <div class="card_list">
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Статья</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Растения
-                  </button>
+          <div class="swiper-wrapper">
+            <div class="card_list">
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Статья</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Растения
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    Опасные садовые <br />растения
+                  </h4>
+                  <p class="card_list_time">~20 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  Опасные садовые <br />растения
-                </h4>
-                <p class="card_list_time">~20 мин</p>
               </div>
-            </div>
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Пост</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Тренды
-                  </button>
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Пост</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Тренды
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    Самые интересные <br />
+                    мифы о растениях
+                  </h4>
+                  <p class="card_list_time">~15 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  Самые интересные <br />
-                  мифы о растениях
-                </h4>
-                <p class="card_list_time">~15 мин</p>
               </div>
-            </div>
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Статья</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Улица
-                  </button>
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Статья</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Улица
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    На что обратить <br />
+                    внимание на улице
+                  </h4>
+                  <p class="card_list_time">~25 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  На что обратить <br />
-                  внимание на улице
-                </h4>
-                <p class="card_list_time">~25 мин</p>
               </div>
-            </div>
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Статья</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Собаки
-                  </button>
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Статья</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Собаки
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    Правила спокойной <br />прогулки
+                  </h4>
+                  <p class="card_list_time">~20 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  Правила спокойной <br />прогулки
-                </h4>
-                <p class="card_list_time">~20 мин</p>
               </div>
-            </div>
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Статья</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Угрозы
-                  </button>
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Статья</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Угрозы
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    Грибы, плесень <br />
+                    и микотоксины
+                  </h4>
+                  <p class="card_list_time">~15 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  Грибы, плесень <br />
-                  и микотоксины
-                </h4>
-                <p class="card_list_time">~15 мин</p>
               </div>
-            </div>
-            <div class="card_list_item">
-              <img
-                class="card_list_img"
-                src="./images/card_list_img.webp"
-                alt="Градиентный фон у карточки"
-                loading="lazy"
-              />
-              <div class="card_list_description">
-                <div class="card_list_tegs">
-                  <button class="card_list_teg">Статья</button>
-                  <button class="card_list_teg card_list_teg_white">
-                    Питание
-                  </button>
+              <div class="card_list_item">
+                <img
+                  class="card_list_img"
+                  src="./images/card_list_img.webp"
+                  alt="Градиентный фон у карточки"
+                  loading="lazy"
+                />
+                <div class="card_list_description">
+                  <div class="card_list_tegs">
+                    <button class="card_list_teg">Статья</button>
+                    <button class="card_list_teg card_list_teg_white">
+                      Питание
+                    </button>
+                  </div>
+                  <h4 class="title_h4 card_list_title">
+                    Растительная диета <br />
+                    и здоровье питомца
+                  </h4>
+                  <p class="card_list_time">~20 мин</p>
                 </div>
-                <h4 class="title_h4 card_list_title">
-                  Растительная диета <br />
-                  и здоровье питомца
-                </h4>
-                <p class="card_list_time">~20 мин</p>
               </div>
             </div>
           </div>
           <div class="card_list_swape">
-            <button
-              class="card_list_swape_button card_list_swape_left"
-            ></button>
-            <button
-              class="card_list_swape_button card_list_swape_right"
-            ></button>
+            <button class="card_list_swape_button swiper-button-next"></button>
+            <button class="card_list_swape_button swiper-button-prev"></button>
           </div>
         </section>
       </section>
@@ -349,17 +347,10 @@
         </section>
       </section>
       <section class="risks_map_area">
-        <h2 class="title_h2 risks_map_area_title">Обучающие тесты</h2>
+        <h2 class="title_h2 risks_map_area_title">Карта рисков</h2>
         <div class="map_area">
-          <img
-            class="map_area_img"
-            src="./images/map_area_img.webp"
-            alt="Карта Москвы"
-            loading="lazy"
-          />
-
           <button class="button button_map_area">
-            <a href="./pages/riskmap.html" class="transition">Узнать больше</a>
+            <a href="./pages/riskmap.html" class="transition">Посмотреть</a>
           </button>
           >
         </div>
@@ -381,7 +372,7 @@
         </div>
         <ul class="social-list">
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a href="https://t.me/karambol_info" target="_blank"
               ><img
                 class="social-icon"
                 src="./images/logo_telegram.svg"
@@ -389,7 +380,7 @@
             /></a>
           </li>
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a href="https://vk.ru/club233311864" target="_blank"
               ><img
                 class="social-icon"
                 src="./images/logo_VK.svg"
@@ -397,7 +388,9 @@
             /></a>
           </li>
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a
+              href="https://dzen.ru/karambol_info?share_to=link"
+              target="_blank"
               ><img
                 class="social-icon"
                 src="./images/logo_dzen.svg"
@@ -459,23 +452,15 @@
       form.addEventListener("submit", handleSubmit);
 
       const menuWrapper = document.querySelector(".menu-wrapper");
-      const menu = document.querySelector(".header_menu");
       const menuButton = document.querySelector(".header_menu_button");
-      function activateMenu() {
+
+      function toggleMenu() {
         if (menuWrapper.classList.contains("scrolled")) {
-          menuWrapper.classList.add("is-active");
+          menuWrapper.classList.toggle("is-active");
         }
       }
 
-      function deactivateMenu() {
-        menuWrapper.classList.remove("is-active");
-      }
-
-      menuButton.addEventListener("mouseenter", activateMenu);
-      menu.addEventListener("mouseenter", activateMenu);
-
-      menuButton.addEventListener("mouseleave", deactivateMenu);
-      menu.addEventListener("mouseleave", deactivateMenu);
+      menuButton.addEventListener("click", toggleMenu);
 
       window.addEventListener("scroll", () => {
         if (window.scrollY > 0) {
@@ -486,7 +471,45 @@
         }
       });
 
-      const menuг = document.querySelector(".header_menu");
+      const cardList = document.querySelector(".card_list");
+      const nextButton = document.querySelector(".swiper-button-prev ");
+      const prevButton = document.querySelector(".swiper-button-next");
+
+      let currentTranslateX = 0;
+      const slideDistance = 340;
+
+      const numCards = cardList.querySelectorAll(".card_list_item").length;
+      const cardItemWidth = 320;
+      const cardGap = 20;
+      const totalContentWidth =
+        cardItemWidth * numCards + cardGap * (numCards - 1);
+      const viewportWidth = 1340;
+      const maxScrollTranslateX = -(totalContentWidth - viewportWidth);
+
+      cardList.style.transition = "transform 0.5s ease-in-out";
+
+      function updateButtonStates() {
+        prevButton.disabled = currentTranslateX >= 0;
+        nextButton.disabled = currentTranslateX <= maxScrollTranslateX;
+      }
+
+      function moveSlider(direction) {
+        if (direction === "next") {
+          currentTranslateX = Math.max(
+            maxScrollTranslateX,
+            currentTranslateX - slideDistance
+          );
+        } else if (direction === "prev") {
+          currentTranslateX = Math.min(0, currentTranslateX + slideDistance);
+        }
+        cardList.style.transform = `translateX(${currentTranslateX}rem)`;
+        updateButtonStates();
+      }
+
+      nextButton.addEventListener("click", () => moveSlider("next"));
+      prevButton.addEventListener("click", () => moveSlider("prev"));
+
+      updateButtonStates();
     </script>
   </body>
 </html>

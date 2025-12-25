@@ -33,7 +33,6 @@
     />
     <meta name="twitter:type" content="website" />
     <meta name="twitter:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body>
     <header class="menu-wrapper">
@@ -128,7 +127,7 @@
         </div>
         <ul class="social-list">
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a href="https://t.me/karambol_info" target="_blank"
               ><img
                 class="social-icon"
                 src="../images/logo_telegram.svg"
@@ -136,7 +135,7 @@
             /></a>
           </li>
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a href="https://vk.ru/club233311864" target="_blank"
               ><img
                 class="social-icon"
                 src="../images/logo_VK.svg"
@@ -144,7 +143,9 @@
             /></a>
           </li>
           <li class="social-list-item">
-            <a href="" target="_blank"
+            <a
+              href="https://dzen.ru/karambol_info?share_to=link"
+              target="_blank"
               ><img
                 class="social-icon"
                 src="../images/logo_dzen.svg"
@@ -154,5 +155,14 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const menuWrapper = document.querySelector(".menu-wrapper");
+
+      if (menuWrapper) {
+        menuWrapper.addEventListener("click", function () {
+          this.classList.toggle("clicked");
+        });
+      }
+    </script>
   </body>
 </html>

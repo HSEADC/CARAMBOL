@@ -29,11 +29,11 @@
   opacity: 1;
   visibility: visible;
 }
-.menu-wrapper:hover .header_menu_button_aboutus {
+.menu-wrapper.clicked .header_menu_button_aboutus {
   opacity: 0;
   visibility: hidden;
 }
-.menu-wrapper:hover .header_menu_aboutus {
+.menu-wrapper.clicked .header_menu_aboutus {
   opacity: 1;
   visibility: visible;
 }
@@ -160,6 +160,7 @@
   font-family: "Gramatika Regular", Arial, sans-serif;
   color: white;
   opacity: 50%;
+  line-height: 1.35;
 }
 .riskmap_form_option {
   display: flex;
@@ -182,7 +183,7 @@
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  padding: 3rem 5rem 8rem;
+  padding: 6rem 5rem 6rem;
   background-color: transparent;
   border-radius: 40rem;
   font-size: 15rem;
@@ -217,33 +218,33 @@ input[type="radio"]:checked + .chip-label {
   background-image: url("../images/map.webp");
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: grab;
 }
 .riskmap_map_button {
   display: flex;
   flex-direction: column;
-  padding: 12rem 11rem;
-  gap: 20rem;
-  width: 48rem;
-  min-height: 80rem;
-  background-color: white;
-  border-radius: 7rem;
+  min-height: 96rem;
+  padding: 0;
   border: none;
+  background-color: transparent;
 }
 .enlarge_the_map {
   cursor: pointer;
+  width: 48rem;
 }
 .zoom_out_the_map {
   cursor: pointer;
+  width: 48rem;
 }
 .riskmap_map_nav {
   width: 48rem;
   min-height: 48rem;
-  padding: 10rem;
-  background-color: white;
+  padding: 0;
+  background-color: transparent;
   border-radius: 7rem;
   border: none;
   cursor: pointer;
 }
 .riskmap_map_nav_img {
-  width: 100%;
+  width: 48rem;
 }

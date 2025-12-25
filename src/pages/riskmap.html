@@ -36,7 +36,6 @@
     />
     <meta name="twitter:type" content="website" />
     <meta name="twitter:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <link rel="stylesheet" href="../stylesheets/style.css" />
   </head>
   <body>
     <header class="menu-wrapper">
@@ -77,6 +76,7 @@
               id="all"
               name="allergen"
               class="visually-hidden"
+              checked
             />
             <label for="all" class="chip-label">Все</label>
 
@@ -189,7 +189,13 @@
         <form class="riskmap_form riskmap_dangerlevel">
           <h5 class="title_h5">Уровень опасности</h5>
           <fieldset class="riskmap_form_option">
-            <input type="radio" id="low" name="level" class="visually-hidden" />
+            <input
+              type="radio"
+              id="low"
+              name="level"
+              class="visually-hidden"
+              checked
+            />
             <label for="low" class="chip-label">
               <img
                 class="chip-icon"
@@ -238,6 +244,7 @@
               id="all_clinic"
               name="clinic"
               class="visually-hidden"
+              checked
             />
             <label for="all_clinic" class="chip-label"> Все </label>
 
@@ -247,7 +254,13 @@
               name="clinic"
               class="visually-hidden"
             />
-            <label for="help" class="chip-label"> Экстренная помощь </label>
+            <label for="help" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/emergency.svg"
+                alt="Иконка телефона"
+              />Экстренная помощь
+            </label>
 
             <input
               type="radio"
@@ -256,6 +269,11 @@
               class="visually-hidden"
             />
             <label for="around_the_clock" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/around_the_clock.svg"
+                alt="Иконка часов"
+              />
               Круглосуточно
             </label>
 
@@ -265,7 +283,14 @@
               name="clinic"
               class="visually-hidden"
             />
-            <label for="dogs" class="chip-label"> Собаки </label>
+            <label for="dogs" class="chip-label"
+              ><img
+                class="chip-icon"
+                src="../images/dogs.svg"
+                alt="Иконка собаки"
+              />
+              Собаки
+            </label>
 
             <input
               type="radio"
@@ -273,7 +298,13 @@
               name="clinic"
               class="visually-hidden"
             />
-            <label for="cats" class="chip-label"> Кошки </label>
+            <label for="cats" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/cats.svg"
+                alt="Иконка кошки"
+              />Кошки
+            </label>
 
             <input
               type="radio"
@@ -281,7 +312,13 @@
               name="clinic"
               class="visually-hidden"
             />
-            <label for="hamsters" class="chip-label"> Хомяки </label>
+            <label for="hamsters" class="chip-label">
+              <img
+                class="chip-icon"
+                src="../images/hamster.svg"
+                alt="Иконка хомяка"
+              />Хомяки
+            </label>
 
             <input
               type="radio"
@@ -289,8 +326,13 @@
               name="clinic"
               class="visually-hidden"
             />
-            <label for="exotic_animals" class="chip-label">
-              Экзотические животные
+            <label for="exotic_animals" class="chip-label"
+              ><img
+                class="chip-icon"
+                src="../images/other.svg"
+                alt="Иконка ящерицы"
+              />
+              Другие
             </label>
           </fieldset>
         </form>
@@ -305,12 +347,12 @@
           <img
             class="enlarge_the_map"
             src="../images/enlarge_the_map.svg"
-            alt="Плюс"
+            alt="Увеличить карту. Плюс"
           />
           <img
             class="zoom_out_the_map"
             src="../images/zoom_out_the_map.svg"
-            alt="Минус"
+            alt="Уменьшить карту. Минус"
           />
         </button>
         <button class="riskmap_map_nav">
@@ -322,5 +364,13 @@
         </button>
       </section>
     </main>
+    <script>
+      const menuWrapper = document.querySelector(".menu-wrapper");
+      if (menuWrapper) {
+        menuWrapper.addEventListener("click", function () {
+          this.classList.toggle("clicked");
+        });
+      }
+    </script>
   </body>
 </html>
