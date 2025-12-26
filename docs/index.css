@@ -638,7 +638,7 @@ footer {
   min-height: 100rem;
   border-radius: 50%;
   border: none;
-  background-image: url(images/6f9212c797992addc3cd.svg);
+  background-image: url(images/4f5521ecff245aea9497.svg);
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -777,7 +777,7 @@ input[type="email"]::placeholder {
   width: 40rem;
   min-height: 40rem;
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url(images/a16fae6039334710a52d.svg);
+  background-image: url(images/e1f1dc930a3fae2ef348.svg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1100,7 +1100,7 @@ input[type="radio"]:checked + .chip-label {
     width: 100%;
     height: 668rem;
     row-gap: 20rem;
-    background-image: url(images/9cbc7580f4206c6d456c.svg);
+    background-image: url(images/98c6f61b79482e05b883.svg);
     padding: 40rem 22rem;
   }
   .section_p {
@@ -1204,7 +1204,7 @@ input[type="radio"]:checked + .chip-label {
     right: -115rem;
     width: 60rem;
     min-height: 60rem;
-    background-image: url(images/2654a5b03051c8ea9560.svg);
+    background-image: url(images/a749b655e3e8366385f7.svg);
   }
   .map_area {
     display: flex;
