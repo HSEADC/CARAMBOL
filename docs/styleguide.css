@@ -144,83 +144,328 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Gramatika Regular", sans-serif;
+  background-color: black;
+  overflow-x: hidden;
 }
-.A_MainHeader,
-.A_SectionHeader,
-.A_SectionDopHeader,
-h4 {
-  line-height: 1.2;
-  font-weight: 500;
+body::-webkit-scrollbar {
+  display: none;
 }
-
-.A_MainHeader {
-  font-size: 120rem;
-}
-.A_SectionHeader {
-  font-size: 56rem;
-}
-.A_SectionDopHeader {
-  font-size: 48rem;
-}
-h4 {
-  font-size: 36rem;
-}
-.A_Text,
-a {
-  font-size: 24rem;
-  line-height: 1.5;
-}
-.O_StyleguideHeader {
-  display: flex;
-  flex-direction: column;
-  gap: 400rem;
-  padding: 20rem;
-  background-color: rgb(0, 68, 132);
+.title_h1 {
+  justify-self: end;
+  font-size: 98rem;
+  font-family: "Pompeji", Arial, sans-serif;
   color: white;
 }
-.A_HeaderLink {
-  color: rgb(216, 216, 216);
-  text-decoration: none;
-  transition: all 0.3s ease;
+.title_h2 {
+  font-size: 40rem;
+  font-family: "Gramatika Medium", Arial, sans-serif;
+  color: white;
 }
-.A_HeaderLink:hover {
-  color: rgb(132, 132, 132);
-  transition: all 0.6s ease;
-  text-decoration: underline;
+.title_h3 {
+  font-size: 32rem;
+  font-family: "Gramatika Medium", Arial, sans-serif;
+  color: white;
 }
-.S_StyleguedeContent {
+.title_h4 {
+  font-size: 25rem;
+  font-family: "Gramatika Medium", Arial, sans-serif;
+  color: white;
+}
+.title_h5 {
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+}
+.section_p {
+  line-height: 1.35;
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: #8b8a89;
+}
+.header_menu {
   display: flex;
-  padding: 20rem 0;
-}
-.O_SidebarMenu {
-  position: relative;
-  width: 20%;
-  padding: 0 30rem;
-}
-.O_Sections {
-  width: 60%;
-}
-.C_SidebarMenu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  background-color: rgb(139, 178, 255);
+  justify-content: center;
+  align-items: center;
+  padding: 0 350rem 0;
+  min-height: 40rem;
+  width: 1340rem;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20rem;
-  gap: 10rem;
-  bottom: 20rem;
 }
-.A_SidebarMenuLink {
-  background-color: white;
-  border-radius: 10rem;
-  padding: 6rem 20rem;
+.header__links-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, min-content);
+  list-style: none;
+  gap: 50rem;
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+}
+.header__links-item {
+  white-space: nowrap;
+}
+.header__link {
   text-decoration: none;
-  color: rgb(56, 56, 56);
-}
-.A_SidebarMenuLink:hover {
-  background-color: rgba(100, 148, 237, 0.452);
   color: white;
-  transition: all 0.8s ease;
+}
+.styleguide_header {
+  display: flex;
+  justify-content: center;
+  padding-top: 50rem;
+}
+.styleguide_main {
+  position: relative;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 207rem 1fr;
+  padding: 135rem 50rem;
+  column-gap: 135rem;
+}
+.styleguide_nav {
+  position: sticky;
+  display: flex;
+  top: 30rem;
+  flex-direction: column;
+  gap: 7rem;
+}
+.styleguide_nav_button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: #898280;
+  background-color: transparent;
+  padding-left: 13rem;
+  width: 220rem;
+  min-height: 38rem;
+  border-radius: 40rem;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  overflow: hidden;
+}
+.styleguide_nav_button_link {
+  text-decoration: none;
+  color: inherit;
+}
+.styleguide_nav_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(6c5762eca051f14d40df.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: -1;
+}
+.styleguide_nav_button:hover {
+  color: white;
+}
+.styleguide_nav_button:hover::before {
+  opacity: 1;
+}
+.styleguide_content {
+  display: grid;
+  grid-template-rows: repeat(10, min-content);
+  row-gap: 80rem;
+}
+.styleguide_general {
+  display: flex;
+  flex-direction: column;
+  gap: 25rem;
+}
+.styleguide_values {
+  display: grid;
+  grid-template-columns: repeat(2, 433rem);
+  grid-template-rows: repeat(2, min-content);
+  gap: 20rem;
+}
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20rem;
+  column-gap: 19rem;
+}
+.feature_button {
+  min-height: 50rem;
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+  border-radius: 40rem;
+  border: 1.5rem solid white;
+  background-color: transparent;
+}
+.feature_button_educational {
+  width: 219rem;
+}
+.feature_button_reliable {
+  width: 145rem;
+}
+.feature_button_friendly {
+  width: 230rem;
+}
+.feature_button_fast {
+  width: 139rem;
+}
+.feature_button_operational {
+  width: 187rem;
+}
+.feature_button_caring {
+  width: 168rem;
+}
+.feature_button_expert {
+  width: 167rem;
+}
+.feature_button_safe {
+  width: 161rem;
+}
+.feature_button_education {
+  width: 164rem;
+}
+.feature_button_personalized {
+  width: 260rem;
+}
+.metaphor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rem;
+}
+.metaphor_discription {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.metaphor_img {
+  align-self: end;
+  width: 540rem;
+}
+.logo_options_img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rem;
+}
+.logo_options_img_general {
+  width: 320rem;
+}
+.color_palette {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rem;
+}
+.color_palette_div {
+  display: grid;
+  grid-template-columns: 180rem 90rem;
+  padding: 20rem 27rem;
+  width: 320rem;
+  min-height: 160rem;
+  border-radius: 20rem;
+  background-color: #ff5e00;
+}
+.color_palette_div_black {
+  background-color: black;
+  border: 1.5rem solid #898280;
+}
+.color_palette_div_white {
+  background-color: white;
+}
+.color_palette_title {
+  align-self: center;
+}
+.section_p_color_palette {
+  font-size: 20rem;
+  font-family: "Gramatika Regular", Arial, sans-serif;
+  color: white;
+  justify-self: end;
+  align-self: end;
+}
+.color_palette_title_black {
+  color: black;
+}
+.color_palette_title_black {
+  color: black;
+}
+.title_h1_discription {
+  position: relative;
+  top: -20rem;
+  display: flex;
+  width: 390rem;
+  justify-content: space-between;
+}
+.section_title {
+  position: relative;
+  top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 320rem);
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 50rem;
+  column-gap: 20rem;
+}
+.section_title_h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.section_title_h3 {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.section_title_h4 {
+  position: relative;
+  top: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.section_title_h5 {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.section_title_p {
+  position: relative;
+  top: -3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+.section_p_white {
+  color: white;
+}
+.graphics_img {
+  width: 547rem;
+}
+.graphics_img_second {
+  width: 433rem;
+}
+.graphics_discription {
+  display: flex;
+  gap: 20rem;
+}
+.corporate_pattern_img {
+  width: 1000rem;
+}
+.corporate_pattern_img_second {
+  width: 1000rem;
+}
+.icons_section {
+  display: flex;
+  width: 660rem;
+  flex-wrap: wrap;
+  column-gap: 35rem;
+  row-gap: 25rem;
+}
+.icons_img {
+  width: 55rem;
+}
+.carriers_img {
+  width: 1000rem;
 }
 
