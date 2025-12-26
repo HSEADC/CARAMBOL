@@ -35,7 +35,6 @@
     />
     <meta name="twitter:type" content="website" />
     <meta name="twitter:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <!-- править header -->
   </head>
   <body>
     <header class="header">
@@ -64,6 +63,7 @@
         </nav>
       </div>
       <nav class="header_menu_visible">
+        <button class="header_menu_button_iphone"></button>
         <ul class="header__links-list">
           <li class="header__links-item">
             <a class="header__link" href="./pages/aboutus.html">О нас</a>
@@ -107,6 +107,12 @@
         <img
           class="first_help_img"
           src="./images/first_help_gif.png"
+          alt=""
+          loading="lazy"
+        />
+        <img
+          class="first_help_img_iphone"
+          src="./images/first_help_img_iphone.png"
           alt=""
           loading="lazy"
         />
@@ -301,10 +307,10 @@
               <button class="card_list_teg">Тест</button>
               <button class="card_list_teg card_list_teg_white">Питомец</button>
             </div>
-            <h4 class="title_h4 card_list_title">
+            <h4 class="title_h4 card_list_title card_list_title_iphone">
               Насколько вы знающий <br />хозяин?
             </h4>
-            <p class="card_list_time">~5 мин</p>
+            <p class="card_list_time card_list_time_iphone">~5 мин</p>
             <button class="tests_area_button"></button>
           </div>
           <div class="card_list_description_test test_second">
@@ -314,11 +320,11 @@
                 Растения
               </button>
             </div>
-            <h4 class="title_h4 card_list_title">
+            <h4 class="title_h4 card_list_title card_list_title_iphone">
               Умеете распознавать <br />
               опасные растения?
             </h4>
-            <p class="card_list_time">~15 мин</p>
+            <p class="card_list_time card_list_time_iphone">~15 мин</p>
             <button class="tests_area_button"></button>
           </div>
           <div class="card_list_description_test test_third">
@@ -326,11 +332,11 @@
               <button class="card_list_teg">Опрос</button>
               <button class="card_list_teg card_list_teg_white">Сервис</button>
             </div>
-            <h4 class="title_h4 card_list_title">
+            <h4 class="title_h4 card_list_title card_list_title_iphone">
               Насколько удобен <br />
               сервис для вас?
             </h4>
-            <p class="card_list_time">~15 мин</p>
+            <p class="card_list_time card_list_time_iphone">~15 мин</p>
             <button class="tests_area_button"></button>
           </div>
           <div class="card_list_description_test test_fourth">
@@ -338,11 +344,11 @@
               <button class="card_list_teg">Тест</button>
               <button class="card_list_teg card_list_teg_white">Тренды</button>
             </div>
-            <h4 class="title_h4 card_list_title">
+            <h4 class="title_h4 card_list_title card_list_title_iphone">
               Зимняя безопасность <br />
               питомца: готовы ли вы?
             </h4>
-            <p class="card_list_time">~15 мин</p>
+            <p class="card_list_time card_list_time_iphone">~15 мин</p>
             <button class="tests_area_button"></button>
           </div>
         </section>
@@ -367,7 +373,7 @@
             method="POST"
           >
             <input type="email" name="email" placeholder="Ваш email" />
-            <button id="my-form-button">Подписаться</button>
+            <button id="my-form-button" class="button">Подписаться</button>
             <p id="my-form-status"></p>
           </form>
         </div>
@@ -477,15 +483,16 @@
       const prevButton = document.querySelector(".swiper-button-next");
 
       let currentTranslateX = 0;
-      const slideDistance = 340;
+      let slideDistance = 340;
+      let viewportWidth = 1340;
 
       const numCards = cardList.querySelectorAll(".card_list_item").length;
       const cardItemWidth = 320;
       const cardGap = 20;
       const totalContentWidth =
         cardItemWidth * numCards + cardGap * (numCards - 1);
-      const viewportWidth = 1340;
-      const maxScrollTranslateX = -(totalContentWidth - viewportWidth);
+
+      let maxScrollTranslateX = -(totalContentWidth - viewportWidth);
 
       cardList.style.transition = "transform 0.5s ease-in-out";
 
@@ -509,6 +516,22 @@
 
       nextButton.addEventListener("click", () => moveSlider("next"));
       prevButton.addEventListener("click", () => moveSlider("prev"));
+
+      function updateViewportWidth() {
+        if (window.matchMedia("(max-width: 440px)").matches) {
+          viewportWidth = 340;
+          slideDistance = 420;
+        } else {
+          viewportWidth = 1340;
+          slideDistance = 340;
+        }
+        maxScrollTranslateX = -(totalContentWidth - viewportWidth);
+        updateButtonStates();
+      }
+
+      const viewportMediaQuery = window.matchMedia("(max-width: 440px)");
+      viewportMediaQuery.addListener(updateViewportWidth);
+      updateViewportWidth();
 
       updateButtonStates();
     </script>

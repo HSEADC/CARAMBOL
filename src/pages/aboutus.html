@@ -16,12 +16,10 @@
       content="Описание медиа-сервиса KARAMBOL."
     />
     <meta property="og:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <!-- добавить ссылку -->
     <meta
       property="og:image"
       content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
     />
-    <!-- добавить фото -->
     <meta name="twitter:title" content="About us" />
     <meta
       name="twitter:description"
@@ -36,33 +34,19 @@
   </head>
   <body>
     <header class="menu-wrapper">
-      <button class="header_menu_button_aboutus"></button>
-      <nav class="header_menu_aboutus">
-        <ul class="header__links-list">
-          <li class="header__links-item">
-            <a class="header__link" href="../pages/aboutus.html">О нас</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Помощь</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Глоссарий</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="../pages/riskmap.html"
-              >Карта рисков</a
-            >
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Обучение</a>
-          </li>
-        </ul>
-      </nav>
+      <a href="../index.html"
+        ><button class="header_menu_button_aboutus"></button
+      ></a>
     </header>
     <main class="main_aboutus">
       <img
         src="../images/main_aboutus.webp"
         class="main_aboutus_background"
+        alt="Градиентный фон"
+      />
+      <img
+        src="../images/aboutus_background_iphone.webp"
+        class="main_aboutus_background_iphone"
         alt="Градиентный фон"
       />
       <div class="aboutus_logo">
@@ -88,11 +72,13 @@
         <div class="aboutus_ident">
           <p class="section_p_aboutus">Моментальная идентификация</p>
           <hr class="liner" />
-          <p class="section_p_aboutus">экспертная проверка</p>
+          <p class="section_p_aboutus section_p_aboutus_iphone">
+            экспертная проверка
+          </p>
         </div>
       </div>
       <div class="aboutus_discription">
-        <p class="section_p_aboutus">
+        <p class="section_p_aboutus section_p_aboutus_iphone_par1">
           Сервис строится на ценностях своевременности, <br />
           безопасности и внимательности: гео‑оповещения, <br />
           <a class="abourus_underline" href="./riskmap.html"
@@ -101,7 +87,7 @@
           предотвращать риски и возвращаем спокойствие — <br />
           вы получаете не просто уведомление, а план действий.
         </p>
-        <p class="section_p_aboutus">
+        <p class="section_p_aboutus section_p_aboutus_iphone_par2">
           Мы объединяем объемную
           <a class="abourus_underline" href="#0">библиографию растений</a>
           <br />
@@ -121,7 +107,7 @@
             method="POST"
           >
             <input type="email" name="email" placeholder="Ваш email" />
-            <button id="my-form-button">Подписаться</button>
+            <button id="my-form-button" class="button">Подписаться</button>
             <p id="my-form-status"></p>
           </form>
         </div>
@@ -154,6 +140,20 @@
           </li>
         </ul>
       </div>
+      <p class="section_p footer_discription">
+        Мы строим отношения с пользователями на прозрачности. Перед началом
+        работы с сервисом прочитайте
+        <a class="footer_discription_link" href="#0"
+          >пользовательское <br />
+          соглашение</a
+        >
+        и
+        <a class="footer_discription_link" href="#0"
+          >политику конфиденциальности</a
+        >
+        — так вы будете уверены, что ваши данные и данные вашего питомца в
+        надёжных руках.
+      </p>
     </footer>
     <script>
       const menuWrapper = document.querySelector(".menu-wrapper");

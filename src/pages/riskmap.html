@@ -19,12 +19,10 @@
       content="Интерактивная карта с метками опасных и безопасных зон, местами роста ядовитых растений и адресами ближайших ветклиник."
     />
     <meta property="og:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <!-- добавить ссылку -->
     <meta
       property="og:image"
       content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
     />
-    <!-- добавить фото -->
     <meta name="twitter:title" content="Risk map" />
     <meta
       name="twitter:description"
@@ -39,34 +37,15 @@
   </head>
   <body>
     <header class="menu-wrapper">
-      <button class="header_menu_button_aboutus button_riskmap"></button>
-      <nav class="header_menu_aboutus">
-        <ul class="header__links-list">
-          <li class="header__links-item">
-            <a class="header__link" href="../pages/aboutus.html">О нас</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Помощь</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Глоссарий</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="../pages/riskmap.html"
-              >Карта рисков</a
-            >
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Обучение</a>
-          </li>
-        </ul>
-      </nav>
+      <a href="../index.html"
+        ><button class="header_menu_button_aboutus"></button
+      ></a>
     </header>
     <main class="riskmap_section">
       <section class="riskmap_discription">
         <div class="riskmap_title">
-          <h2 class="title_h2">Карта рисков</h2>
-          <p class="section_p_aboutus">г. Москва</p>
+          <h2 class="title_h2 title_h2_map">Карта рисков</h2>
+          <p class="section_p_aboutus section_p_aboutus_map">г. Москва</p>
         </div>
         <form class="riskmap_form riskmap_flowers">
           <h5 class="title_h5">Аллергены</h5>
@@ -364,6 +343,64 @@
         </button>
       </section>
     </main>
+    <footer class="footer_area_risk">
+      <div class="footer_area">
+        <div class="text-wrapper">
+          <p class="text-wrapper_title">Волонтерите? Свяжитесь с нами!</p>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xnngorro"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Ваш email" />
+            <button id="my-form-button" class="button">Подписаться</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="https://t.me/karambol_info" target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_telegram.svg"
+                alt="Логотип Телеграмм"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a href="https://vk.ru/club233311864" target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_VK.svg"
+                alt="Логотип ВК"
+            /></a>
+          </li>
+          <li class="social-list-item">
+            <a
+              href="https://dzen.ru/karambol_info?share_to=link"
+              target="_blank"
+              ><img
+                class="social-icon"
+                src="../images/logo_dzen.svg"
+                alt="Логотип Яндекс Дзен"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="section_p footer_discription">
+        Мы строим отношения с пользователями на прозрачности. Перед началом
+        работы с сервисом прочитайте
+        <a class="footer_discription_link" href="#0"
+          >пользовательское <br />
+          соглашение</a
+        >
+        и
+        <a class="footer_discription_link" href="#0"
+          >политику конфиденциальности</a
+        >
+        — так вы будете уверены, что ваши данные и данные вашего питомца в
+        надёжных руках.
+      </p>
+    </footer>
     <script>
       const menuWrapper = document.querySelector(".menu-wrapper");
       if (menuWrapper) {

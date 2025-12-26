@@ -1,0 +1,383 @@
+@media screen and (max-width: 440px) {
+  html {
+    font-size: calc(1vw / 4.4);
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .header {
+    justify-content: space-between;
+    background-size: auto 80%;
+    background-position: center;
+    gap: 323rem;
+    padding: 51rem 20rem;
+    min-height: 956rem;
+  }
+  .header_menu_button {
+    display: none;
+  }
+  .header_menu_button_aboutus {
+    top: 80rem;
+    right: 20rem;
+  }
+  .header_menu {
+    width: 252rem;
+    min-height: 919rem;
+    opacity: 90%;
+    border-radius: 0;
+    padding: 305rem 60rem;
+  }
+  .title_h1 {
+    font-size: 70rem;
+  }
+  .title_h2 {
+    font-size: 32rem;
+  }
+  .title_h3 {
+    font-size: 28rem;
+  }
+  .title_h4 {
+    font-size: 28rem;
+  }
+  .header__links-list {
+    display: none;
+  }
+  .header_menu_button_iphone {
+    z-index: 20;
+    position: fixed;
+    display: block;
+    width: 40rem;
+    min-height: 40rem;
+    background-color: #848484;
+    background-image: url("../images/header_menu_button.svg");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+  }
+  .header_menu_visible {
+    justify-content: end;
+    background-color: transparent;
+    width: 400rem;
+  }
+  .team_name {
+    gap: 9rem;
+  }
+  .team_name {
+    width: 128rem;
+  }
+  .team_logo {
+    width: 43rem;
+  }
+  .team_discription {
+    font-size: 16rem;
+  }
+  .button {
+    width: 158rem;
+    min-height: 32rem;
+    font-size: 14rem;
+  }
+  .main {
+    padding: 150rem 0 263rem;
+    gap: 150rem;
+  }
+  .first_help_banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 668rem;
+    row-gap: 20rem;
+    background-image: url("../images/first_help_banner_image.svg");
+    padding: 40rem 22rem;
+  }
+  .section_p {
+    font-size: 16rem;
+  }
+  .first_help_img_iphone {
+    display: block;
+    order: 3;
+    width: 399rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .first_help_banner_p {
+    padding-bottom: 0;
+  }
+  .first_help_img {
+    display: none;
+  }
+  .button_learn_more {
+    align-self: center;
+    order: 4;
+  }
+  .area_article_title {
+    padding-left: 22rem;
+    padding-bottom: 34rem;
+  }
+  .area_article {
+    min-height: 931rem;
+    background-image: url("../images/area_article_iphone.webp");
+    padding: 324rem 16rem 324rem 16rem;
+    gap: 40rem;
+  }
+  .article_disciption {
+    padding-bottom: 30rem;
+  }
+  .card_list {
+    padding-top: 70rem;
+    min-height: 362rem;
+  }
+  .card_list_img {
+    width: 400rem;
+  }
+  .card_list_description {
+    padding: 20rem 26rem 31rem 26rem;
+    gap: 20rem;
+  }
+  .card_list_teg {
+    font-size: 12rem;
+    min-height: 20rem;
+  }
+  .swiper-wrapper {
+    width: 400rem;
+    align-items: start;
+  }
+  .ticket_area {
+    display: none;
+  }
+  .area_tests {
+    background-image: url("../images/ticket_area_img_iphone.webp");
+  }
+  .tests {
+    display: flex;
+    flex-direction: column;
+    padding: 70rem 18rem 0;
+    gap: 18rem;
+  }
+  .card_list_time_iphone {
+    display: none;
+  }
+  .card_list_title_iphone {
+    font-size: 20rem;
+    padding-top: 14rem;
+  }
+  .card_list_description_test {
+    gap: 0rem;
+    padding: 10rem 10rem 20rem;
+  }
+  .card_list_tegs {
+    padding-bottom: 11rem;
+    min-height: 20rem;
+  }
+  .test_first {
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+  }
+  .test_second {
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+  }
+  .test_third {
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+  }
+  .test_fourth {
+    display: grid;
+    grid-template-rows: 20rem 1fr;
+  }
+  .tests_area_button {
+    background-color: transparent;
+    top: 45rem;
+    right: -115rem;
+    width: 60rem;
+    min-height: 60rem;
+    background-image: url("../images/tests_area_button_iphone.svg");
+  }
+  .map_area {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    align-items: center;
+    min-height: 452rem;
+    width: 442rem;
+    background-size: auto 100%;
+    background-position: center;
+    background-image: url("../images/map_area_img_iphone.webp");
+  }
+  .risks_map_area_title {
+    padding-left: 20rem;
+  }
+  .button_map_area {
+    position: relative;
+    top: 510rem;
+    left: 20rem;
+  }
+  .footer_area {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    padding: 0 20rem;
+  }
+  .text-wrapper_title {
+    font-size: 20rem;
+  }
+  .text-wrapper {
+    gap: 20rem;
+  }
+  input[type="email"] {
+    width: 242rem;
+    height: 32rem;
+    font-size: 14rem;
+  }
+  #my-form-button {
+    width: 138rem;
+    min-height: 32rem;
+    font-size: 14rem;
+  }
+  input[type="email"]::placeholder {
+    font-size: 14rem;
+  }
+  #my-form {
+    gap: 20rem;
+  }
+  .social-list {
+    padding-top: 104rem;
+  }
+  .social-icon {
+    width: 32rem;
+  }
+  .footer_discription {
+    display: block;
+    position: relative;
+    top: -50rem;
+    align-self: start;
+    padding-left: 20rem;
+    font-size: 10rem;
+    width: 260rem;
+  }
+  .footer {
+    gap: 0;
+    padding-bottom: 0;
+  }
+  .footer_area_aboutus {
+    padding-bottom: 0;
+  }
+  .main_aboutus_background_iphone {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+  .main_aboutus_background {
+    display: none;
+  }
+  .main_aboutus {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, min-content);
+    column-gap: 0;
+    padding: 0;
+    padding-bottom: 100rem;
+  }
+  .aboutus_logo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding: 103rem 0 0 27rem;
+    height: 51rem;
+    gap: 15rem;
+  }
+  .aboutus_logo_img {
+    align-self: start;
+    width: 49rem;
+    height: auto;
+  }
+  .aboutus_logo_discription {
+    font-size: 14rem;
+  }
+  .aboutus_appeals_title {
+    font-size: 48rem;
+  }
+  .aboutus_appeals {
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .section_p_aboutus_appeals {
+    font-size: 14rem;
+    padding-top: 0;
+  }
+  .aboutus_information {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-left: 27rem;
+    gap: 71rem;
+  }
+  .section_p_aboutus {
+    font-size: 14rem;
+  }
+  .aboutus_ident {
+    flex-direction: column;
+    width: 117rem;
+  }
+  .liner {
+    left: -15rem;
+  }
+  .section_p_aboutus_iphone {
+    position: relative;
+    top: -60rem;
+  }
+  .aboutus_discription {
+    grid-column: 1 / 3;
+    width: 542rem;
+  }
+  .section_p_aboutus_iphone_par1 {
+    position: relative;
+    left: 210rem;
+    top: -230rem;
+    width: 220rem;
+  }
+  .section_p_aboutus_iphone_par2 {
+    position: relative;
+    left: 30rem;
+    top: -10rem;
+    width: 220rem;
+  }
+  .riskmap_section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100rem;
+  }
+  .button_riskmap {
+    top: 50rem;
+    left: 360rem;
+  }
+  .riskmap_discription {
+    padding: 160rem 20rem 50rem;
+  }
+  .title_h2_map {
+    font-size: 50rem;
+  }
+  .section_p_aboutus_map {
+    font-size: 20rem;
+  }
+  .riskmap_form {
+    width: 402rem;
+  }
+  .riskmap_discription_carefully {
+    font-size: 12rem;
+    padding-bottom: 20rem;
+  }
+  .riskmap_map_button {
+    display: none;
+  }
+  .riskmap_map_nav {
+    display: none;
+  }
+  .riskmap_map {
+    background-image: url("../images/riskmap_map_iphone.webp");
+  }
+  .footer_area_risk {
+    display: block;
+  }
+}

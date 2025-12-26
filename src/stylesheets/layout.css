@@ -109,6 +109,9 @@ footer {
   visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
+.header_menu_button_iphone {
+  display: none;
+}
 .menu-wrapper.scrolled .header_menu_button {
   opacity: 1;
   visibility: visible;
@@ -167,6 +170,33 @@ footer {
   border-radius: 25rem;
   border: none;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.2s ease-in-out;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/button_img.webp");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: -1;
+}
+.button:hover {
+  color: white;
+}
+.button:hover::before {
+  opacity: 1;
 }
 .extra_button {
   justify-self: end;
@@ -193,6 +223,9 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40rem 40rem 31rem;
+}
+.first_help_img_iphone {
+  display: none;
 }
 .first_help_banner_title {
   grid-column: 1;
@@ -399,6 +432,7 @@ footer {
   column-gap: 25rem;
 }
 .card_list_description_test {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, min-content);
@@ -406,6 +440,39 @@ footer {
   gap: 15rem;
   border-radius: 20rem;
   background-color: white;
+}
+.card_list_description_test::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/card_list_description_test.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 0;
+}
+
+.card_list_description_test:hover::before {
+  opacity: 1;
+}
+.card_list_description_test > * {
+  position: relative;
+  z-index: 1;
+}
+.card_list_description_test:has(.title_h4):hover .title_h4 {
+  color: white;
+}
+.card_list_description_test:has(.title_h4):hover .card_list_teg {
+  color: black;
+}
+.card_list_description_test:has(.title_h4):hover .card_list_teg_white {
+  color: #ff5e00;
+  background-color: transparent;
 }
 .test_first {
   grid-column: 1;
@@ -529,6 +596,10 @@ input[type="email"]::placeholder {
   background-color: white;
   color: #000;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+#my-form-button:hover {
+  color: white;
 }
 #my-form-status {
   font-family: "Gramatika Regular", Arial, sans-serif;
