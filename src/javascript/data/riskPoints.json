@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Парк Горького",
+    "coordinates": [55.731386, 37.603040],
+    "types": ["toxic", "seasonal", "flowering", "summerActive", "city"]
+  },
+  {
+    "id": 2,
+    "name": "ВДНХ",
+    "coordinates": [55.828150, 37.630400],
+    "types": ["contact", "dogDanger", "fruiting", "springActive", "city"]
+  },
+  {
+    "id": 3,
+    "name": "Нескучный сад",
+    "coordinates": [55.719740, 37.585960],
+    "types": ["poisonous", "catDanger", "flowering", "fallActive", "yard"]
+  },
+  {
+    "id": 4,
+    "name": "Коломенское",
+    "coordinates": [55.667520, 37.671700],
+    "types": ["seasonal", "poisonous", "summerActive", "fruiting", "forest"]
+  },
+  {
+    "id": 5,
+    "name": "Царицыно",
+    "coordinates": [55.615560, 37.680400],
+    "types": ["toxic", "contact", "flowering", "springActive", "city"]
+  },
+  {
+    "id": 6,
+    "name": "Сокольники",
+    "coordinates": [55.794490, 37.671400],
+    "types": ["seasonal", "dogDanger", "fallActive", "fruiting", "forest"]
+  },
+  {
+    "id": 7,
+    "name": "Измайловский парк",
+    "coordinates": [55.790580, 37.795500],
+    "types": ["contact", "catDanger", "summerActive", "flowering", "city"]
+  },
+  {
+    "id": 8,
+    "name": "Битцевский лес",
+    "coordinates": [55.625870, 37.550640],
+    "types": ["poisonous", "dogDanger", "springActive", "fruiting", "forest"]
+  },
+  {
+    "id": 9,
+    "name": "Воробьёвы горы",
+    "coordinates": [55.709660, 37.542960],
+    "types": ["toxic", "seasonal", "flowering", "fallActive", "yard"]
+  },
+  {
+    "id": 10,
+    "name": "Кузьминки",
+    "coordinates": [55.692870, 37.767300],
+    "types": ["contact", "catDanger", "summerActive", "fruiting", "city"]
+  },
+  {
+    "id": 11,
+    "name": "Фили",
+    "coordinates": [55.746300, 37.497700],
+    "types": ["seasonal", "poisonous", "springActive", "flowering", "forest"]
+  },
+  {
+    "id": 12,
+    "name": "Тропарёво",
+    "coordinates": [55.646550, 37.472000],
+    "types": ["toxic", "dogDanger", "fallActive", "fruiting", "yard"]
+  },
+  {
+    "id": 13,
+    "name": "Лосиный остров",
+    "coordinates": [55.864200, 37.736600],
+    "types": ["poisonous", "contact", "summerActive", "flowering", "forest"]
+  },
+  {
+    "id": 14,
+    "name": "Покровское-Стрешнево",
+    "coordinates": [55.820400, 37.470800],
+    "types": ["seasonal", "catDanger", "springActive", "fruiting", "city"]
+  },
+  {
+    "id": 15,
+    "name": "Красная Пресня",
+    "coordinates": [55.762700, 37.562100],
+    "types": ["toxic", "dogDanger", "flowering", "fallActive", "city"]
+  },
+  {
+    "id": 16,
+    "name": "Парк Победы",
+    "coordinates": [55.733050, 37.512100],
+    "types": ["seasonal", "toxic", "summerActive", "flowering", "city"]
+  },
+  {
+    "id": 17,
+    "name": "Ботанический сад МГУ",
+    "coordinates": [55.705700, 37.527300],
+    "types": ["poisonous", "catDanger", "springActive", "fruiting", "yard"]
+  },
+  {
+    "id": 18,
+    "name": "Парк Фили",
+    "coordinates": [55.750200, 37.489500],
+    "types": ["contact", "dogDanger", "fallActive", "flowering", "forest"]
+  },
+  {
+    "id": 19,
+    "name": "Серебряный бор",
+    "coordinates": [55.782600, 37.423700],
+    "types": ["seasonal", "poisonous", "summerActive", "fruiting", "forest"]
+  },
+  {
+    "id": 20,
+    "name": "Парк Кусково",
+    "coordinates": [55.736100, 37.809400],
+    "types": ["toxic", "contact", "springActive", "flowering", "city"]
+  },
+  {
+    "id": 21,
+    "name": "Главный ботанический сад",
+    "coordinates": [55.841900, 37.600100],
+    "types": ["poisonous", "catDanger", "flowering", "fallActive", "yard"]
+  },
+  {
+    "id": 22,
+    "name": "Парк Северное Тушино",
+    "coordinates": [55.859200, 37.435900],
+    "types": ["seasonal", "dogDanger", "summerActive", "fruiting", "city"]
+  },
+  {
+    "id": 23,
+    "name": "Таганский парк",
+    "coordinates": [55.741600, 37.661500],
+    "types": ["toxic", "contact", "springActive", "flowering", "city"]
+  },
+  {
+    "id": 24,
+    "name": "Парк Дружбы",
+    "coordinates": [55.839800, 37.492800],
+    "types": ["seasonal", "catDanger", "fallActive", "fruiting", "yard"]
+  },
+  {
+    "id": 25,
+    "name": "Бульвар Дмитрия Донского",
+    "coordinates": [55.568900, 37.574700],
+    "types": ["poisonous", "dogDanger", "summerActive", "flowering", "city"]
+  },
+  {
+    "id": 26,
+    "name": "Парк Ангарские пруды",
+    "coordinates": [55.614500, 37.584300],
+    "types": ["contact", "toxic", "springActive", "fruiting", "yard"]
+  },
+  {
+    "id": 27,
+    "name": "Терлецкий парк",
+    "coordinates": [55.753900, 37.831200],
+    "types": ["seasonal", "poisonous", "fallActive", "flowering", "forest"]
+  },
+  {
+    "id": 28,
+    "name": "Парк Братеево",
+    "coordinates": [55.633400, 37.744700],
+    "types": ["catDanger", "contact", "summerActive", "fruiting", "city"]
+  },
+  {
+    "id": 29,
+    "name": "Парк 850-летия Москвы",
+    "coordinates": [55.876100, 37.531900],
+    "types": ["dogDanger", "toxic", "springActive", "flowering", "city"]
+  },
+  {
+    "id": 30,
+    "name": "Парк Левобережный",
+    "coordinates": [55.857300, 37.481000],
+    "types": ["seasonal", "poisonous", "fallActive", "fruiting", "yard"]
+  },
+  {
+    "id": 31,
+    "name": "Бабушкинский парк",
+    "coordinates": [55.868600, 37.662100],
+    "types": ["contact", "catDanger", "summerActive", "flowering", "forest"]
+  },
+  {
+    "id": 32,
+    "name": "Парк Олимпийская деревня",
+    "coordinates": [55.811800, 37.485200],
+    "types": ["toxic", "dogDanger", "springActive", "fruiting", "city"]
+  },
+  {
+    "id": 33,
+    "name": "Митинский парк",
+    "coordinates": [55.839500, 37.356800],
+    "types": ["seasonal", "contact", "fallActive", "flowering", "yard"]
+  },
+  {
+    "id": 34,
+    "name": "Парк Кузьминки-Люблино",
+    "coordinates": [55.690400, 37.780600],
+    "types": ["poisonous", "catDanger", "summerActive", "fruiting", "forest"]
+  },
+  {
+    "id": 35,
+    "name": "Александровский сад",
+    "coordinates": [55.752000, 37.611500],
+    "types": ["seasonal", "toxic", "springActive", "flowering", "city"]
+  },
+  {
+    "id": 36,
+    "name": "Парк Красногвардейские пруды",
+    "coordinates": [55.762500, 37.743800],
+    "types": ["contact", "dogDanger", "fallActive", "fruiting", "yard"]
+  },
+  {
+    "id": 37,
+    "name": "Парк Перовский",
+    "coordinates": [55.749800, 37.791400],
+    "types": ["poisonous", "seasonal", "summerActive", "flowering", "city"]
+  },
+  {
+    "id": 38,
+    "name": "Парк Красная Пахра",
+    "coordinates": [55.558200, 37.528300],
+    "types": ["toxic", "catDanger", "springActive", "fruiting", "forest"]
+  },
+  {
+    "id": 39,
+    "name": "Парк Дубки",
+    "coordinates": [55.831700, 37.404200],
+    "types": ["seasonal", "contact", "fallActive", "flowering", "yard"]
+  },
+  {
+    "id": 40,
+    "name": "Лианозовский парк",
+    "coordinates": [55.896900, 37.570300],
+    "types": ["dogDanger", "poisonous", "summerActive", "fruiting", "forest"]
+  }
+]

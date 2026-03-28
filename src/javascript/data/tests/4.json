@@ -1,0 +1,142 @@
+{
+  "id": 4,
+  "card": {
+    "image": "../../images/tests/test4.jpg",
+    "readTime": "4 минуты",
+    "tags": ["Собаки", "Про животных"],
+    "title": "Почему твой питомец ведёт себя как персонаж TikTok",
+    "date": "1 декабря 2025"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "image": "../../images/tests/test_process/test4/1.png",
+      "question": "Почему кот садится прямо перед экраном?",
+      "options": [
+        { "id": "a", "text": "Тепло", "isCorrect": false },
+        { "id": "b", "text": "Реагирует на движение как на живую добычу", "isCorrect": true },
+        { "id": "c", "text": "Ревнует", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "../../images/tests/test_process/test4/2.png",
+      "question": "Почему собака «говорит» разными звуками?",
+      "options": [
+        { "id": "a", "text": "Каприз", "isCorrect": false },
+        { "id": "b", "text": "Пытается копировать интонации человека", "isCorrect": true },
+        { "id": "c", "text": "Болезнь", "isCorrect": false },
+        { "id": "d", "text": "Скука", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "../../images/tests/test_process/test4/3.png",
+      "question": "Почему кот резко атакует ноги из-за угла?",
+      "options": [
+        { "id": "a", "text": "Злится", "isCorrect": false },
+        { "id": "b", "text": "Засадная охота — природный паттерн", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Мстит", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "../../images/tests/test_process/test4/4.png",
+      "question": "Почему собака приносит одну и ту же игрушку?",
+      "options": [
+        { "id": "a", "text": "Других нет", "isCorrect": false },
+        { "id": "b", "text": "Самый сильный запах «стаи» на ней", "isCorrect": true },
+        { "id": "c", "text": "Привычка", "isCorrect": false },
+        { "id": "d", "text": "Любит цвет", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "../../images/tests/test_process/test4/5.png",
+      "question": "Почему кошка сидит в раковине?",
+      "options": [
+        { "id": "a", "text": "Холодно", "isCorrect": false },
+        { "id": "b", "text": "Форма даёт ощущение укрытия", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "../../images/tests/test_process/test4/6.png",
+      "question": "Почему собака кладёт подбородок на колени?",
+      "options": [
+        { "id": "a", "text": "Просит еду", "isCorrect": false },
+        { "id": "b", "text": "Запрашивает контакт и внимание", "isCorrect": true },
+        { "id": "c", "text": "Устала", "isCorrect": false },
+        { "id": "d", "text": "Играет", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "../../images/tests/test_process/test4/7.png",
+      "question": "Почему кот «разговаривает» ночью?",
+      "options": [
+        { "id": "a", "text": "Скучно", "isCorrect": false },
+        { "id": "b", "text": "Пик активности хищника приходится на сумерки", "isCorrect": true },
+        { "id": "c", "text": "Болен", "isCorrect": false },
+        { "id": "d", "text": "Голоден", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "../../images/tests/test_process/test4/8.png",
+      "question": "Почему собака следует за вами в туалет?",
+      "options": [
+        { "id": "a", "text": "Любопытно", "isCorrect": false },
+        { "id": "b", "text": "Инстинкт не оставлять члена стаи одного", "isCorrect": true },
+        { "id": "c", "text": "Просит еду", "isCorrect": false },
+        { "id": "d", "text": "Боится", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../../images/tests/test_process/test4/9.png",
+      "question": "Почему кот ложится на клавиатуру?",
+      "options": [
+        { "id": "a", "text": "Тепло", "isCorrect": false },
+        { "id": "b", "text": "Перекрывает объект, который забирает ваше внимание", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "../../images/tests/test_process/test4/10.png",
+      "question": "Почему собака резко встряхивается, даже когда сухая?",
+      "options": [
+        { "id": "a", "text": "Чешется", "isCorrect": false },
+        { "id": "b", "text": "Сбрасывает стресс и «перезагружает» нервную систему", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Привычка", "isCorrect": false }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "TikTok-новичок",
+      "description": "Твой питомец — звезда, но ты ещё не разгадал все его секреты!"
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "TikTok-знаток",
+      "description": "Ты неплохо понимаешь вирусное поведение своего питомца!"
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "TikTok-эксперт",
+      "description": "Ты точно знаешь, почему твой питомец — звезда интернета!"
+    }
+  ]
+}

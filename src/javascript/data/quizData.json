@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "question": "Как часто вы можете давать псу сыр?",
+    "image": "./images/tests/dog-cheese.png",
+    "options": [
+      { "id": 1, "text": "1 раз в неделю", "isCorrect": false },
+      { "id": 2, "text": "2 раза в неделю", "isCorrect": false },
+      { "id": 3, "text": "1 раз в день", "isCorrect": true },
+      { "id": 4, "text": "1 раз в месяц", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Сколько раз в день нужно кормить взрослую собаку?",
+    "image": "./images/tests/dog-cheese.png",
+    "options": [
+      { "id": 1, "text": "1 раз в день", "isCorrect": false },
+      { "id": 2, "text": "2 раза в день", "isCorrect": true },
+      { "id": 3, "text": "3 раза в день", "isCorrect": false },
+      { "id": 4, "text": "4 раза в день", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Можно ли давать собаке шоколад?",
+    "image": "./images/tests/dog-cheese.png",
+    "options": [
+      { "id": 1, "text": "Да, в небольших количествах", "isCorrect": false },
+      { "id": 2, "text": "Нет, это опасно", "isCorrect": true },
+      { "id": 3, "text": "Только темный шоколад", "isCorrect": false },
+      { "id": 4, "text": "Только по праздникам", "isCorrect": false }
+    ]
+  }
+]

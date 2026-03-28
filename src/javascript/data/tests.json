@@ -1,0 +1,59 @@
+[
+  {
+    "id": "dog-nutrition-test",
+    "title": "Тест: Питание собак",
+    "description": "Проверьте свои знания о правильном питании питомцев",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Как часто вы можете давать псу сыр?",
+        "image": "/src/images/tests/dog-cheese.jpg",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 раз в неделю",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "2 раза в неделю",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "1 раз в день",
+            "isCorrect": true
+          },
+          {
+            "id": "d",
+            "text": "1 раз в месяц",
+            "isCorrect": false
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "minScore": 0,
+        "maxScore": 3,
+        "title": "Стоит быть внимательнее к песику!",
+        "description": "Стоит быть внимательнее к песику!",
+        "image": "/src/images/tests/result-low.jpg"
+      },
+      {
+        "minScore": 4,
+        "maxScore": 7,
+        "title": "Хороший результат!",
+        "description": "Вы на правильном пути!",
+        "image": "/src/images/tests/result-medium.jpg"
+      },
+      {
+        "minScore": 8,
+        "maxScore": 10,
+        "title": "Ты ответственный хозяин!",
+        "description": "Ты поддерживаешь правильное питание питомца на...",
+        "image": "/src/images/tests/result-high.jpg"
+      }
+    ]
+  }
+]

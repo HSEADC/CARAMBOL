@@ -1,0 +1,142 @@
+{
+  "id": 7,
+  "card": {
+    "image": "../../images/tests/test7.jpg",
+    "readTime": "6 минут",
+    "tags": ["Кошки", "Про растения"],
+    "title": "Эти растения могут медленно убивать кошку у тебя дома",
+    "date": "1 декабря 2025"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "image": "../../images/tests/test_process/test7/1.png",
+      "question": "Самое опасное растение для кошек:",
+      "options": [
+        { "id": "a", "text": "Фикус", "isCorrect": false },
+        { "id": "b", "text": "Алоэ", "isCorrect": false },
+        { "id": "c", "text": "Лилии", "isCorrect": true },
+        { "id": "d", "text": "Пальма", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "../../images/tests/test_process/test7/2.png",
+      "question": "Чем опасна диффенбахия?",
+      "options": [
+        { "id": "a", "text": "Запах", "isCorrect": false },
+        { "id": "b", "text": "Ожог слизистой кристаллами оксалата", "isCorrect": true },
+        { "id": "c", "text": "Пыльца", "isCorrect": false },
+        { "id": "d", "text": "Листья", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "../../images/tests/test_process/test7/3.png",
+      "question": "Чем опасен спатифиллум?",
+      "options": [
+        { "id": "a", "text": "Пыльца", "isCorrect": false },
+        { "id": "b", "text": "Кристаллы, травмирующие рот и гортань", "isCorrect": true },
+        { "id": "c", "text": "Запах", "isCorrect": false },
+        { "id": "d", "text": "Корни", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "../../images/tests/test_process/test7/4.png",
+      "question": "Почему опасен алоэ?",
+      "options": [
+        { "id": "a", "text": "Колючки", "isCorrect": false },
+        { "id": "b", "text": "Вызывает рвоту и диарею у кошек", "isCorrect": true },
+        { "id": "c", "text": "Запах", "isCorrect": false },
+        { "id": "d", "text": "Листья", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "../../images/tests/test_process/test7/5.png",
+      "question": "Чем опасен фикус?",
+      "options": [
+        { "id": "a", "text": "Пыль", "isCorrect": false },
+        { "id": "b", "text": "Млечный сок токсичен", "isCorrect": true },
+        { "id": "c", "text": "Листья острые", "isCorrect": false },
+        { "id": "d", "text": "Корни", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "../../images/tests/test_process/test7/6.png",
+      "question": "Почему опасны тюльпаны?",
+      "options": [
+        { "id": "a", "text": "Листья", "isCorrect": false },
+        { "id": "b", "text": "Луковицы наиболее токсичны", "isCorrect": true },
+        { "id": "c", "text": "Запах", "isCorrect": false },
+        { "id": "d", "text": "Пыльца", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "../../images/tests/test_process/test7/7.png",
+      "question": "Чем опасен плющ?",
+      "options": [
+        { "id": "a", "text": "Запах", "isCorrect": false },
+        { "id": "b", "text": "Токсичен при поедании листьев", "isCorrect": true },
+        { "id": "c", "text": "Пыльца", "isCorrect": false },
+        { "id": "d", "text": "Корни", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "../../images/tests/test_process/test7/8.png",
+      "question": "Почему опасен олеандр?",
+      "options": [
+        { "id": "a", "text": "Пыльца", "isCorrect": false },
+        { "id": "b", "text": "Содержит сердечные гликозиды", "isCorrect": true },
+        { "id": "c", "text": "Листья колючие", "isCorrect": false },
+        { "id": "d", "text": "Запах", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../../images/tests/test_process/test7/9.png",
+      "question": "Чем опасен каланхоэ?",
+      "options": [
+        { "id": "a", "text": "Листья", "isCorrect": false },
+        { "id": "b", "text": "Влияет на сердечный ритм", "isCorrect": true },
+        { "id": "c", "text": "Запах", "isCorrect": false },
+        { "id": "d", "text": "Пыльца", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "../../images/tests/test_process/test7/10.png",
+      "question": "Почему даже вода из вазы с лилиями опасна?",
+      "options": [
+        { "id": "a", "text": "Грязная", "isCorrect": false },
+        { "id": "b", "text": "Содержит токсичную пыльцу", "isCorrect": true },
+        { "id": "c", "text": "Цветёт", "isCorrect": false },
+        { "id": "d", "text": "Запах", "isCorrect": false }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "Новичок в ботанике",
+      "description": "Опасные растения — серьёзная тема, тебе стоит узнать больше!"
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "Знаток растений",
+      "description": "Ты неплохо разбираешься в опасных растениях!"
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "Эксперт по безопасности",
+      "description": "Ты отлично знаешь, какие растения опасны для кошек!"
+    }
+  ]
+}

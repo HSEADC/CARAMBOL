@@ -1,0 +1,142 @@
+{
+  "id": 6,
+  "card": {
+    "image": "../../images/tests/test6.png",
+    "readTime": "5 минут",
+    "tags": ["Собаки", "Про животных"],
+    "title": "То, что делает твой питомец, есть только у хищников",
+    "date": "1 декабря 2025"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "image": "../../images/tests/test_process/test6/1.png",
+      "question": "Почему кошка «замирает» перед прыжком?",
+      "options": [
+        { "id": "a", "text": "Боится", "isCorrect": false },
+        { "id": "b", "text": "Фиксация дистанции до добычи", "isCorrect": true },
+        { "id": "c", "text": "Игра", "isCorrect": false },
+        { "id": "d", "text": "Устала", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "../../images/tests/test_process/test6/2.png",
+      "question": "Почему собака несёт добычу (игрушку) в укромное место?",
+      "options": [
+        { "id": "a", "text": "Прячет", "isCorrect": false },
+        { "id": "b", "text": "Поведение поедания в безопасности", "isCorrect": true },
+        { "id": "c", "text": "Игра", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "../../images/tests/test_process/test6/3.png",
+      "question": "Почему кошка атакует из-за угла?",
+      "options": [
+        { "id": "a", "text": "Весело", "isCorrect": false },
+        { "id": "b", "text": "Засадная тактика хищника", "isCorrect": true },
+        { "id": "c", "text": "Злость", "isCorrect": false },
+        { "id": "d", "text": "Скука", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "../../images/tests/test_process/test6/4.png",
+      "question": "Почему собака трясёт игрушку из стороны в сторону?",
+      "options": [
+        { "id": "a", "text": "Игра", "isCorrect": false },
+        { "id": "b", "text": "Имитация убийства добычи", "isCorrect": true },
+        { "id": "c", "text": "Злость", "isCorrect": false },
+        { "id": "d", "text": "Привычка", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "../../images/tests/test_process/test6/5.png",
+      "question": "Почему кошка следит за каждым движением пальцев?",
+      "options": [
+        { "id": "a", "text": "Интерес", "isCorrect": false },
+        { "id": "b", "text": "Микродвижения воспринимаются как добыча", "isCorrect": true },
+        { "id": "c", "text": "Игра", "isCorrect": false },
+        { "id": "d", "text": "Скука", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "../../images/tests/test_process/test6/6.png",
+      "question": "Почему собака замирает, услышав шорох?",
+      "options": [
+        { "id": "a", "text": "Боится", "isCorrect": false },
+        { "id": "b", "text": "Фокусировка на потенциальной добыче", "isCorrect": true },
+        { "id": "c", "text": "Слушает хозяина", "isCorrect": false },
+        { "id": "d", "text": "Привычка", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "../../images/tests/test_process/test6/7.png",
+      "question": "Почему кошка приносит игрушку в зубах?",
+      "options": [
+        { "id": "a", "text": "Игра", "isCorrect": false },
+        { "id": "b", "text": "Перенос добычи в безопасное место", "isCorrect": true },
+        { "id": "c", "text": "Просит внимания", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "../../images/tests/test_process/test6/8.png",
+      "question": "Почему собака обнюхивает воздух, подняв голову?",
+      "options": [
+        { "id": "a", "text": "Игра", "isCorrect": false },
+        { "id": "b", "text": "Ловит воздушные запаховые следы", "isCorrect": true },
+        { "id": "c", "text": "Скука", "isCorrect": false },
+        { "id": "d", "text": "Устала", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../../images/tests/test_process/test6/9.png",
+      "question": "Почему кошка бьёт лапой быстро и резко?",
+      "options": [
+        { "id": "a", "text": "Злость", "isCorrect": false },
+        { "id": "b", "text": "Способ оглушить добычу", "isCorrect": true },
+        { "id": "c", "text": "Игра", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "../../images/tests/test_process/test6/10.png",
+      "question": "Почему собака предпочитает скрипящие игрушки?",
+      "options": [
+        { "id": "a", "text": "Громко", "isCorrect": false },
+        { "id": "b", "text": "Звук напоминает писк раненой добычи", "isCorrect": true },
+        { "id": "c", "text": "Привычка", "isCorrect": false },
+        { "id": "d", "text": "Цвет нравится", "isCorrect": false }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "Новичок в мире хищников",
+      "description": "Хищные инстинкты питомцев — целый мир, который тебе ещё предстоит открыть!"
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "Знаток хищников",
+      "description": "Ты неплохо понимаешь хищную натуру своего питомца!"
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "Эксперт по хищникам",
+      "description": "Ты отлично разбираешься в повадках хищников!"
+    }
+  ]
+}

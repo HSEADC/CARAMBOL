@@ -1,0 +1,142 @@
+{
+  "id": 3,
+  "card": {
+    "image": "../../images/tests/test3.jpg",
+    "readTime": "5 минут",
+    "tags": ["Кошки", "Про животных"],
+    "title": "Ты точно живёшь с питомцем? 10 фактов, которые ломают мозг",
+    "date": "1 декабря 2025"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "image": "../../../images/tests/test_process/test3/1.png",
+      "question": "Почему кошка может внезапно укусить во время ласки?",
+      "options": [
+        { "id": "a", "text": "Злится", "isCorrect": false },
+        { "id": "b", "text": "Играет", "isCorrect": false },
+        { "id": "c", "text": "Наступила сенсорная перегрузка от прикосновений", "isCorrect": true },
+        { "id": "d", "text": "Просит еду", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "../../../images/tests/test_process/test3/2.png",
+      "question": "Почему собака иногда «улыбается» во сне?",
+      "options": [
+        { "id": "a", "text": "Видит хозяина", "isCorrect": false },
+        { "id": "b", "text": "Фаза сна с активной мимикой и движениями", "isCorrect": true },
+        { "id": "c", "text": "Реагирует на шум", "isCorrect": false },
+        { "id": "d", "text": "Притворяется", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "../../../images/tests/test_process/test3/3.png",
+      "question": "Почему кошка пьёт из крана, игнорируя миску?",
+      "options": [
+        { "id": "a", "text": "Играет", "isCorrect": false },
+        { "id": "b", "text": "Любит звук воды", "isCorrect": false },
+        { "id": "c", "text": "Инстинкт выбирать проточную воду как более безопасную", "isCorrect": true },
+        { "id": "d", "text": "Не видит миску", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "../../../images/tests/test_process/test3/4.png",
+      "question": "Почему собака нюхает человека дольше обычного?",
+      "options": [
+        { "id": "a", "text": "Ищет еду", "isCorrect": false },
+        { "id": "b", "text": "Считывает гормональный фон и эмоции", "isCorrect": true },
+        { "id": "c", "text": "Узнаёт одежду", "isCorrect": false },
+        { "id": "d", "text": "Проверяет запах духов", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "../../../images/tests/test_process/test3/5.png",
+      "question": "Почему кошка спит на голове человека?",
+      "options": [
+        { "id": "a", "text": "Выше — безопаснее", "isCorrect": false },
+        { "id": "b", "text": "Мягче", "isCorrect": false },
+        { "id": "c", "text": "Теплее и сильнее ощущается запах владельца", "isCorrect": true },
+        { "id": "d", "text": "Привычка", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "../../../images/tests/test_process/test3/6.png",
+      "question": "Почему собака выбирает одного члена семьи «главным»?",
+      "options": [
+        { "id": "a", "text": "Кто кормит", "isCorrect": false },
+        { "id": "b", "text": "Кто играет", "isCorrect": false },
+        { "id": "c", "text": "Кто даёт больше предсказуемости и спокойствия", "isCorrect": true },
+        { "id": "d", "text": "Кто строже", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "../../../images/tests/test_process/test3/7.png",
+      "question": "Почему кошки любят ронять предметы?",
+      "options": [
+        { "id": "a", "text": "Вредничают", "isCorrect": false },
+        { "id": "b", "text": "Проверяют реакцию и свойства предмета как добычи", "isCorrect": true },
+        { "id": "c", "text": "Скучают", "isCorrect": false },
+        { "id": "d", "text": "Мстят", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "../../../images/tests/test_process/test3/8.png",
+      "question": "Почему собака может лизать пол?",
+      "options": [
+        { "id": "a", "text": "Ищет еду", "isCorrect": false },
+        { "id": "b", "text": "Признак стресса или проблем с ЖКТ", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Чистит язык", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../../../images/tests/test_process/test3/9.png",
+      "question": "Почему кошка может «залипать» на вентилятор?",
+      "options": [
+        { "id": "a", "text": "Боится", "isCorrect": false },
+        { "id": "b", "text": "Слушает звук", "isCorrect": false },
+        { "id": "c", "text": "Отслеживает повторяющееся движение как потенциальную добычу", "isCorrect": true },
+        { "id": "d", "text": "Любит ветер", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "../../../images/tests/test_process/test3/10.png",
+      "question": "Почему собака приносит вам тапок?",
+      "options": [
+        { "id": "a", "text": "Играет", "isCorrect": false },
+        { "id": "b", "text": "Хочет гулять", "isCorrect": false },
+        { "id": "c", "text": "Предлагает социальный контакт через предмет с вашим запахом", "isCorrect": true },
+        { "id": "d", "text": "Путает с игрушкой", "isCorrect": false }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "Новичок в мире питомцев",
+      "description": "Питомцы полны сюрпризов — тебе ещё многое предстоит узнать!"
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "Знаток питомцев",
+      "description": "Ты неплохо разбираешься в поведении животных!"
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "Эксперт по питомцам",
+      "description": "Ты отлично понимаешь своих питомцев!"
+    }
+  ]
+}

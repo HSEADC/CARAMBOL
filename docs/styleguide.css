@@ -219,7 +219,8 @@ body::-webkit-scrollbar {
   align-items: start;
   grid-template-columns: 207rem 1fr;
   padding: 135rem 50rem;
-  column-gap: 135rem;
+  -moz-column-gap: 135rem;
+       column-gap: 135rem;
 }
 .styleguide_nav {
   position: sticky;
@@ -289,7 +290,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-wrap: wrap;
   row-gap: 20rem;
-  column-gap: 19rem;
+  -moz-column-gap: 19rem;
+       column-gap: 19rem;
 }
 .feature_button {
   min-height: 50rem;
@@ -403,7 +405,8 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(3, 320rem);
   grid-template-rows: repeat(3, min-content);
   row-gap: 50rem;
-  column-gap: 20rem;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
 }
 .section_title_h2 {
   display: flex;
@@ -459,7 +462,8 @@ body::-webkit-scrollbar {
   display: flex;
   width: 660rem;
   flex-wrap: wrap;
-  column-gap: 35rem;
+  -moz-column-gap: 35rem;
+       column-gap: 35rem;
   row-gap: 25rem;
 }
 .icons_img {

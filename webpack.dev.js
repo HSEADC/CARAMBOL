@@ -1,0 +1,19 @@
+const { merge } = require('webpack-merge')
+const common = require('./webpack.common.js')
+const path = require('path')
+
+module.exports = merge(common, {
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dev_build',
+    historyApiFallback: {
+      rewrites: [
+        { from: /./, to: '/404.html' }
+      ]
+    }
+  },
+  output: {
+    path: path.resolve(__dirname, 'dev_build')
+  }
+})

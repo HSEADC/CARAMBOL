@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <title><%= htmlWebpackPlugin.options.title %> | Карамболь</title>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.title %> — статья о безопасности питомцев от сервиса Карамболь. Полезная информация для владельцев кошек и собак." />
+    <meta name="keywords" content="безопасность питомцев, здоровье животных, кошки, собаки, растения, ветеринария" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %> | Карамболь" />
+    <meta property="og:description" content="Статья о безопасности питомцев от сервиса Карамболь." />
+    <meta property="og:site_name" content="Карамболь" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %> | Карамболь" />
+
+    <analytics></analytics>
+  </head>
+  <body>
+    <navbar></navbar>
+
+    <div id="article-root" data-article-id="<%= htmlWebpackPlugin.options.articleId %>"></div>
+
+    <footer></footer>
+  </body>
+</html>

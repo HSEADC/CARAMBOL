@@ -1,0 +1,65 @@
+.SO_Navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+
+.SO_footerLinks {
+  display: flex;
+  justify-content: space-between;
+
+  * {
+    font-size: 0.97vw;
+  }
+}
+
+.SO_page404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+
+  .bubble-icon {
+    position: absolute;
+    bottom: 3.47vw;
+    animation: floatUp linear forwards;
+    animation-fill-mode: both;
+    z-index: 1;
+  }
+}
+
+.SO_overflowHidden {
+  overflow: hidden;
+}
+
+.SO_Styleguide {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6.94vw;
+  gap: 3.47vw;
+
+  p {
+    width: 42.36vw;
+    font-size: 1.25vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .SO_Navbar {
+    margin-top: 11.14vw;
+  }
+
+  .SO_footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11.36vw;
+
+    * {
+      font-size: 12px !important;
+      line-height: 100%;
+    }
+  }
+}

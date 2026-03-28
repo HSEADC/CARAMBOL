@@ -1,0 +1,142 @@
+{
+  "id": 5,
+  "card": {
+    "image": "../../images/tests/test5.jpg",
+    "readTime": "5 минут",
+    "tags": ["Кошки", "Про животных"],
+    "title": "10 привычек питомца, которые на самом деле древние инстинкты",
+    "date": "1 декабря 2025"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "image": "../../images/tests/test_process/test5/1.png",
+      "question": "Почему кошка выбирает самые высокие места в доме?",
+      "options": [
+        { "id": "a", "text": "Любит высоту", "isCorrect": false },
+        { "id": "b", "text": "Теплее", "isCorrect": false },
+        { "id": "c", "text": "Инстинкт наблюдать территорию с безопасной точки", "isCorrect": true },
+        { "id": "d", "text": "Привычка", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "../../images/tests/test_process/test5/2.png",
+      "question": "Почему собака закапывает еду в диван или плед?",
+      "options": [
+        { "id": "a", "text": "Играет", "isCorrect": false },
+        { "id": "b", "text": "Прячет от хозяина", "isCorrect": false },
+        { "id": "c", "text": "Поведение «запаса» на голодные времена", "isCorrect": true },
+        { "id": "d", "text": "Любит мягкое", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "../../images/tests/test_process/test5/3.png",
+      "question": "Почему кошка охотится на движущиеся тени?",
+      "options": [
+        { "id": "a", "text": "Игра", "isCorrect": false },
+        { "id": "b", "text": "Реакция на мельчайшее движение как на добычу", "isCorrect": true },
+        { "id": "c", "text": "Плохое зрение", "isCorrect": false },
+        { "id": "d", "text": "Скука", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "../../images/tests/test_process/test5/4.png",
+      "question": "Почему собака трётся о траву спиной?",
+      "options": [
+        { "id": "a", "text": "Чешется", "isCorrect": false },
+        { "id": "b", "text": "Маскирует собственный запах", "isCorrect": true },
+        { "id": "c", "text": "Играет", "isCorrect": false },
+        { "id": "d", "text": "Охлаждается", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "../../images/tests/test_process/test5/5.png",
+      "question": "Почему кошка умывается после еды?",
+      "options": [
+        { "id": "a", "text": "Чистоплотность", "isCorrect": false },
+        { "id": "b", "text": "Удаляет запах добычи, чтобы не привлекать хищников", "isCorrect": true },
+        { "id": "c", "text": "Привычка", "isCorrect": false },
+        { "id": "d", "text": "Игра", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "../../images/tests/test_process/test5/6.png",
+      "question": "Почему собака ложится у входной двери?",
+      "options": [
+        { "id": "a", "text": "Холодно", "isCorrect": false },
+        { "id": "b", "text": "Контроль точки входа на территорию", "isCorrect": true },
+        { "id": "c", "text": "Ждёт прогулку", "isCorrect": false },
+        { "id": "d", "text": "Случайно", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "../../images/tests/test_process/test5/7.png",
+      "question": "Почему кошка кусает во время игры?",
+      "options": [
+        { "id": "a", "text": "Злость", "isCorrect": false },
+        { "id": "b", "text": "Тренировка смертельного укуса добычи", "isCorrect": true },
+        { "id": "c", "text": "Баловство", "isCorrect": false },
+        { "id": "d", "text": "Скука", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "../../images/tests/test_process/test5/8.png",
+      "question": "Почему собака ходит кругами по новой территории?",
+      "options": [
+        { "id": "a", "text": "Игра", "isCorrect": false },
+        { "id": "b", "text": "Сканирует запахи и границы", "isCorrect": true },
+        { "id": "c", "text": "Нервничает", "isCorrect": false },
+        { "id": "d", "text": "Ищет хозяина", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "../../images/tests/test_process/test5/9.png",
+      "question": "Почему кошка любит узкие проходы и щели?",
+      "options": [
+        { "id": "a", "text": "Интересно", "isCorrect": false },
+        { "id": "b", "text": "Инстинкт укрытия хищника", "isCorrect": true },
+        { "id": "c", "text": "Случайно", "isCorrect": false },
+        { "id": "d", "text": "Игра", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "../../images/tests/test_process/test5/10.png",
+      "question": "Почему собака лижет раны?",
+      "options": [
+        { "id": "a", "text": "Привычка", "isCorrect": false },
+        { "id": "b", "text": "Инстинктивная попытка обеззаразить слюной", "isCorrect": true },
+        { "id": "c", "text": "Скука", "isCorrect": false },
+        { "id": "d", "text": "Чешется", "isCorrect": false }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "Новичок в инстинктах",
+      "description": "Древние инстинкты питомцев — целый мир, который тебе ещё предстоит открыть!"
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "Знаток инстинктов",
+      "description": "Ты неплохо понимаешь природу своего питомца!"
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "Эксперт по инстинктам",
+      "description": "Ты отлично разбираешься в древних инстинктах животных!"
+    }
+  ]
+}

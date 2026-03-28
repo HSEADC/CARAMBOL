@@ -1,0 +1,17 @@
+[
+  {
+    "scoreRange": { "min": 0, "max": 3 },
+    "image": "./images/tests/dog-cheese.png",
+    "title": "Стоит быть внимательнее к песику!"
+  },
+  {
+    "scoreRange": { "min": 4, "max": 7 },
+    "image": "./images/tests/dog-cheese.png",
+    "title": "Хорошо, но можно лучше!"
+  },
+  {
+    "scoreRange": { "min": 8, "max": 10 },
+    "image": "./images/tests/dog-cheese.png",
+    "title": "Ты ответственный хозяин!"
+  }
+]
