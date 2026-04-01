@@ -1,12 +1,15 @@
 @font-face {
-  font-family: "Gramatika Regular";
-  src: url("../fonts/gramatika_regular.ttf");
+  font-family: 'Gramatika';
+  src: url('../fonts/Gramatika-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Gramatika Medium";
-  src: url("../fonts/gramatika_medium.ttf");
-}
-@font-face {
-  font-family: "Pompeji";
-  src: url("../fonts/POMPEJI-trial.otf");
+  font-family: 'Gramatika Medium';
+  src: url('../fonts/gramatika_medium.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }

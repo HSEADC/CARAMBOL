@@ -1,539 +1,230 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="ru" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main page</title>
-    <link rel="icon" href="./images/logo.ico" sizes="any" />
-    <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/logo.png" />
-    <meta
-      name="description"
-      content="KARAMBOL — ваш надежный помощник в защите домашних животных от ядовитых растений. 
-      Удобный доступ к основным разделам через главную страницу: первая помощь, популярные статьи, обучающие тесты, карта рисков."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <title>Карамболь — безопасность питомцев и растений | Идентификация опасных растений</title>
+    <meta name="description" content="Сервис идентификации растений, опасных для домашних животных. Статьи о безопасности кошек и собак, тесты о питомцах, карта рисков. Защитите своего питомца от ядовитых растений." />
+    <meta name="keywords" content="опасные растения для кошек, ядовитые растения для собак, безопасность питомцев, домашние животные, комнатные растения, отравление питомца, ветеринария" />
+    <meta name="author" content="Карамболь" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://karambol.ru/" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="KARAMBOL" />
-    <meta
-      property="og:description"
-      content="KARAMBOL — сервис по идентификации опасных растений для домашних животных."
-    />
-    <meta property="og:url" content="https://hseadc.github.io/CARAMBOL/" />
-    <meta
-      property="og:image"
-      content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
-    />
-    <meta name="twitter:title" content="KARAMBOL" />
-    <meta
-      name="twitter:description"
-      content="KARAMBOL — сервис по идентификации опасных растений для домашних животных."
-    />
-    <meta
-      name="twitter:image"
-      content="https://4.downloader.disk.yandex.ru/preview/1887022f0eaefdb05304d543517a7302b7f475b35f1771f5b7668c80a5c06fc5/inf/hnGE2LiURxUYS50vlGhhglegeOxXbQdzrwYdwX8_0NxsAlDEY94GbnUA5g1DQ5AuCsRbzvRI_0oZ4kvN9OydmA%3D%3D?uid=526120246&filename=og%20image.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
-    />
-    <meta name="twitter:type" content="website" />
-    <meta name="twitter:url" content="https://hseadc.github.io/CARAMBOL/" />
+    <meta property="og:title" content="Карамболь — безопасность питомцев и растений" />
+    <meta property="og:description" content="Сервис идентификации растений, опасных для домашних животных. Статьи, тесты и карта рисков для защиты вашего питомца." />
+    <meta property="og:url" content="https://karambol.ru/" />
+    <meta property="og:site_name" content="Карамболь" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Карамболь — безопасность питомцев и растений" />
+    <meta name="twitter:description" content="Сервис идентификации растений, опасных для домашних животных." />
+
+    <analytics></analytics>
   </head>
-  <body>
-    <header class="header">
-      <div class="menu-wrapper">
-        <button class="header_menu_button"></button>
-        <nav class="header_menu">
-          <ul class="header__links-list">
-            <li class="header__links-item">
-              <a class="header__link" href="./pages/aboutus.html">О нас</a>
-            </li>
-            <li class="header__links-item">
-              <a class="header__link" href="#0">Помощь</a>
-            </li>
-            <li class="header__links-item">
-              <a class="header__link" href="#0">Глоссарий</a>
-            </li>
-            <li class="header__links-item">
-              <a class="header__link" href="./pages/riskmap.html"
-                >Карта рисков</a
-              >
-            </li>
-            <li class="header__links-item">
-              <a class="header__link" href="#0">Обучение</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <nav class="header_menu_visible">
-        <button class="header_menu_button_iphone"></button>
-        <ul class="header__links-list">
-          <li class="header__links-item">
-            <a class="header__link" href="./pages/aboutus.html">О нас</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Помощь</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Глоссарий</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="./pages/riskmap.html">Карта рисков</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link" href="#0">Обучение</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="title_h1">KARAMBOL</h1>
-      <div class="team">
-        <div class="team_name">
-          <img
-            class="team_logo"
-            src="./images/logo_KARAMBOL.webp"
-            alt="Логотип KARAMBOL"
-          />
-          <p class="team_discription">Karambol<br />Team</p>
-        </div>
-        <button class="button extra_button">Первая помощь</button>
-      </div>
-    </header>
-    <main class="main">
-      <section class="first_help_banner">
-        <h2 class="title_h2 first_help_banner_title">Первая помощь</h2>
-        <p class="section_p first_help_banner_p">
-          Мы знаем, как помочь питомцу, подскажем <br />
-          адреса ближайших клиник, их контакты <br />
-          и необходимые действия
-        </p>
-        <button class="button button_learn_more">Узнать больше</button>
-        <img
-          class="first_help_img"
-          src="./images/first_help_gif.webp"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          class="first_help_img_iphone"
-          src="./images/first_help_img_iphone.webp"
-          alt=""
-          loading="lazy"
-        />
+
+  <body class="index">
+    <navbar></navbar>
+
+    <main>
+      <section class="O_mainSection">
+        <h1>Сервис для идентификации растений опасных для домашних животных</h1>
+        <img src="./images/openFlowers.svg" alt="" class="Q_openFlowersImage" />
       </section>
 
-      <section class="glossary_area">
-        <h2 class="title_h2 area_article_title">Популярные статьи</h2>
-        <section class="area_article">
-          <h3 class="title_h3 article_title">
-            Отучаем питомца грызть растения
-          </h3>
-          <p class="section_p article_disciption">
-            Узнайте топ самых эффективных советов, как безопасно <br />
-            и навсегда отучить вашего питомца портить комнатные <br />
-            и уличные растения
-          </p>
-          <button class="button article_button">Изучить глоссарий</button>
-        </section>
-        <section class="cards_list_area">
-          <div class="swiper-wrapper">
-            <div class="card_list">
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Статья</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Растения
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    Опасные садовые <br />растения
-                  </h4>
-                  <p class="card_list_time">~20 мин</p>
-                </div>
-              </div>
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Пост</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Тренды
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    Самые интересные <br />
-                    мифы о растениях
-                  </h4>
-                  <p class="card_list_time">~15 мин</p>
-                </div>
-              </div>
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Статья</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Улица
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    На что обратить <br />
-                    внимание на улице
-                  </h4>
-                  <p class="card_list_time">~25 мин</p>
-                </div>
-              </div>
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Статья</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Собаки
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    Правила спокойной <br />прогулки
-                  </h4>
-                  <p class="card_list_time">~20 мин</p>
-                </div>
-              </div>
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Статья</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Угрозы
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    Грибы, плесень <br />
-                    и микотоксины
-                  </h4>
-                  <p class="card_list_time">~15 мин</p>
-                </div>
-              </div>
-              <div class="card_list_item">
-                <img
-                  class="card_list_img"
-                  src="./images/card_list_img.webp"
-                  alt="Градиентный фон у карточки"
-                  loading="lazy"
-                />
-                <div class="card_list_description">
-                  <div class="card_list_tegs">
-                    <button class="card_list_teg">Статья</button>
-                    <button class="card_list_teg card_list_teg_white">
-                      Питание
-                    </button>
-                  </div>
-                  <h4 class="title_h4 card_list_title">
-                    Растительная диета <br />
-                    и здоровье питомца
-                  </h4>
-                  <p class="card_list_time">~20 мин</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card_list_swape">
-            <button class="card_list_swape_button swiper-button-next"></button>
-            <button class="card_list_swape_button swiper-button-prev"></button>
-          </div>
-        </section>
+      <section class="O_aboutSection">
+        <div></div>
+        <h2>
+          «Карамболь» — неожиданное столкновение с проблемой, которая требует
+          быстрых решений.
+          <span>Мы помогаем быть готовыми к таким ситуациям.</span>
+        </h2>
       </section>
-      <section class="ticket_area">
-        <img
-          class="ticket_area_img"
-          src="./images/ticket_area_img.webp"
-          alt=""
-          loading="lazy"
-        />
-        <p class="section_p ticket_area_chooseus">Choose Us!</p>
-        <h3 class="title_h3 ticket_area_title">
-          Первый помощник по безопасности <br />
-          питомца у вас в кармане
-        </h3>
-        <p class="section_p ticket_area_discription">
-          Наша задача – обеспечивать ваше спокойствие, быстро <br />и точно
-          выявляя риски, связанные с аллергенами
-        </p>
-        <img
-          class="ticket_area_icon"
-          src="./images/icon.svg"
-          alt="Иконка цветка"
-        />
-      </section>
-      <section class="tests_area">
-        <h2 class="title_h2 area_article_title">Обучающие тесты</h2>
-        <div class="area_article area_tests">
-          <h3 class="title_h3 article_title">
-            А вы хорошо знаете своего питомца?
-          </h3>
-          <p class="section_p article_disciption">
-            Изучите особенности животного для его счастливой <br />
-            и безопасной жизни, а также виды опасных растений <br />
-            в вашем доме и на улице
-          </p>
-          <button class="button article_button">К тестам</button>
+
+      <section class="O_searchSection">
+        <div class="A_searchAnimation">
+          Статьи о взаимодействии животных с растениями
         </div>
-        <section class="tests">
-          <div class="card_list_description_test test_first">
-            <div class="card_list_tegs">
-              <button class="card_list_teg">Тест</button>
-              <button class="card_list_teg card_list_teg_white">Питомец</button>
+
+        <div>
+          <div class="W_allInfoContainer">
+            <div class="W_searchInfo">
+              <div class="W_searchCardInfo">
+                <h1>Статьи.<br />Растения.<br />Безопасность.</h1>
+                <div class="W_descriptionSearchInfo">
+                  <h4>Как растения влияют на кошек</h4>
+                  <p>
+                    Почему кошек интересуют листьями многих комнатных растений и
+                    что с этим делать
+                  </p>
+                </div>
+              </div>
+              <img src="./images/naming.svg" alt="" />
             </div>
-            <h4 class="title_h4 card_list_title card_list_title_iphone">
-              Насколько вы знающий <br />хозяин?
-            </h4>
-            <p class="card_list_time card_list_time_iphone">~5 мин</p>
-            <button class="tests_area_button"></button>
+
+            <div class="Q_folderBackground"></div>
+            <div class="Q_folderBackground"></div>
+
+            <img src="./images/roundFlower.svg" alt="" />
+            <img src="./images/coupleLittleFlowers.svg" alt="" />
+            <img src="./images/dog.svg" alt="vector sitting dog" />
+            <img src="./images/fluffyFlower.svg" alt="" />
           </div>
-          <div class="card_list_description_test test_second">
-            <div class="card_list_tegs">
-              <button class="card_list_teg">Викторина</button>
-              <button class="card_list_teg card_list_teg_white">
-                Растения
-              </button>
-            </div>
-            <h4 class="title_h4 card_list_title card_list_title_iphone">
-              Умеете распознавать <br />
-              опасные растения?
-            </h4>
-            <p class="card_list_time card_list_time_iphone">~15 мин</p>
-            <button class="tests_area_button"></button>
-          </div>
-          <div class="card_list_description_test test_third">
-            <div class="card_list_tegs">
-              <button class="card_list_teg">Опрос</button>
-              <button class="card_list_teg card_list_teg_white">Сервис</button>
-            </div>
-            <h4 class="title_h4 card_list_title card_list_title_iphone">
-              Насколько удобен <br />
-              сервис для вас?
-            </h4>
-            <p class="card_list_time card_list_time_iphone">~15 мин</p>
-            <button class="tests_area_button"></button>
-          </div>
-          <div class="card_list_description_test test_fourth">
-            <div class="card_list_tegs">
-              <button class="card_list_teg">Тест</button>
-              <button class="card_list_teg card_list_teg_white">Тренды</button>
-            </div>
-            <h4 class="title_h4 card_list_title card_list_title_iphone">
-              Зимняя безопасность <br />
-              питомца: готовы ли вы?
-            </h4>
-            <p class="card_list_time card_list_time_iphone">~15 мин</p>
-            <button class="tests_area_button"></button>
-          </div>
-        </section>
+        </div>
       </section>
-      <section class="risks_map_area">
-        <h2 class="title_h2 risks_map_area_title">Карта рисков</h2>
-        <div class="map_area">
-          <button class="button button_map_area">
-            <a href="./pages/riskmap.html" class="transition">Посмотреть</a>
-          </button>
+
+      <section class="O_articlesSection">
+        <div id="articles-root"></div>
+      </section>
+
+      <section class="O_statisticArea">
+        <h2>
+          В России около 75 млн питомцев.
+          <span
+            >Отравления случаются часто,<br />
+            от первых действий владельца зависит исход.</span
           >
+          Знания могут<br />
+          спасти питомца.
+        </h2>
+        <div class="C_Stat">
+          <div class="M_Stat">
+            <div class="A_bigStat">
+              <p class="Q_Banners">72</p>
+              <p class="Q_Adds">
+                Россиян держат питомцев (кошек, собак, грызунов<br />
+                и экзотику)
+              </p>
+            </div>
+            <div class="A_smallStat"></div>
+          </div>
+          <div class="M_Stat">
+            <div class="A_bigStat">
+              <p class="Q_Banners">84</p>
+              <p class="Q_Adds">
+                Неутешительных исходов отравлений у домашних питомцев
+              </p>
+            </div>
+            <div class="A_smallStat"></div>
+          </div>
         </div>
+      </section>
+
+      <section class="O_swipeCardsSection">
+        <div class="W_swipeCardsContainer">
+          <div class="W_swipeCardsHeader">
+            <div class="W_progressCircle">
+              <svg class="A_progressCircleSvg" viewBox="0 0 36 36">
+                <circle
+                  class="A_progressCircleBackground"
+                  cx="18"
+                  cy="18"
+                  r="15.5"
+                />
+                <circle
+                  class="A_progressCircleFill"
+                  id="progressCircle"
+                  cx="18"
+                  cy="18"
+                  r="15.5"
+                />
+              </svg>
+              <span class="A_swipeCounter" id="swipeCounter">0 / 4</span>
+            </div>
+            <div class="A_swipeIcon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="34"
+                viewBox="0 0 33 34"
+                fill="none"
+              >
+                <path
+                  d="M9.12452 7.53632C9.40944 7.40346 9.73662 7.39168 10.0341 7.50359C10.3315 7.61549 10.5749 7.8419 10.7107 8.13302L14.976 17.2801C15.0665 17.4742 15.2288 17.6251 15.4271 17.6997C15.6254 17.7743 15.8435 17.7665 16.0334 17.6779C16.2234 17.5893 16.3696 17.4273 16.4399 17.2274C16.5102 17.0276 16.4989 16.8063 16.4084 16.6122L14.6797 12.905L14.8002 12.8418C15.2461 12.6125 15.7072 12.4046 15.9874 12.3362C16.1978 12.2862 16.4741 12.2804 16.7534 12.3034C16.8923 12.3134 17.0685 12.4183 17.1825 12.6627L18.557 15.6103C18.6475 15.8044 18.8097 15.9553 19.008 16.0299C19.2063 16.1045 19.4244 16.0967 19.6144 16.0081C19.8043 15.9195 19.9506 15.7575 20.0209 15.5576C20.0912 15.3577 20.0799 15.1364 19.9894 14.9424L18.9213 12.6519L19.0663 12.5665C19.5026 12.3203 19.896 12.1618 20.1077 12.1521C20.3082 12.1406 20.6787 12.2547 21.0973 12.4568C21.2789 12.5432 21.4419 12.6347 21.5606 12.7023L22.4792 14.6722C22.5697 14.8663 22.7319 15.0172 22.9302 15.0918C23.1285 15.1665 23.3466 15.1586 23.5366 15.07C23.7265 14.9815 23.8727 14.8194 23.9431 14.6195C24.0134 14.4197 24.002 14.1984 23.9115 14.0043L23.2291 12.5408L23.719 12.3123C23.9191 12.219 24.1371 12.1695 24.3588 12.1672C24.5804 12.1649 24.8009 12.2097 25.0059 12.2987C25.2109 12.3878 25.396 12.5192 25.5491 12.6843C25.7022 12.8495 25.82 13.0448 25.8949 13.2576L27.3596 17.4121C27.5476 17.9461 27.6233 18.5124 27.5818 19.0742L27.2502 23.5799C27.2398 23.7211 27.1928 23.8564 27.1138 23.9721C27.0348 24.0878 26.9268 24.1797 26.8005 24.2386L17.7737 28.4479C17.6408 28.5099 17.4929 28.5329 17.3465 28.5143C17.2002 28.4957 17.0612 28.4362 16.945 28.3426L13.4981 25.5578L7.04384 21.1108C6.87755 20.9955 6.7575 20.8234 6.70624 20.6266C6.65497 20.4299 6.67603 20.2221 6.76545 20.0424C6.85486 19.8626 7.00649 19.7232 7.19184 19.6504C7.37718 19.5776 7.5835 19.5764 7.77201 19.6469L12.8688 21.5644C13.0167 21.6202 13.1768 21.6306 13.329 21.5942C13.4812 21.5578 13.6186 21.4762 13.7238 21.3598C13.829 21.2434 13.8972 21.0975 13.9199 20.9404C13.9425 20.7833 13.9186 20.6221 13.8511 20.4773L8.56208 9.13492C8.42633 8.8438 8.40932 8.51183 8.5148 8.21204C8.62028 7.91224 8.8396 7.66918 9.12452 7.53632ZM13.9966 11.4401L12.143 7.46509C11.8263 6.78582 11.2584 6.25752 10.5643 5.99641C9.87028 5.7353 9.10687 5.76278 8.44206 6.07278C7.77725 6.38279 7.2655 6.94993 7.01938 7.64946C6.77326 8.34898 6.81295 9.12358 7.12969 9.80285L11.595 19.3788L8.30221 18.14C7.74917 17.9337 7.14421 17.9379 6.60084 18.1518C6.05747 18.3657 5.61306 18.7747 5.351 19.3019C5.08894 19.8291 5.02725 20.4384 5.1775 21.0153C5.32775 21.5922 5.67962 22.0972 6.16707 22.4355L12.5694 26.8497L15.9681 29.5946C16.3167 29.876 16.7341 30.0547 17.1735 30.1107C17.613 30.1667 18.0571 30.0977 18.4561 29.9115L27.483 25.7022C27.8617 25.5255 28.1859 25.2496 28.4228 24.9026C28.6597 24.5556 28.8009 24.1497 28.832 23.7261L29.1643 19.2218C29.2224 18.4345 29.1162 17.6408 28.8524 16.8924L27.3877 12.7379C27.2377 12.3124 27.0021 11.9221 26.6958 11.592C26.3896 11.2619 26.0195 10.9994 25.6096 10.8214C25.1996 10.6434 24.7589 10.5539 24.3157 10.5586C23.8725 10.5633 23.4367 10.6622 23.0365 10.8488L22.2043 11.2369C22.0571 11.1546 21.9075 11.077 21.7557 11.0041C21.3259 10.7966 20.6376 10.5135 20.0066 10.544C19.3856 10.5735 18.7047 10.9159 18.2742 11.1594L18.0933 11.2652C17.7548 10.9374 17.3163 10.7375 16.853 10.6996C16.4329 10.6583 16.0101 10.6824 15.5994 10.7711C15.113 10.8874 14.5013 11.1798 14.064 11.4051L13.9966 11.4401Z"
+                  fill="#7A7474"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="W_swipeCardContent" id="swipeCardContent">
+            <div class="M_swipeCardNext" id="swipeCardNext"></div>
+            <div class="M_swipeCard" id="swipeCard">
+              <div class="W_swipeCardTitles">
+                <h2 class="A_swipeCardTitle" id="swipeCardTitle">
+                  Как вовремя успеть помочь любимому питомцу
+                </h2>
+                <p class="A_swipeCardSubtitle" id="swipeCardSubtitle"></p>
+              </div>
+              <img
+                src="./images/swipe/card1.svg"
+                alt=""
+                class="A_swipeCardImage"
+                id="swipeCardImage"
+              />
+            </div>
+          </div>
+
+          <p class="A_swipeFooterText">
+            Более подробную памятку вы можете получить в
+            <a href="https://t.me/Karambol_Support_bot" target="_blank">боте</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="O_testsSection">
+        <h2>Узнать больше — проще с тестами</h2>
+        <div id="tests-root"></div>
+      </section>
+
+      <section class="O_cardsMedia">
+        <div class="C_cards">
+          <img
+            src="./images/posts/post1.jpg"
+            alt=""
+            class="Q_Card Q_Card—first"
+          />
+          <img
+            src="./images/posts/post2.jpg"
+            alt=""
+            class="Q_Card Q_Card—second"
+          />
+          <img
+            src="./images/posts/post3.jpg"
+            alt=""
+            class="Q_Card Q_Card—third"
+          />
+          <img
+            src="./images/posts/post4.jpg"
+            alt=""
+            class="Q_Card Q_Card—fourth"
+          />
+          <img
+            src="./images/posts/post5.jpg"
+            alt=""
+            class="Q_Card Q_Card—fifth"
+          />
+          <img
+            src="./images/posts/post6.jpg"
+            alt=""
+            class="Q_Card Q_Card—sixth"
+          />
+          <img
+            src="./images/posts/post7.jpg"
+            alt=""
+            class="Q_Card Q_Card—seventh"
+          />
+        </div>
+        <h2>Посты в медиа</h2>
+        <button class="Q_Button light_button">
+          <a href="/articles.html">Все медиа</a>
+        </button>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer_area">
-        <div class="text-wrapper">
-          <p class="text-wrapper_title">Волонтерите? Свяжитесь с нами!</p>
-          <form
-            id="my-form"
-            action="https://formspree.io/f/xnngorro"
-            method="POST"
-          >
-            <input type="email" name="email" placeholder="Ваш email" />
-            <button id="my-form-button" class="button">Подписаться</button>
-            <p id="my-form-status"></p>
-          </form>
-        </div>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a href="https://t.me/karambol_info" target="_blank"
-              ><img
-                class="social-icon"
-                src="./images/logo_telegram.svg"
-                alt="Логотип Телеграмм"
-            /></a>
-          </li>
-          <li class="social-list-item">
-            <a href="https://vk.ru/club233311864" target="_blank"
-              ><img
-                class="social-icon"
-                src="./images/logo_VK.svg"
-                alt="Логотип ВК"
-            /></a>
-          </li>
-          <li class="social-list-item">
-            <a
-              href="https://dzen.ru/karambol_info?share_to=link"
-              target="_blank"
-              ><img
-                class="social-icon"
-                src="./images/logo_dzen.svg"
-                alt="Логотип Яндекс Дзен"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <p class="section_p footer_discription">
-        Мы строим отношения с пользователями на прозрачности. Перед началом
-        работы с сервисом прочитайте
-        <a class="footer_discription_link" href="#0"
-          >пользовательское <br />
-          соглашение</a
-        >
-        и
-        <a class="footer_discription_link" href="#0"
-          >политику конфиденциальности</a
-        >
-        — так вы будете уверены, что ваши данные и данные вашего питомца в
-        надёжных руках.
-      </p>
-    </footer>
-    <script>
-      var form = document.getElementById("my-form");
-
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset();
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, "errors")) {
-                  status.innerHTML = data["errors"]
-                    .map((error) => error["message"])
-                    .join(", ");
-                } else {
-                  status.innerHTML =
-                    "Oops! There was a problem submitting your form";
-                }
-              });
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-
-      const menuWrapper = document.querySelector(".menu-wrapper");
-      const menuButton = document.querySelector(".header_menu_button");
-
-      function toggleMenu() {
-        if (menuWrapper.classList.contains("scrolled")) {
-          menuWrapper.classList.toggle("is-active");
-        }
-      }
-
-      menuButton.addEventListener("click", toggleMenu);
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          menuWrapper.classList.add("scrolled");
-        } else {
-          menuWrapper.classList.remove("scrolled");
-          menuWrapper.classList.remove("is-active");
-        }
-      });
-
-      const cardList = document.querySelector(".card_list");
-      const nextButton = document.querySelector(".swiper-button-prev ");
-      const prevButton = document.querySelector(".swiper-button-next");
-
-      let currentTranslateX = 0;
-      let slideDistance = 340;
-      let viewportWidth = 1340;
-
-      const numCards = cardList.querySelectorAll(".card_list_item").length;
-      const cardItemWidth = 320;
-      const cardGap = 20;
-      const totalContentWidth =
-        cardItemWidth * numCards + cardGap * (numCards - 1);
-
-      let maxScrollTranslateX = -(totalContentWidth - viewportWidth);
-
-      cardList.style.transition = "transform 0.5s ease-in-out";
-
-      function updateButtonStates() {
-        prevButton.disabled = currentTranslateX >= 0;
-        nextButton.disabled = currentTranslateX <= maxScrollTranslateX;
-      }
-
-      function moveSlider(direction) {
-        if (direction === "next") {
-          currentTranslateX = Math.max(
-            maxScrollTranslateX,
-            currentTranslateX - slideDistance
-          );
-        } else if (direction === "prev") {
-          currentTranslateX = Math.min(0, currentTranslateX + slideDistance);
-        }
-        cardList.style.transform = `translateX(${currentTranslateX}rem)`;
-        updateButtonStates();
-      }
-
-      nextButton.addEventListener("click", () => moveSlider("next"));
-      prevButton.addEventListener("click", () => moveSlider("prev"));
-
-      function updateViewportWidth() {
-        if (window.matchMedia("(max-width: 440px)").matches) {
-          viewportWidth = 340;
-          slideDistance = 420;
-        } else {
-          viewportWidth = 1340;
-          slideDistance = 340;
-        }
-        maxScrollTranslateX = -(totalContentWidth - viewportWidth);
-        updateButtonStates();
-      }
-
-      const viewportMediaQuery = window.matchMedia("(max-width: 440px)");
-      viewportMediaQuery.addListener(updateViewportWidth);
-      updateViewportWidth();
-
-      updateButtonStates();
-    </script>
+    <footer></footer>
   </body>
 </html>
