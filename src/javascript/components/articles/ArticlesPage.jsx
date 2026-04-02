@@ -47,13 +47,13 @@ const ArticlesPage = () => {
   }
 
   const carouselImages = [
-    '../../images/tests/audio1.png',
-    '../../images/tests/audio2.png',
-    '../../images/tests/audio3.png',
-    '../../images/tests/audio4.png',
-    '../../images/tests/audio5.png',
-    '../../images/tests/audio6.png',
-    '../../images/tests/audio7.png'
+    'images/tests/audio1.png',
+    'images/tests/audio2.png',
+    'images/tests/audio3.png',
+    'images/tests/audio4.png',
+    'images/tests/audio5.png',
+    'images/tests/audio6.png',
+    'images/tests/audio7.png'
   ]
 
   const getFilteredArticles = () => {
