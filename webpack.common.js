@@ -8,6 +8,15 @@ const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs')
 
+const basePath = process.env.NODE_ENV === 'production' ? '/CARAMBOL/' : '/'
+
+const makeTemplateParams = (compilation, assets, assetTags, options) => ({
+  compilation,
+  webpackConfig: compilation.options,
+  htmlWebpackPlugin: { tags: assetTags, files: assets, options },
+  basePath
+})
+
 // Динамически читаем статьи из папки articles
 const articlesDir = path.join(__dirname, 'src/javascript/data/articles')
 const articleFiles = fs.existsSync(articlesDir)
@@ -28,7 +37,8 @@ const articlePages = articleFiles.map((file) => {
     filename: `./article/${id}.html`,
     chunks: ['index', 'mobileMenu', 'article'],
     articleId: id,
-    title: title
+    title: title,
+    templateParameters: makeTemplateParams
   })
 })
 
@@ -97,7 +107,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'mobileMenu', 'swipeCards', 'articles', 'tests']
+      chunks: ['index', 'mobileMenu', 'swipeCards', 'articles', 'tests'],
+      templateParameters: makeTemplateParams
     }),
 
     // Internal pages
@@ -106,7 +117,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/page.html',
       filename: './pages/page.html',
-      chunks: ['mobileMenu']
+      chunks: ['mobileMenu'],
+      templateParameters: makeTemplateParams
     }),
 
     // 404 page
@@ -115,7 +127,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/404.html',
       filename: './404.html',
-      chunks: ['index', 'mobileMenu']
+      chunks: ['index', 'mobileMenu'],
+      templateParameters: makeTemplateParams
     }),
 
     // Map page
@@ -124,7 +137,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/map.html',
       filename: './map.html',
-      chunks: ['index', 'mobileMenu', 'map']
+      chunks: ['index', 'mobileMenu', 'map'],
+      templateParameters: makeTemplateParams
     }),
 
     // Learning page
@@ -133,7 +147,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/learning.html',
       filename: './learning.html',
-      chunks: ['index', 'mobileMenu', 'learning']
+      chunks: ['index', 'mobileMenu', 'learning'],
+      templateParameters: makeTemplateParams
     }),
 
     // Articles page
@@ -142,7 +157,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index', 'mobileMenu', 'articlesPage']
+      chunks: ['index', 'mobileMenu', 'articlesPage'],
+      templateParameters: makeTemplateParams
     }),
 
     ...articlePages,
@@ -153,7 +169,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index', 'mobileMenu']
+      chunks: ['index', 'mobileMenu'],
+      templateParameters: makeTemplateParams
     }),
 
     // Partials
