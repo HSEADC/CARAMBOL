@@ -17426,7 +17426,7 @@ var ArticleCard = function ArticleCard(_ref) {
     onTestClick = _ref.onTestClick,
     isLarge = _ref.isLarge;
   return /*#__PURE__*/react.createElement("a", {
-    href: "/article/".concat(article.id, ".html"),
+    href: "article/".concat(article.id, ".html"),
     className: "M_articleCard M_articleAllCards ".concat(isLarge ? 'M_articleCardLarge' : 'M_articleCardSmall')
   }, /*#__PURE__*/react.createElement("div", {
     className: "W_articleImageWrapper"

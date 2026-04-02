@@ -3,7 +3,7 @@ import React from 'react'
 const ArticleCard = ({ article, onTestClick, isLarge }) => {
   return (
     <a
-      href={`/article/${article.id}.html`}
+      href={`article/${article.id}.html`}
       className={`M_articleCard M_articleAllCards ${isLarge ? 'M_articleCardLarge' : 'M_articleCardSmall'}`}
     >
       <div className="W_articleImageWrapper">
