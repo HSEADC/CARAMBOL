@@ -8,7 +8,7 @@ const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs')
 
-const basePath = process.env.NODE_ENV === 'production' ? '/CARAMBOL/' : '/'
+const basePath = process.env.NODE_ENV === 'production' ? '/KARAMBOL/' : '/'
 
 const makeTemplateParams = (compilation, assets, assetTags, options) => ({
   compilation,
@@ -57,7 +57,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/CARAMBOL/'
+    publicPath: '/KARAMBOL/'
     // clean: true
   },
   module: {
